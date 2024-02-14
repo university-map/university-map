@@ -1,0 +1,19 @@
+name: "Technical University of Munich"
+address: "Arcisstraße 21, Munich 80333 Germany"
+website: "https://www.tum.de/en"
+locations:
+  - name: "Munich Campus"
+    coordinates: [48.14978194502807, 11.567286773153985]
+  - name: "Garching Campus"
+    coordinates: [48.26595650384384, 11.671006515976153]
+acronyms: ["TUM", "TU Munich"]
+banner: "https://www.tum.de/fileadmin/_processed_/e/e/csm_thiersch-turm-muenchen_235708a869.jpg"
+introduction: >-
+  Established in 1868 by King Ludwig II of Bavaria, the university now has additional campuses
+  in Garching, Freising, Heilbronn, Straubing, and Singapore, with the Garching campus being
+  its largest. The university is organized into seven schools, and is supported by numerous
+  research centers. A University of Excellence under the German Universities Excellence
+  Initiative, TUM is among the leading universities in the European Union. Its researchers
+  and alumni include 18 Nobel laureates and 24 Leibniz Prize winners.
+gallery:
+  []

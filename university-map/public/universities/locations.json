@@ -1,0 +1,244 @@
+[
+  {
+    "name": "University of Toronto",
+    "country": "Canada",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          43.66440327972784,
+          -79.39666130605445
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Peking University",
+    "country": "China",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          39.98713492033826,
+          116.30588462559174
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tsinghua University",
+    "country": "China",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          39.99987276788524,
+          116.32633659183877
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Technical University of Munich",
+    "country": "Germany",
+    "location": [
+      {
+        "name": "Munich Campus",
+        "coordinates": [
+          48.14978194502807,
+          11.567286773153985
+        ]
+      },
+      {
+        "name": "Garching Campus",
+        "coordinates": [
+          48.26595650384384,
+          11.671006515976153
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Indian Institute of Science",
+    "country": "India",
+    "location": [
+      {
+        "name": "Bangalore Campus",
+        "coordinates": [
+          13.10332243062725,
+          77.55402896592238
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kyoto University",
+    "country": "Japan",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          35.02652551562812,
+          135.78083252541526
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The University of Tokyo",
+    "country": "Japan",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          35.713966038846046,
+          139.76274081234956
+        ]
+      }
+    ]
+  },
+  {
+    "name": "National University of Singapore",
+    "country": "Singapore",
+    "location": [
+      {
+        "name": "Bukit Timah Campus",
+        "coordinates": [
+          1.320161371980279,
+          103.81701426172378
+        ]
+      },
+      {
+        "name": "Kent Ridge Campus",
+        "coordinates": [
+          1.2970475817534486,
+          103.77613066561054
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ETH Zurich",
+    "country": "Switzerland",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          47.37721714414568,
+          8.54701758971196
+        ]
+      }
+    ]
+  },
+  {
+    "name": "National Cheng Kung University",
+    "country": "Taiwan",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          22.9987772261614,
+          120.21648234565666
+        ]
+      },
+      {
+        "name": "Guiren Campus",
+        "coordinates": [
+          22.93788805281445,
+          120.27485576268575
+        ]
+      }
+    ]
+  },
+  {
+    "name": "National Taiwan University",
+    "country": "Taiwan",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          25.017491194856326,
+          121.53968742646664
+        ]
+      }
+    ]
+  },
+  {
+    "name": "National Tsing Hua University",
+    "country": "Taiwan",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          24.796893583808767,
+          120.99644335317485
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of Cambridge",
+    "country": "United Kingdom",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          52.20555624964476,
+          0.11314384499981649
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of Oxford",
+    "country": "United Kingdom",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          51.75526524099619,
+          -1.2545852667835287
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Harvard University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Cambridge Campus",
+        "coordinates": [
+          42.37482288761835,
+          -71.11818747532095
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Massachusetts Institute of Technology",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Cambridge Campus",
+        "coordinates": [
+          42.36043149339396,
+          -71.09426317806926
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Stanford University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Central Campus",
+        "coordinates": [
+          37.42798659476949,
+          -122.17017749899045
+        ]
+      }
+    ]
+  }
+]

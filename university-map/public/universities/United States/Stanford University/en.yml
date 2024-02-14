@@ -1,0 +1,20 @@
+name: "Stanford University"
+address: "Stanford, CA 94305 United States"
+website: "http://www.stanford.edu"
+locations:
+  - name: "Central Campus"
+    coordinates: [37.42798659476949, -122.17017749899045]
+acronyms: ["Stanford"]
+banner: "https://images.unsplash.com/photo-1619139081320-38dc9778d051"
+introduction: >-
+  Stanford University, officially Leland Stanford Junior University, is a private research
+  university located in Stanford, California. Stanford was founded in 1885 by Leland and
+  Jane Stanford in memory of their only child, Leland Stanford Jr.
+  Stanford's undergraduate program is one of the top three most selective in the United States.
+  Stanford is known for its entrepreneurial character, particularly in the fields of computer
+  science and engineering. It is located in the heart of Silicon Valley, and has close ties to
+  tech companies such as Google, Yahoo, and Hewlett-Packard.
+gallery:
+  [
+    "https://images.unsplash.com/photo-1508302882073-8af6be4c6688",
+  ]

@@ -1,0 +1,24 @@
+name: "Massachusetts Institute of Technology (MIT)"
+address: "77 Massachusetts Avenue, Cambridge, MA 02139 United States"
+website: "https://web.mit.edu"
+locations:
+  - name: "Cambridge Campus"
+    coordinates: [42.36043149339396, -71.09426317806926]
+acronyms: ["MIT"]
+banner: "https://images.unsplash.com/photo-1537888692311-8a7fb3e9f374"
+introduction: >-
+  The Massachusetts Institute of Technology (MIT) is a private land-grant research
+  university in Cambridge, Massachusetts. The institute has an urban campus that
+  extends more than a mile alongside the Charles River. The institute also encompasses
+  a number of major off-campus facilities such as the MIT Lincoln Laboratory, the Bates
+  Center, and the Haystack Observatory, as well as affiliated laboratories such as the
+  Broad and Whitehead Institutes. Founded in 1861 in response to the increasing
+  industrialization of the United States, MIT adopted a European polytechnic university
+  model and stressed laboratory instruction in applied science and engineering.
+  It has since played a key role in the development of many aspects of modern science,
+  engineering, mathematics, and technology, and is widely known for its innovation and
+  academic strength, making it one of the most prestigious universities in the world.
+gallery:
+  [
+    "https://images.unsplash.com/photo-1678742733118-029763b67e5c",
+  ]

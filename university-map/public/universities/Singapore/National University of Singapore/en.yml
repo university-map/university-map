@@ -1,0 +1,16 @@
+name: "National University of Singapore"
+address: "21 Lower Kent Ridge Road, Singapore 119077 Singapore"
+website: "http://www.nus.edu.sg"
+locations:
+  - name: "Bukit Timah Campus"
+    coordinates: [1.320161371980279, 103.81701426172378]
+  - name: "Kent Ridge Campus"
+    coordinates: [1.2970475817534486, 103.77613066561054]
+acronyms: ["NUS"]
+banner: "https://masters.nus.edu.sg/images/default-source/default-album/nus-u-town-campusdcb399df-fa6a-4778-9088-967eabc0315f.jpg"
+introduction: >-
+  The National University of Singapore (NUS) is a national public collegiate and research
+  university in Singapore. It was officially established in 1980 by the merger of the
+  University of Singapore and Nanyang University.
+gallery:
+  []

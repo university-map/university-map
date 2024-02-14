@@ -1,0 +1,21 @@
+name: "University of Cambridge"
+address: "Trinity Lane, Cambridge CB2 1TN United Kingdom"
+website: "http://www.cam.ac.uk"
+locations:
+  - name: "Main Campus"
+    coordinates: [52.20555624964476, 0.11314384499981649]
+acronyms: ["Cambridge"]
+banner: "https://images.unsplash.com/20/cambridge.JPG"
+introduction: >-
+  The University of Cambridge is a collegiate research university in Cambridge, United Kingdom.
+  Founded in 1209 and granted a royal charter by Henry III in 1231, Cambridge is the second-oldest
+  university in the English-speaking world and the world's fourth-oldest surviving university.
+  The university grew out of an association of scholars who left the University of Oxford after a
+  dispute with the townspeople. The two English ancient universities share many common features
+  and are often jointly referred to as Oxbridge. The history and influence of the University of
+  Cambridge has made it one of the most prestigious universities in the world.
+gallery:
+  [
+    "https://images.unsplash.com/photo-1612106319259-23c259df2661",
+    "https://images.unsplash.com/photo-1596967082890-810f0f4cf634"
+  ]
