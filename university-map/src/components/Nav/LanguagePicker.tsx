@@ -11,9 +11,10 @@ const LanguagePicker: React.FC = () => {
     const newLocale = Object.keys(languages).find((key) => languages[key] === language) as string;
     i18n.changeLanguage(newLocale);
 
-    // '', 'en', ...
-    const segments = decodeURI(window.location.pathname).split('/');
-    segments[1] = newLocale;
+    // '#', 'en', ...
+    const segments = decodeURI(window.location.hash).split('/');
+    segments.shift();
+    segments[0] = newLocale;
     navigate(segments.join('/'));
   };
 
@@ -23,8 +24,9 @@ const LanguagePicker: React.FC = () => {
       radius='xs'
       checkIconPosition='left'
       maxDropdownHeight={150}
-      data={Object.values(languages)}
+      allowDeselect={false}
       dropdownOpened
+      data={Object.values(languages)}
       placeholder={t('pickLanguage')}
       defaultValue={languages[i18n.language]}
       onChange={(value) => updateLanguage(value as string)}

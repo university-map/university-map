@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { createTheme, MantineProvider } from '@mantine/core';
 import App from './App.tsx';
 import '@mantine/core/styles.css';
@@ -12,11 +12,11 @@ const theme = createTheme({
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <MantineProvider theme={theme}>
         <App />
       </MantineProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
