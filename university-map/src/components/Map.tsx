@@ -1,6 +1,7 @@
 import { MapContainer, Marker, Popup, TileLayer, ZoomControl } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import { useTranslation } from "react-i18next";
 
 const markerIcon = new L.Icon({
   iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
@@ -12,6 +13,7 @@ const markerIcon = new L.Icon({
 });
 
 function Map() {
+  const { t } = useTranslation();
   return (
     <MapContainer
       center={[22.996900745680346, 120.21685639625197]}
@@ -28,7 +30,7 @@ function Map() {
       <ZoomControl position='bottomright' />
       <Marker position={[22.996900745680346, 120.21685639625197]} icon={markerIcon} >
         <Popup>
-          National Cheng Kung University
+          {t('InfoCard.overview')}
         </Popup>
       </Marker>
     </MapContainer>
