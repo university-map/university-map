@@ -14,6 +14,7 @@ const InfoCardOverview: React.FC<{
     <Carousel.Slide key={index}>
       <Image
         sizes='100vw'
+        h={240}
         alt='Gallery Image'
         style={{ objectFit: 'cover' }}
         src={image}

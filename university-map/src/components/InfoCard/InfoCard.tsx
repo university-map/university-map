@@ -16,6 +16,7 @@ const InfoCard: React.FC<{
       <div className='banner'>
         <Image
           sizes='100vw'
+          h={240}
           alt='University Banner'
           style={{ objectFit: 'cover' }}
           src={props.universityInfo.banner}
@@ -30,7 +31,7 @@ const InfoCard: React.FC<{
         onChange={setActiveTab}
       >
         <Tabs.List>
-          <Tabs.Tab value="overview">{t('overview')}</Tabs.Tab>
+          <Tabs.Tab value="overview">{t('InfoCard.overview')}</Tabs.Tab>
         </Tabs.List>
 
         <Tabs.Panel value="overview">

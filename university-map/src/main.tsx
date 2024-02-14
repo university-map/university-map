@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom';
 import { createTheme, MantineProvider } from '@mantine/core';
 import App from './App.tsx';
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 import './index.css';
 
 const theme = createTheme({
