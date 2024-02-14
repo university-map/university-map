@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { createTheme, MantineProvider } from '@mantine/core';
 import App from './App.tsx';
 import '@mantine/core/styles.css';
 import './index.css';
-import { BrowserRouter } from 'react-router-dom';
 
 const theme = createTheme({
   /** Put your mantine theme override here */
