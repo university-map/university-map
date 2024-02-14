@@ -131,6 +131,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# vite
+.vite
+
 # testing
 /coverage
 
