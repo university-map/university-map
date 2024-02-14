@@ -11,8 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.5.2",
     "@mantine/core": "^7.5.2",
     "@mantine/hooks": "^7.5.2",
+    "embla-carousel-autoplay": "^7.1.0",
+    "embla-carousel-react": "^7.1.0",
     "i18next": "^23.8.2",
     "js-cookie": "^3.0.5",
     "js-yaml": "^4.1.0",

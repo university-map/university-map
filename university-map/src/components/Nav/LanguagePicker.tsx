@@ -8,7 +8,7 @@ const LanguagePicker: React.FC = () => {
   const { t, i18n } = useTranslation();
 
   const updateLanguage = async (language: string): Promise<void> => {
-    const newLocale = Object.keys(languages).find((key) => languages[key] === language) as string;
+    const newLocale = Object.keys(languages).find((key) => languages[key] === language) ?? 'en';
     i18n.changeLanguage(newLocale);
 
     // '#', 'en', ...
@@ -29,7 +29,7 @@ const LanguagePicker: React.FC = () => {
       data={Object.values(languages)}
       placeholder={t('pickLanguage')}
       defaultValue={languages[i18n.language]}
-      onChange={(value) => updateLanguage(value as string)}
+      onChange={(value) => updateLanguage(value!)}
     />
   );
 };
