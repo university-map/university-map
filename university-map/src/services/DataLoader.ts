@@ -18,9 +18,7 @@ class DataLoader implements IDataLoader {
   public static getInstance(): DataLoader {
     if (!DataLoader.Instance) {
       DataLoader.Instance = new DataLoader();
-      if (typeof window !== 'undefined') {
-        DataLoader.Endpoint = window.location.origin;
-      }
+      DataLoader.Endpoint = window.location.origin;
     }
     return DataLoader.Instance;
   }

@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import SideNavbar from '@/components/Nav/SideNavbar';
-import Map from '@/components/Map';
+import { Home, Map } from '@/components';
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
       <SideNavbar />
       <div style={{ height: '100%', flexGrow: 1, paddingLeft: '50px' }}>
         <Routes>
-          <Route path="/" element={<Map />} />
+          <Route path="/:lang" element={<Home />} />
+          <Route path="/:lang/university/:country/:university" element={<Map />} />
         </Routes>
       </div>
     </div>
