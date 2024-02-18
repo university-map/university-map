@@ -28,14 +28,14 @@ const SideNavbar: React.FC = () => {
       <nav className='navbar'>
         <div className='bottomNav'>
           <Stack justify='center' gap={0}>
-            <NavbarLink icon={IoLanguage} label='Locale' onClick={() => { setShowLanguages((isShow) => !isShow); }} />
+            <NavbarLink icon={IoLanguage} label='Locale' onClick={() => setShowLanguages((isShow) => !isShow)} />
             <NavbarLink icon={IoLogoGithub} label='Github' onClick={() => { window.location.href = 'https://github.com/university-map/university-map'; }} />
           </Stack>
         </div>
       </nav>
       {showLanguages &&
         <div className='languagePanel'>
-          <LanguagePicker />
+          <LanguagePicker onChange={() => setShowLanguages(false)} />
         </div>
       }
     </>

@@ -3,7 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { Select } from '@mantine/core';
 import { languages } from '@/i18n';
 
-const LanguagePicker: React.FC = () => {
+interface LanguagePickerProps {
+  onChange: (language: string) => void;
+}
+
+const LanguagePicker: React.FC<LanguagePickerProps> = (props) => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
@@ -29,7 +33,10 @@ const LanguagePicker: React.FC = () => {
       data={Object.values(languages)}
       placeholder={t('pickLanguage')}
       defaultValue={languages[i18n.language]}
-      onChange={(value) => updateLanguage(value!)}
+      onChange={(value) => {
+        updateLanguage(value!);
+        props.onChange(value!);
+      }}
     />
   );
 };
