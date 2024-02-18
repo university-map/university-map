@@ -13,7 +13,7 @@ interface NavbarLinkProps {
 
 function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
   return (
-    <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
+    <Tooltip label={label} position='right' transitionProps={{ duration: 0 }}>
       <UnstyledButton onClick={onClick} className='link' data-active={active || undefined}>
         <Icon style={{ width: rem(20), height: rem(20) }} />
       </UnstyledButton>
@@ -27,9 +27,9 @@ const SideNavbar: React.FC = () => {
     <>
       <nav className='navbar'>
         <div className='bottomNav'>
-          <Stack justify="center" gap={0}>
-            <NavbarLink icon={IoLanguage} label="Locale" onClick={() => { setShowLanguages((isShow) => !isShow); }} />
-            <NavbarLink icon={IoLogoGithub} label="Github" onClick={() => { window.location.href = 'https://github.com'; }} />
+          <Stack justify='center' gap={0}>
+            <NavbarLink icon={IoLanguage} label='Locale' onClick={() => { setShowLanguages((isShow) => !isShow); }} />
+            <NavbarLink icon={IoLogoGithub} label='Github' onClick={() => { window.location.href = 'https://github.com/university-map/university-map'; }} />
           </Stack>
         </div>
       </nav>

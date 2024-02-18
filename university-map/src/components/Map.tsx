@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { MapContainer, Marker, Popup, TileLayer, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
@@ -44,7 +45,7 @@ const MapMarker = (props: MapMarkerProps) => {
       position={props.coordinates}
       icon={props.icon}
       eventHandlers={{
-        click: (e) => {
+        click: () => {
           props.onMarkerClick(props.countryName, props.universityName);
         },
       }}
@@ -66,11 +67,11 @@ const MapMarker = (props: MapMarkerProps) => {
 const MapController = () => {
   const map = useMap();
   Cookies.set('mapCenter', JSON.stringify(map.getCenter()), {
-    expires: 1/24, // 1 hour
+    expires: 1 / 24, // 1 hour
     path: '/',
   });
   Cookies.set('mapZoom', map.getZoom().toString(), {
-    expires: 1/24, // 1 hour
+    expires: 1 / 24, // 1 hour
     path: '/',
   });
   return <></>;
@@ -78,12 +79,15 @@ const MapController = () => {
 
 function Map() {
   const { country, university } = useParams();
+  const navigate = useNavigate();
   const [markers, setMarkers] = useState([] as JSX.Element[]);
   const [selectedUniv, setSelectedUniv] = useState(new UniversityInfo());
+  const { i18n } = useTranslation();
   const dataLoader = DataLoader.getInstance();
 
   const handleMarkerClick = useCallback(async (countryName: string, universityName: string) => {
-    const univInfo = await dataLoader.getUnivInfo(countryName, universityName);
+    const univInfo = await dataLoader.getUnivInfo(countryName, universityName, i18n.language);
+    navigate(`/${i18n.language}/university/${countryName}/${universityName}`);
     setSelectedUniv(univInfo);
     setMarkers((prevMarkers) => {
       return prevMarkers.map((marker) => {
@@ -92,10 +96,10 @@ function Map() {
         });
       });
     });
-  }, [dataLoader]);
+  }, [dataLoader, i18n.language, navigate]);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const initMarkers = async () => {
       if (markers?.length != 0) {
         // Already initialized
         return;
@@ -104,7 +108,7 @@ function Map() {
       const newMarkers = [];
       for (const univ of univLocations) {
         for (const location of univ.locations) {
-          const isSelected = decodeURI(country as string) === univ.country && decodeURI(university as string) === univ.name;
+          const isSelected = country === univ.country && university === univ.name;
           newMarkers.push(
             <MapMarker
               key={`${univ.country}+${univ.name}+${location.name}`}
@@ -121,16 +125,18 @@ function Map() {
       setMarkers(newMarkers);
     };
 
-    fetchData();
-    dataLoader.getUnivInfo(country, university).then((univInfo) => setSelectedUniv(univInfo));
-  }, [country, university, dataLoader, handleMarkerClick, markers?.length]);
+    initMarkers();
+    if (country && university) {
+      dataLoader.getUnivInfo(country, university, i18n.language).then((univInfo) => setSelectedUniv(univInfo));
+    }
+  }, [country, university, i18n.language, dataLoader, markers?.length, handleMarkerClick]);
 
   const bounds = L.latLngBounds(L.latLng(-90, -180), L.latLng(90, 180));
   const center = JSON.parse(Cookies.get('mapCenter') ?? '[0, 20]');
   const zoom = parseInt(Cookies.get('mapZoom') ?? '3');
   return (
     <main style={{ height: '100vh' }}>
-      <InfoCard universityInfo={selectedUniv} />
+      { country && university ? <InfoCard universityInfo={selectedUniv} /> : null }
       <MapContainer
         center={center}
         zoom={zoom}

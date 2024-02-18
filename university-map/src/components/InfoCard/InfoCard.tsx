@@ -31,10 +31,10 @@ const InfoCard: React.FC<{
         onChange={setActiveTab}
       >
         <Tabs.List>
-          <Tabs.Tab value="overview">{t('InfoCard.overview')}</Tabs.Tab>
+          <Tabs.Tab value='overview'>{t('InfoCard.overview')}</Tabs.Tab>
         </Tabs.List>
 
-        <Tabs.Panel value="overview">
+        <Tabs.Panel value='overview'>
           <InfoCardOverview universityInfo={props.universityInfo} />
         </Tabs.Panel>
       </Tabs>
