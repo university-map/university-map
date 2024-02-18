@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+       run:
+         working-directory: ./university-map
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        cache: 'pip'
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 'lts/*'
+        cache: 'npm'
+        cache-dependency-path: './university-map'
+
+    - name: Install all dependencies
+      run: |
+        pip install -r scripts/requirements.txt
+        npm ci
+
+    - name: Build
+      run: |
+        python scripts/build-index.py
+        npm run lint
+        npm run build
+
+    - name: Deploy
+      if: github.repository == 'university-map/university-map' && github.ref == 'refs/heads/dev'
+      env:
+        BOT_PRIVATE_SSH_KEY: ${{ secrets.BOT_PRIVATE_SSH_KEY }}
+      run: |
+        # Configure SSH
+        git config --global user.email "universitymapbot@gmail.com"
+        git config --global user.name "university-map bot"
+        git config --global push.default simple
+        git config --global diff.zip.textconv "unzip -c -a"
+        eval "$(ssh-agent -s)"
+        echo "$BOT_PRIVATE_SSH_KEY" > id_ed25519
+        chmod 600 id_ed25519
+        ssh-add id_ed25519
+
+        # Deploy
+        export SITE_HOME="$HOME/site"
+        git clone --quiet --depth 1 "git@github.com:university-map/university-map.github.io.git" "$SITE_HOME"
+        cp -rf dist/* "$SITE_HOME"
+        cd "$SITE_HOME"
+        git add -A
+        git commit -m "[GitHub Actions] Deploy university-map/university-map@$GITHUB_SHA"
+        git push -q
+        echo "Finished Deployment"
