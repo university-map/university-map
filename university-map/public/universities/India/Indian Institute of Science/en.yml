@@ -1,0 +1,17 @@
+name: "Indian Institute of Science"
+address: "CV Raman Road, M S Ramaiah Nagar, Bangalore 560012 India"
+website: "https://iisc.ac.in"
+locations:
+  - name: "Bangalore Campus"
+    coordinates: [13.10332243062725, 77.55402896592238]
+acronyms: ["IISC"]
+banner: "https://ioe.iisc.ac.in/wp-content/uploads/2021/04/About.jpg"
+introduction: >-
+  The Indian Institute of Science (IISc) is a public, deemed, research university for higher
+  education and research in science, engineering, design, and management. It is located in the
+  southern Indian city of Bangalore, Karnataka. The institute was established in 1909 with
+  active support from Jamsetji Tata and thus is also locally known as the "Tata Institute".
+  It is ranked among the most prestigious academic institutions in India and has the highest
+  citation-per-faculty among all the universities in the world.
+gallery:
+  []

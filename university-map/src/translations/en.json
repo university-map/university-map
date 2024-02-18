@@ -1,0 +1,9 @@
+{
+  "notFoundText": "The page you are looking for does not exist.",
+  "pickLanguage": "Please Select",
+  "InfoCard": {
+    "overview": "Overview",
+    "rankings": "Rankings",
+    "gallery": "Gallery"
+  }
+}

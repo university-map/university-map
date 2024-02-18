@@ -1,0 +1,17 @@
+name: "National Tsing Hua University"
+address: "101, Section 2, Kuang-Fu Road, Hsinchu 300044, Taiwan R.O.C."
+website: "https://nthu-en.site.nthu.edu.tw"
+locations:
+  - name: "Main Campus"
+    coordinates: [24.796893583808767, 120.99644335317485]
+acronyms: ["NTHU"]
+banner: "https://attractions.site.nthu.edu.tw/var/file/515/1515/pictures/342/m/mczh-tw700x700_large39275_123771912642.jpg"
+introduction: >-
+  In 1909, the U.S. Congress agreed to reduce the Qing Dynasty's indemnity payments by US$10.8 million, on the condition that the funding be used as scholarships for Chinese students to study in the United States.
+  Using this fund, Tsinghua College was established in Beijing, China, on 22 April 1911 on the site of a former royal garden belonging to a prince.
+  After the Chinese Civil War, the Nationalist government reinstalled National Tsing Hua University in Hsinchu, Taiwan, which has since remained independent and distinct from Tsinghua University in Beijing.
+gallery:
+  [
+    "https://attractions.site.nthu.edu.tw/var/file/515/1515/pictures/851/m/mczh-tw700x700_large38192_469808975881.jpg",
+    "https://attractions.site.nthu.edu.tw/var/file/515/1515/pictures/270/m/mczh-tw700x700_large37404_181213561242.jpg"
+  ]

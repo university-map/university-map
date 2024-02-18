@@ -1,0 +1,18 @@
+name: "Harvard University"
+address: "Massachusetts Hall Cambridge, MA 02138 United States"
+website: "https://www.harvard.edu"
+locations:
+  - name: "Cambridge Campus"
+    coordinates: [42.37482288761835, -71.11818747532095]
+acronyms: ["Harvard"]
+banner: "https://images.unsplash.com/photo-1559135197-8a45ea74d367"
+introduction: >-
+  Harvard University is a private Ivy League research university in Cambridge,
+  Massachusetts. Established in 1636 and named for its first benefactor,
+  clergyman John Harvard, Harvard is the United States' oldest institution
+  of higher learning. Its history, influence, wealth, and academic reputation
+  have made it one of the most prestigious universities in the world.
+gallery:
+  [
+    "https://www.harvard.edu/wp-content/uploads/2020/12/032613_overviews_0206-1536x1152.jpg",
+  ]

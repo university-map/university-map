@@ -1,0 +1,23 @@
+name: "University of Oxford"
+address: "Wellington Square, Oxford OX1 2JD United Kingdom"
+website: "http://www.ox.ac.uk"
+locations:
+  - name: "Main Campus"
+    coordinates: [51.75526524099619, -1.2545852667835287]
+acronyms: ["Oxford"]
+banner: "https://images.unsplash.com/photo-1472121779802-43c68a9f405f"
+introduction: >-
+  The University of Oxford is a collegiate research university in Oxford, England.
+  There is evidence of teaching as early as 1096, making it the oldest university
+  in the English-speaking world and the world's second-oldest university in continuous
+  operation. It grew rapidly from 1167 when Henry II banned English students from
+  attending the University of Paris. After disputes between students and Oxford
+  townsfolk in 1209, some academics fled north-east to Cambridge where they established
+  what became the University of Cambridge. The two English ancient universities share
+  many common features and are often jointly referred to as Oxbridge. The history and
+  influence of the University of Oxford has made it one of the most prestigious
+  universities in the world.
+gallery:
+  [
+    "https://images.unsplash.com/photo-1612563958093-2c3bcfbd8760",
+  ]

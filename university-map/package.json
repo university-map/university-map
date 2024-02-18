@@ -1,0 +1,50 @@
+{
+  "name": "university-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": ".",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mantine/carousel": "^7.5.2",
+    "@mantine/core": "^7.5.2",
+    "@mantine/hooks": "^7.5.2",
+    "embla-carousel-autoplay": "^7.1.0",
+    "embla-carousel-react": "^7.1.0",
+    "i18next": "^23.8.2",
+    "js-cookie": "^3.0.5",
+    "js-yaml": "^4.1.0",
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.5",
+    "react-icons": "^5.0.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.22.0"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/js-yaml": "^4.0.9",
+    "@types/leaflet": "^1.9.8",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "postcss-preset-mantine": "^1.13.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0"
+  }
+}

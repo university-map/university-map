@@ -1,0 +1,24 @@
+name: "University of Toronto"
+address: "315 Bloor Street W, Toronto, Ontario M5S 2J7 Canada"
+website: "http://www.utoronto.ca"
+locations:
+  - name: "Main Campus"
+    coordinates: [43.66440327972784, -79.39666130605445]
+acronyms: ["UToronto", "U of T"]
+banner: "https://www.utoronto.ca/sites/default/files/vlcsnap-2021-10-25-11h27m42s786-crop.jpg"
+introduction: >-
+  The University of Toronto is a public research university in Toronto, Ontario, Canada,
+  located on the grounds that surround Queen's Park. It was founded by royal charter in
+  1827 as King's College, the first institution of higher learning in Upper Canada.
+  Originally controlled by the Church of England, the university assumed its present name
+  in 1850 upon becoming a secular institution. As a collegiate university, it comprises 11
+  colleges each with substantial autonomy on financial and institutional affairs and
+  significant differences in character and history. The university maintains three campuses,
+  the oldest of which is St. George, located in downtown Toronto. The other two satellite
+  campuses are located in Scarborough and Mississauga.
+gallery:
+  [
+    "https://www.utsc.utoronto.ca/utscinternational/sites/utsc.utoronto.ca.utscinternational/files/styles/slideshow/public/images/slideshow/UofT-sign-1340x816.png",
+    "https://www.trinity.utoronto.ca/wp-content/uploads/2019/01/trinity-home-wide-01.jpg",
+    "https://future.utoronto.ca/wp-content/uploads/IB-1-edited-scaled.jpg"
+  ]

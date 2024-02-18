@@ -1,0 +1,15 @@
+name: "國立臺灣大學"
+address: "臺灣臺北市大安區羅斯福路四段1號"
+website: "https://www.ntu.edu.tw"
+locations:
+  - name: "主校區"
+    coordinates: [25.017491194856326, 121.53968742646664]
+acronyms: ["NTU", "台大"]
+banner: "https://www.ntu.edu.tw/images/photo-nav-about-cover-1.jpg"
+introduction: >-
+  1928年創立於臺灣臺北市，是臺灣第一所高等教育機構，為臺灣學生人數最多的大專院校。前身為大日本帝國九所帝國大學之一的「臺北帝國大學」，1945年中華民國接收臺灣後經改制與易名始用現名。
+gallery:
+  [
+    "https://www.ntu.edu.tw/images/resized/cover-about-1366w.jpeg",
+    "https://www.ntu.edu.tw/images/academics/photo-academics-liberal.jpg"
+  ]
