@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
         npm run build
 
     - name: Deploy
-      if: github.repository == 'university-map/university-map' && github.ref == 'refs/heads/dev'
+      if: github.repository == 'university-map/university-map' && github.ref == 'refs/heads/main'
       env:
         BOT_PRIVATE_SSH_KEY: ${{ secrets.BOT_PRIVATE_SSH_KEY }}
       run: |
