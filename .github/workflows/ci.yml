@@ -56,12 +56,19 @@ jobs:
         chmod 600 id_ed25519
         ssh-add id_ed25519
 
-        # Deploy
+        # Copy the built files to github page repository
         export SITE_HOME="$HOME/site"
         git clone --quiet --depth 1 "git@github.com:university-map/university-map.github.io.git" "$SITE_HOME"
         cp -rf dist/* "$SITE_HOME"
+
+        # Check if there are changes to commit and deploy
         cd "$SITE_HOME"
-        git add -A
-        git commit -m "[GitHub Actions] Deploy university-map/university-map@$GITHUB_SHA"
-        git push -q
-        echo "Finished Deployment"
+        if [[ -n $(git status -s) ]]; then
+          git add -A
+          git commit -m "[GitHub Actions] Deploy university-map/university-map@$GITHUB_SHA"
+          git push -q
+          echo "Finished Deployment"
+        else
+          echo "No changes to deploy. Exiting with status 0."
+          exit 0
+        fi
