@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@mantine/carousel": "^7.5.2",
-    "@mantine/core": "^7.5.2",
+    "@mantine/core": "^7.5.3",
     "@mantine/hooks": "^7.5.2",
     "embla-carousel-autoplay": "^7.1.0",
     "embla-carousel-react": "^7.1.0",
