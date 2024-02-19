@@ -5,7 +5,7 @@ locations:
   - name: "Main Campus"
     coordinates: [52.20555624964476, 0.11314384499981649]
 acronyms: ["Cambridge"]
-banner: "https://images.unsplash.com/20/cambridge.JPG"
+banner: "https://images.unsplash.com/20/cambridge.JPG?q=80&w=400"
 introduction: >-
   The University of Cambridge is a collegiate research university in Cambridge, United Kingdom.
   Founded in 1209 and granted a royal charter by Henry III in 1231, Cambridge is the second-oldest
@@ -16,6 +16,6 @@ introduction: >-
   Cambridge has made it one of the most prestigious universities in the world.
 gallery:
   [
-    "https://images.unsplash.com/photo-1612106319259-23c259df2661",
-    "https://images.unsplash.com/photo-1596967082890-810f0f4cf634"
+    "https://images.unsplash.com/photo-1612106319259-23c259df2661?q=80&w=400",
+    "https://images.unsplash.com/photo-1596967082890-810f0f4cf634?q=80&w=400"
   ]

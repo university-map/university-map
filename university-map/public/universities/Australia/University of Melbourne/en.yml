@@ -1,0 +1,11 @@
+name: "University of Melbourne"
+address: "1-100 Grattan St, Parkville, Victoria 3010 Australia"
+website: "https://www.unimelb.edu.au"
+locations:
+  - name: "Main Campus"
+    coordinates: [-37.798252617950006, 144.96098472580636]
+acronyms: []
+banner: "https://www.unimelb.edu.au/__data/assets/image/0005/4002566/Screen-Shot-2019-01-30-at-2.31.49-pm.png"
+introduction: TBD
+gallery:
+  []

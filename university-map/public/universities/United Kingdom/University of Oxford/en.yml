@@ -5,7 +5,7 @@ locations:
   - name: "Main Campus"
     coordinates: [51.75526524099619, -1.2545852667835287]
 acronyms: ["Oxford"]
-banner: "https://images.unsplash.com/photo-1472121779802-43c68a9f405f"
+banner: "https://images.unsplash.com/photo-1472121779802-43c68a9f405f?q=80&w=400"
 introduction: >-
   The University of Oxford is a collegiate research university in Oxford, England.
   There is evidence of teaching as early as 1096, making it the oldest university
@@ -19,5 +19,5 @@ introduction: >-
   universities in the world.
 gallery:
   [
-    "https://images.unsplash.com/photo-1612563958093-2c3bcfbd8760",
+    "https://images.unsplash.com/photo-1612563958093-2c3bcfbd8760?q=80&w=400",
   ]

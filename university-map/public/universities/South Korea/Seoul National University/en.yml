@@ -1,0 +1,11 @@
+name: "Seoul National University"
+address: "1 Gwanak-ro, Gwanak-gu, Seoul 151-742 South Korea"
+website: "https://en.snu.ac.kr/index.html"
+locations:
+  - name: "Main Campus"
+    coordinates: [37.45953783240295, 126.9510827524896]
+acronyms: ["SNU"]
+banner: "https://uploaded.kcampus.kr/3_d44c03b545.jpg"
+introduction: TBD
+gallery:
+  []
