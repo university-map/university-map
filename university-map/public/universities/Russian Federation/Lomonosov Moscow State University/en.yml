@@ -1,0 +1,12 @@
+name: "Lomonosov Moscow State University"
+address: "GSP-1, Leninskie Gory, Moscow 119991 Russian Federation"
+website: "https://msu.ru/en"
+locations:
+  - name: "Main Campus"
+    coordinates: [55.70406182562782, 37.52856230910677]
+acronyms: ["MSU"]
+banner: "https://www.journ.msu.ru/upload/medialibrary/470/470821a501816e525b230beca524f286.jpg"
+introduction: TBD
+gallery:
+  [
+  ]

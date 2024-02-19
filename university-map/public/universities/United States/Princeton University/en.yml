@@ -1,0 +1,18 @@
+name: "Princeton University"
+address: "Princeton, NJ 08544 United States"
+website: "https://www.princeton.edu"
+locations:
+  - name: "Main Campus"
+    coordinates: [40.34342195971586, -74.6550710037108]
+acronyms: ["Princeton"]
+banner: "https://images.unsplash.com/photo-1611339105600-dca794ada272?q=80&w=400"
+introduction: >-
+  Princeton University is a private Ivy League research university in Princeton, New Jersey.
+  Founded in 1746 in Elizabeth as the College of New Jersey, Princeton is the fourth-oldest institution
+  of higher education in the United States and one of the nine colonial colleges chartered before the
+  American Revolution. As of October 2021, 75 Nobel laureates, 16 Fields Medalists and 16 Turing Award
+  laureates have been affiliated with Princeton University as alumni, faculty members, or researchers.
+gallery:
+  [
+    "https://www.princeton.edu/sites/default/files/styles/third_1x_crop/public/images/2024/01/20231023_CL_Fall_DJA_003_WEB.jpeg",
+  ]

@@ -1,0 +1,12 @@
+name: "Delft University of Technology"
+address: "Postbus 5, Delft 2600 AA Netherlands"
+website: "https://www.tudelft.nl/en"
+locations:
+  - name: "Main Campus"
+    coordinates: [52.00237020677967, 4.373576597273559]
+acronyms: ["TU Delft"]
+banner: "https://filelist.tudelft.nl/_processed_/b/0/csm_TU%20Delft%20Library%20headerafbeelding%20-%20zomer_349b5d5086.jpg"
+introduction: TBD
+gallery:
+  [
+  ]

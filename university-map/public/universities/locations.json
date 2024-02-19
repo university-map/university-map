@@ -1,5 +1,18 @@
 [
   {
+    "name": "University of Melbourne",
+    "country": "Australia",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          -37.798252617950006,
+          144.96098472580636
+        ]
+      }
+    ]
+  },
+  {
     "name": "University of Toronto",
     "country": "Canada",
     "location": [
@@ -98,6 +111,32 @@
     ]
   },
   {
+    "name": "Delft University of Technology",
+    "country": "Netherlands",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          52.00237020677967,
+          4.373576597273559
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lomonosov Moscow State University",
+    "country": "Russian Federation",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          55.70406182562782,
+          37.52856230910677
+        ]
+      }
+    ]
+  },
+  {
     "name": "National University of Singapore",
     "country": "Singapore",
     "location": [
@@ -113,6 +152,19 @@
         "coordinates": [
           1.2970475817534486,
           103.77613066561054
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Seoul National University",
+    "country": "South Korea",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          37.45953783240295,
+          126.9510827524896
         ]
       }
     ]
@@ -203,6 +255,19 @@
     ]
   },
   {
+    "name": "California Institute of Technology",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          34.13787389202399,
+          -118.12531233014644
+        ]
+      }
+    ]
+  },
+  {
     "name": "Harvard University",
     "country": "United States",
     "location": [
@@ -229,6 +294,19 @@
     ]
   },
   {
+    "name": "Princeton University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          40.34342195971586,
+          -74.6550710037108
+        ]
+      }
+    ]
+  },
+  {
     "name": "Stanford University",
     "country": "United States",
     "location": [
@@ -237,6 +315,32 @@
         "coordinates": [
           37.42798659476949,
           -122.17017749899045
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of California Berkeley",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          37.870489515094455,
+          -122.25945378132072
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Yale University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          41.31660946953559,
+          -72.92240928635714
         ]
       }
     ]
