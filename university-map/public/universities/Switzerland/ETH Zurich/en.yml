@@ -1,11 +1,11 @@
-name: "Eidgenössische Technische Hochschule Zürich (ETH Zurich)"
-address: "Rämistrasse 101, Zurich CH-8092 Switzerland"
-website: "https://www.ethz.ch/en.html"
+name: Eidgenössische Technische Hochschule Zürich (ETH Zurich)
+address: Rämistrasse 101, Zurich CH-8092 Switzerland
+website: https://www.ethz.ch/en.html
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [47.37721714414568, 8.54701758971196]
-acronyms: ["ETH Zurich"]
-banner: "https://ethz.ch/en/campus/access/zentrum/_jcr_content/par/fullwidthimage/image.imageformat.930.152068286.jpg"
+acronyms: [ETH Zurich]
+banner: https://ethz.ch/en/campus/access/zentrum/_jcr_content/par/fullwidthimage/image.imageformat.930.152068286.jpg
 introduction: >-
   ETH Zurich is a public research university in Zürich, Switzerland. Founded by the Swiss
   federal government in 1854, with the stated mission to educate engineers and scientists.

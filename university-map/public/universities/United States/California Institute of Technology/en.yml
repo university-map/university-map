@@ -1,11 +1,11 @@
-name: "California Institute of Technology"
-address: "1200 E. California Boulevard, Pasadena, CA 91125 United States"
-website: "https://www.caltech.edu"
+name: California Institute of Technology
+address: 1200 E. California Boulevard, Pasadena, CA 91125 United States
+website: https://www.caltech.edu
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [34.13787389202399, -118.12531233014644]
-acronyms: ["Caltech"]
-banner: "https://caltech-prod.s3.amazonaws.com/main/images/02-D230226_PAZ_0265.2e16d0ba.fill-1600x900-c100.jpg"
+acronyms: [Caltech]
+banner: https://caltech-prod.s3.amazonaws.com/main/images/02-D230226_PAZ_0265.2e16d0ba.fill-1600x900-c100.jpg
 introduction: >-
   The California Institute of Technology (branded as Caltech) is a private research university in Pasadena, California.
   The university is responsible for many modern scientific advancements and is among a small group of institutes of technology

@@ -1,11 +1,11 @@
-name: "Peking University"
-address: "No.5 Yiheyuan Road, Beijing 100871 China"
-website: "https://english.pku.edu.cn"
+name: Peking University
+address: No.5 Yiheyuan Road, Beijing 100871 China
+website: https://english.pku.edu.cn
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [39.98713492033826, 116.30588462559174]
-acronyms: ["PKU"]
-banner: "https://english.pku.edu.cn/Uploads/Bden/Picture/2024/01/03/s659519496ea9a.jpg"
+acronyms: [PKU]
+banner: https://english.pku.edu.cn/Uploads/Bden/Picture/2024/01/03/s659519496ea9a.jpg
 introduction: >-
   Peking University is a major research university in Beijing, and a member of the C9
   League of Chinese universities. Since its establishment in 1911, it has been dedicated

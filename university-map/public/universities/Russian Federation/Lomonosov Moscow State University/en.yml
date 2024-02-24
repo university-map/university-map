@@ -1,12 +1,15 @@
-name: "Lomonosov Moscow State University"
-address: "GSP-1, Leninskie Gory, Moscow 119991 Russian Federation"
-website: "https://msu.ru/en"
+name: Lomonosov Moscow State University
+address: GSP-1, Leninskie Gory, Moscow 119991 Russian Federation
+website: https://msu.ru/en
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [55.70406182562782, 37.52856230910677]
-acronyms: ["MSU"]
-banner: "https://www.journ.msu.ru/upload/medialibrary/470/470821a501816e525b230beca524f286.jpg"
-introduction: TBD
+acronyms: [MSU]
+banner: https://www.journ.msu.ru/upload/medialibrary/470/470821a501816e525b230beca524f286.jpg
+introduction: >-
+  It is the oldest and largest university in Russian history, founded by Empress Elizabeth of
+  the Russian Empire in 1755. As of 2020, a total of 13 alumni and faculty members have been
+  awarded the Nobel Prize.
 gallery:
   [
   ]

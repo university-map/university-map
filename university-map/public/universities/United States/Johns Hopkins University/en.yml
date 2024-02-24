@@ -1,0 +1,13 @@
+name: Johns Hopkins University
+address: 3400 N. Charles Street, Baltimore, MD 21218 United States
+website: https://www.jhu.edu
+locations:
+  - name: Main Campus
+    coordinates: [39.33050153516928, -76.62069359228687]
+acronyms: [JHU]
+banner: https://www.jhu.edu/assets/uploads/2020/01/shriver_sunset010220-1600x800.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

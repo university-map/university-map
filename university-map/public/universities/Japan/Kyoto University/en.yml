@@ -1,11 +1,11 @@
-name: "Kyoto University"
-address: "Yoshida-Honmachi, Sakyō-ku, Kyoto, Kyoto 606-8501 Japan"
-website: "http://www.kyoto-u.ac.jp/en"
+name: Kyoto University
+address: Yoshida-Honmachi, Sakyō-ku, Kyoto, Kyoto 606-8501 Japan
+website: http://www.kyoto-u.ac.jp/en
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [35.02652551562812, 135.78083252541526]
-acronyms: ["KyotoU"]
-banner: "https://www.kyoto-u.ac.jp/sites/default/files/styles/scale_crop_1920x577/public/2020-11/trim_IMG_5071-3%20%281%29_0.webp"
+acronyms: [KyotoU]
+banner: https://www.kyoto-u.ac.jp/sites/default/files/styles/scale_crop_1920x577/public/2020-11/trim_IMG_5071-3%20%281%29_0.webp
 introduction: >-
   Kyoto University is a major research university located in Kyoto, Japan. Founded in
   1897, It is the second oldest university in Japan and one of the former Imperial

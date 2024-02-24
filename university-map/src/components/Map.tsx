@@ -10,7 +10,7 @@ import { UniversityInfo } from '@/services/models';
 import 'leaflet/dist/leaflet.css';
 
 const blueIcon = new L.Icon({
-  iconUrl: '/leaflet-color-markers/marker-icon-2x-blue.png',
+  iconUrl: '/leaflet-color-markers/marker-icon-blue.png',
   shadowUrl: '/leaflet-color-markers/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
@@ -19,7 +19,7 @@ const blueIcon = new L.Icon({
 });
 
 const redIcon = new L.Icon({
-  iconUrl: '/leaflet-color-markers/marker-icon-2x-red.png',
+  iconUrl: '/leaflet-color-markers/marker-icon-red.png',
   shadowUrl: '/leaflet-color-markers/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],

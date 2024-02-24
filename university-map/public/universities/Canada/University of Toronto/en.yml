@@ -1,11 +1,11 @@
-name: "University of Toronto"
-address: "315 Bloor Street W, Toronto, Ontario M5S 2J7 Canada"
-website: "http://www.utoronto.ca"
+name: University of Toronto
+address: 315 Bloor Street W, Toronto, Ontario M5S 2J7 Canada
+website: http://www.utoronto.ca
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [43.66440327972784, -79.39666130605445]
-acronyms: ["UToronto", "U of T"]
-banner: "https://www.utoronto.ca/sites/default/files/vlcsnap-2021-10-25-11h27m42s786-crop.jpg"
+acronyms: [UToronto, U of T]
+banner: https://www.utoronto.ca/sites/default/files/vlcsnap-2021-10-25-11h27m42s786-crop.jpg
 introduction: >-
   The University of Toronto is a public research university in Toronto, Ontario, Canada,
   located on the grounds that surround Queen's Park. It was founded by royal charter in

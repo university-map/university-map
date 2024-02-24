@@ -1,0 +1,13 @@
+name: University of Pennsylvania
+address: Philadelphia, PA 19104 United States
+website: https://www.upenn.edu/
+locations:
+  - name: Main Campus
+    coordinates: [39.95243260853637, -75.19328880508864]
+acronyms: [UPenn]
+banner: https://www.upenn.edu/sites/default/files/styles/default/public/2020-11/p-100297-master-v1-075a-1600x800.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

@@ -1,12 +1,16 @@
-name: "Delft University of Technology"
-address: "Postbus 5, Delft 2600 AA Netherlands"
-website: "https://www.tudelft.nl/en"
+name: Delft University of Technology
+address: Postbus 5, Delft 2600 AA Netherlands
+website: https://www.tudelft.nl/en
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [52.00237020677967, 4.373576597273559]
-acronyms: ["TU Delft"]
-banner: "https://filelist.tudelft.nl/_processed_/b/0/csm_TU%20Delft%20Library%20headerafbeelding%20-%20zomer_349b5d5086.jpg"
-introduction: TBD
+acronyms: [TU Delft]
+banner: https://filelist.tudelft.nl/_processed_/b/0/csm_TU%20Delft%20Library%20headerafbeelding%20-%20zomer_349b5d5086.jpg
+introduction: >-
+  The university was established on 8 January 1842 by King William II as a royal academy, with the primary purpose of
+  training civil servants for work in the Dutch East Indies. The school expanded its research and education curriculum
+  over time, becoming a polytechnic school in 1864 and an institute of technology (making it a full-fledged university)
+  in 1905. It changed its name to Delft University of Technology in 1986.
 gallery:
   [
   ]

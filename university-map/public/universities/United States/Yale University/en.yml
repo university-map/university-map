@@ -1,11 +1,11 @@
-name: "Yale University"
-address: "New Haven, CT 06520 United States"
-website: "https://www.yale.edu"
+name: Yale University
+address: New Haven, CT 06520 United States
+website: https://www.yale.edu
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [41.31660946953559, -72.92240928635714]
-acronyms: ["Yale"]
-banner: "https://admissions.yale.edu/sites/default/files/styles/flexslider_full/public/2010_05_10_19_03_37_central_campus_1.jpg"
+acronyms: [Yale]
+banner: https://admissions.yale.edu/sites/default/files/styles/flexslider_full/public/2010_05_10_19_03_37_central_campus_1.jpg
 introduction: >-
   Yale was established as the Collegiate School in 1701 by Congregationalist clergy of
   the Connecticut Colony. Originally restricted to instructing ministers in theology and

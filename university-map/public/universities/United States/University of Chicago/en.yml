@@ -1,0 +1,13 @@
+name: University of Chicago
+address: 5801 S. Ellis Avenue, Chicago, IL 60637 United States
+website: https://www.uchicago.edu
+locations:
+  - name: Main Campus
+    coordinates: [41.790608356689596, -87.60039530317336]
+acronyms: [UChicago]
+banner: https://college.uchicago.edu/sites/default/files/styles/sixteen_by_nine/public/images/2018-12/dji_0025_b.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

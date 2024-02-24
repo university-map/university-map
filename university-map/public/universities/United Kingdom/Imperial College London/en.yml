@@ -1,0 +1,15 @@
+name: Imperial College London
+address: Exhibition Road, London SW7 2AZ United Kingdom
+website: https://www.imperial.ac.uk
+locations:
+  - name: Main Campus
+    coordinates: [51.49891577025555, -0.17492754189598936]
+acronyms: [IC]
+banner: https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/0160108_qt_sken_winter_012_185276_001--tojpeg_1504273907642_x1.jpg
+introduction: >-
+  Imperial College London (full name Imperial College of Science, Technology and Medicine, often known simply as Imperial) is a public research
+  university in London, England. Its history began with Prince Albert, consort of Queen Victoria, who developed his vision for a cultural area
+  that included the Royal Albert Hall, the Victoria and Albert Museum, the Natural History Museum and several royal colleges.
+gallery:
+  [
+  ]

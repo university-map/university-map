@@ -1,0 +1,13 @@
+name: Columbia University
+address: 2960 Broadway, New York, NY 10027 United States
+website: http://www.columbia.edu
+locations:
+  - name: Main Campus
+    coordinates: [40.807861417655424, -73.96261081854225]
+acronyms: [Columbia]
+banner: https://www.columbia.edu/content/sites/default/files/styles/cu_crop/public/content/Campus%20Images/Low_Library_NYC_skyline_night_lights.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]
