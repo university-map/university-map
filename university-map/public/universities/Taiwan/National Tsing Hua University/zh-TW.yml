@@ -1,7 +1,7 @@
-name: "國立清華大學"
-address: "臺灣新竹市光復路二段101號"
-website: "https://www.nthu.edu.tw"
+name: 國立清華大學
+address: 臺灣新竹市光復路二段101號
+website: https://www.nthu.edu.tw
 locations:
-  - name: "主校區"
+  - name: 主校區
     coordinates: [24.796893583808767, 120.99644335317485]
-acronyms: ["NTHU", "清大"]
+acronyms: [NTHU, 清大]

@@ -1,11 +1,11 @@
-name: "The University of Tokyo"
-address: "7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033 Japan"
-website: "http://www.u-tokyo.ac.jp/en"
+name: The University of Tokyo
+address: 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033 Japan
+website: http://www.u-tokyo.ac.jp/en
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [35.713966038846046, 139.76274081234956]
-acronyms: ["UTokyo"]
-banner: "https://www.u-tokyo.ac.jp/content/400184684.jpeg"
+acronyms: [UTokyo]
+banner: https://www.u-tokyo.ac.jp/content/400184684.jpeg
 introduction: >-
   The University of Tokyo is a major research university located in Tokyo, Japan.
   It is the first of Japan's National Seven Universities, and is considered to be

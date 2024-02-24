@@ -1,0 +1,13 @@
+name: University of California Los Angeles
+address: 405 Hilgard Avenue, Los Angeles, CA 90095 United States
+website: https://www.ucla.edu
+locations:
+  - name: Main Campus
+    coordinates: [34.07008703131178, -118.44386023228604]
+acronyms: [UCLA]
+banner: https://luskinconferencecenter.ucla.edu/wp-content/uploads/2018/03/Blog_Luskin.jpg
+introduction: >-
+
+gallery:
+  [
+  ]

@@ -1,11 +1,11 @@
-name: "Massachusetts Institute of Technology (MIT)"
-address: "77 Massachusetts Avenue, Cambridge, MA 02139 United States"
-website: "https://web.mit.edu"
+name: Massachusetts Institute of Technology (MIT)
+address: 77 Massachusetts Avenue, Cambridge, MA 02139 United States
+website: https://web.mit.edu
 locations:
-  - name: "Cambridge Campus"
+  - name: Cambridge Campus
     coordinates: [42.36043149339396, -71.09426317806926]
-acronyms: ["MIT"]
-banner: "https://images.unsplash.com/photo-1537888692311-8a7fb3e9f374?q=80&w=400"
+acronyms: [MIT]
+banner: https://images.unsplash.com/photo-1537888692311-8a7fb3e9f374?q=80&w=400
 introduction: >-
   The Massachusetts Institute of Technology (MIT) is a private land-grant research
   university in Cambridge, Massachusetts. The institute has an urban campus that

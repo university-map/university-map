@@ -1,11 +1,11 @@
-name: "Princeton University"
-address: "Princeton, NJ 08544 United States"
-website: "https://www.princeton.edu"
+name: Princeton University
+address: Princeton, NJ 08544 United States
+website: https://www.princeton.edu
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [40.34342195971586, -74.6550710037108]
-acronyms: ["Princeton"]
-banner: "https://images.unsplash.com/photo-1611339105600-dca794ada272?q=80&w=400"
+acronyms: [Princeton]
+banner: https://images.unsplash.com/photo-1611339105600-dca794ada272?q=80&w=400
 introduction: >-
   Princeton University is a private Ivy League research university in Princeton, New Jersey.
   Founded in 1746 in Elizabeth as the College of New Jersey, Princeton is the fourth-oldest institution

@@ -1,11 +1,11 @@
-name: "Tsinghua University"
-address: "Haidian  District, Beijing, 100084, P. R. China"
-website: "https://www.tsinghua.edu.cn/en/index.htm"
+name: Tsinghua University
+address: Haidian  District, Beijing, 100084, P. R. China
+website: https://www.tsinghua.edu.cn/en/index.htm
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [39.99987276788524, 116.32633659183877]
-acronyms: ["THU"]
-banner: "https://www.tsinghua.edu.cn/en/image/inner1_bn.jpg"
+acronyms: [THU]
+banner: https://www.tsinghua.edu.cn/en/image/inner1_bn.jpg
 introduction: >-
   Tsinghua University is a major research university in Beijing, and a member of the C9
   League of Chinese universities. Since its establishment in 1911, it has been dedicated

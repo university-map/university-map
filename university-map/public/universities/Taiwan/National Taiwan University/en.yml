@@ -1,11 +1,11 @@
-name: "National Taiwan University"
-address: "No. 1, Sec. 4, Roosevelt Rd., Taipei 106319, Taiwan (R.O.C.)"
-website: "https://www.ntu.edu.tw/english"
+name: National Taiwan University
+address: No. 1, Sec. 4, Roosevelt Rd., Taipei 106319, Taiwan (R.O.C.)
+website: https://www.ntu.edu.tw/english
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [25.017491194856326, 121.53968742646664]
-acronyms: ["NTU"]
-banner: "https://www.ntu.edu.tw/images/photo-nav-about-cover-1.jpg"
+acronyms: [NTU]
+banner: https://www.ntu.edu.tw/images/photo-nav-about-cover-1.jpg
 introduction: >-
   The university was founded in 1928 during Japanese rule as the seventh of the Imperial Universities.
   It was named Taihoku Imperial University and served during the period of Japanese colonization.

@@ -1,11 +1,11 @@
-name: "University of Oxford"
-address: "Wellington Square, Oxford OX1 2JD United Kingdom"
-website: "http://www.ox.ac.uk"
+name: University of Oxford
+address: Wellington Square, Oxford OX1 2JD United Kingdom
+website: http://www.ox.ac.uk
 locations:
-  - name: "Main Campus"
+  - name: Main Campus
     coordinates: [51.75526524099619, -1.2545852667835287]
-acronyms: ["Oxford"]
-banner: "https://images.unsplash.com/photo-1472121779802-43c68a9f405f?q=80&w=400"
+acronyms: [Oxford]
+banner: https://images.unsplash.com/photo-1472121779802-43c68a9f405f?q=80&w=400
 introduction: >-
   The University of Oxford is a collegiate research university in Oxford, England.
   There is evidence of teaching as early as 1096, making it the oldest university
