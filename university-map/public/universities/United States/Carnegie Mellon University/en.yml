@@ -1,0 +1,17 @@
+name: Carnegie Mellon University
+address: 5000 Forbes Avenue, Pittsburgh, PA 15213 United States
+website: https://www.cmu.edu
+locations:
+  - name: Main Campus
+    coordinates: [40.44344184124333, -79.94284744538533]
+acronyms: [CMU]
+banner: https://www.cmu.edu/assets/images/site/meta-image-cmu.jpg
+introduction: >-
+  Carnegie Mellon University is a private research university in Pittsburgh, Pennsylvania.
+  The institution was originally established in 1900 by Andrew Carnegie as the Carnegie
+  Technical Schools. In 1967, it became the current-day Carnegie Mellon University through
+  its merger with the Mellon Institute of Industrial Research. The university's faculty and
+  alumni include 20 Nobel Prize laureates and 13 Turing Award winners.
+gallery:
+  [
+  ]

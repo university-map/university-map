@@ -1,0 +1,13 @@
+name: University College London (UCL)
+address: Gower Street, London WC1E 6BT United Kingdom
+website: http://www.ucl.ac.uk
+locations:
+  - name: Main Campus
+    coordinates: [51.52459424508937, -0.13404546467947312]
+acronyms: [UCL]
+banner: https://www.ucl.ac.uk/news/sites/news/files/styles/medium_image/public/ucl_poritco_welcome_web_ready_800x500.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

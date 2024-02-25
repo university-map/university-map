@@ -1,0 +1,13 @@
+name: University of Washington Seattle
+address: Seattle, WA 98195 United States
+website: https://www.washington.edu
+locations:
+  - name: Main Campus
+    coordinates: [47.6554373481695, -122.30740158084986]
+acronyms: [UW]
+banner: https://artsci.washington.edu/sites/default/files/2021-10/Cherry%20Blossoms%2094%20875x492copy.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

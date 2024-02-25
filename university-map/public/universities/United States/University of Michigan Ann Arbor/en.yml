@@ -1,0 +1,14 @@
+name: University of Michigan Ann Arbor
+address: 500 S. State St. , Ann Arbor, MI 48109 United States
+website: https://www.umich.edu
+locations:
+  - name: Main Campus
+    coordinates: [42.278081707748214, -83.73816418675673]
+acronyms: [UMich]
+banner: https://admissions.umich.edu/sites/default/files/styles/section/public/central-campus-aerial.jpg
+introduction: >-
+  The University of Michigan (U-M, UMich, or simply Michigan) is a public research university in Ann
+  Arbor, Michigan. Founded in 1817, it is the oldest institution of higher education in the state.
+gallery:
+  [
+  ]

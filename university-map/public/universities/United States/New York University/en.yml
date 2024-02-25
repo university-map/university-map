@@ -1,0 +1,13 @@
+name: New York University
+address: 70 Washington Square S, New York, NY 10012 United States
+website: https://www.nyu.edu
+locations:
+  - name: Main Campus
+    coordinates: [40.72975192268224, -73.99656755156305]
+acronyms: [NYU]
+banner: https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-09/campus-convocation-2018-sign.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

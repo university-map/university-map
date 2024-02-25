@@ -1,0 +1,13 @@
+name: Northwestern University
+address: 633 Clark Street, Evanston, IL 60208 United States
+website: https://www.northwestern.edu
+locations:
+  - name: Main Campus
+    coordinates: [42.05722937430988, -87.67532615281772]
+acronyms: [NU]
+banner: https://www.northwestern.edu/sustainability/images/about/home-equity720x350.png
+introduction: >-
+  TBD
+gallery:
+  [
+  ]
