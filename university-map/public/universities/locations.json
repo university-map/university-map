@@ -249,6 +249,19 @@
     ]
   },
   {
+    "name": "University College London",
+    "country": "United Kingdom",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          51.52459424508937,
+          -0.13404546467947312
+        ]
+      }
+    ]
+  },
+  {
     "name": "University of Cambridge",
     "country": "United Kingdom",
     "location": [
@@ -288,6 +301,19 @@
     ]
   },
   {
+    "name": "Carnegie Mellon University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          40.44344184124333,
+          -79.94284744538533
+        ]
+      }
+    ]
+  },
+  {
     "name": "Columbia University",
     "country": "United States",
     "location": [
@@ -296,6 +322,32 @@
         "coordinates": [
           40.807861417655424,
           -73.96261081854225
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cornell University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          42.45365498721209,
+          -76.47357780499111
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Duke University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          36.00167741111304,
+          -78.93820716318346
         ]
       }
     ]
@@ -335,6 +387,32 @@
         "coordinates": [
           42.36043149339396,
           -71.09426317806926
+        ]
+      }
+    ]
+  },
+  {
+    "name": "New York University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          40.72975192268224,
+          -73.99656755156305
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Northwestern University",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          42.05722937430988,
+          -87.67532615281772
         ]
       }
     ]
@@ -405,6 +483,19 @@
     ]
   },
   {
+    "name": "University of Michigan Ann Arbor",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          42.278081707748214,
+          -83.73816418675673
+        ]
+      }
+    ]
+  },
+  {
     "name": "University of Pennsylvania",
     "country": "United States",
     "location": [
@@ -413,6 +504,19 @@
         "coordinates": [
           39.95243260853637,
           -75.19328880508864
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of Washington Seattle",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          47.6554373481695,
+          -122.30740158084986
         ]
       }
     ]

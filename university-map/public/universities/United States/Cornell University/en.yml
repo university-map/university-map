@@ -1,0 +1,15 @@
+name: Cornell University
+address: Ithaca, NY 14853 United States
+website: https://www.cornell.edu
+locations:
+  - name: Main Campus
+    coordinates: [42.45365498721209, -76.47357780499111]
+acronyms: [Cornell]
+banner: https://www.cornell.edu/about/img/main-Tower1.Still001-720x.jpg
+introduction: >-
+  Cornell University is a private Ivy League land-grant research university based in Ithaca, New York. The university was founded in 1865 by Ezra
+  Cornell and Andrew Dickson White. Since its founding, Cornell has been a co-educational and nonsectarian institution. As of October 2023, 62 Nobel
+  laureates, four Turing Award winners, and one Field Medalist have been affiliated with Cornell.
+gallery:
+  [
+  ]

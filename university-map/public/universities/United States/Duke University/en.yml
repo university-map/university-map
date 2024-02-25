@@ -1,0 +1,13 @@
+name: Duke University
+address: Durham, NC 27708 United States
+website: https://duke.edu
+locations:
+  - name: Main Campus
+    coordinates: [36.00167741111304, -78.93820716318346]
+acronyms: [Duke]
+banner: https://chapel.duke.edu/sites/default/files/styles/inline_image/public/20200721_westcampus007_web1000.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]
