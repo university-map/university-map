@@ -1,0 +1,10 @@
+.SearchBar {
+  position: absolute;
+  left: 50%;
+  z-index: 500;
+  width: 550px;
+  height: 100px;
+  margin-left: -275px;
+  margin-top: 10px;
+  background-color: transparent;
+}

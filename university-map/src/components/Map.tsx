@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { MapContainer, Marker, Popup, TileLayer, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
-import InfoCard from './InfoCard/InfoCard';
+import InfoCard from './Map/InfoCard';
+import SearchBar from './Map/SearchBar';
 import DataLoader from '@/services/DataLoader';
 import { UniversityInfo } from '@/services/models';
 import 'leaflet/dist/leaflet.css';
@@ -27,6 +28,9 @@ const redIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
+/**
+ * MapMarker
+ */
 interface MapMarkerProps {
   countryName: string;
   universityName: string;
@@ -36,9 +40,6 @@ interface MapMarkerProps {
   onMarkerClick: (country: string, universityName: string) => void;
 }
 
-/**
- * MapMarker
- */
 const MapMarker = (props: MapMarkerProps) => {
   return (
     <Marker
@@ -137,6 +138,7 @@ function Map() {
   return (
     <main style={{ height: '100vh' }}>
       { country && university ? <InfoCard universityInfo={selectedUniv} /> : null }
+      <SearchBar />
       <MapContainer
         center={center}
         zoom={zoom}
