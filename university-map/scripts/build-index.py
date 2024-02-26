@@ -26,6 +26,19 @@ def get_univ_locations(file_path):
             print(f"Error reading {file_path}: {e}")
             sys.exit(1)
 
+
+def get_keywords(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        try:
+            content = yaml.safe_load(file)
+            keywords = []
+            keywords.append(content["name"])
+            keywords += content["acronyms"]
+            return [kw.upper() for kw in keywords]
+        except yaml.YAMLError as e:
+            print(f"Error reading {file_path}: {e}")
+            sys.exit(1) 
+
 def build_locations_json():
     index_data = []
     root_path = os.path.join(get_project_root(), "public/universities")
@@ -45,12 +58,29 @@ def build_locations_json():
         json_file.write(json_data)
 
 
-def build_search_index():
-    pass
+def build_search_json():
+    search_data = {}
+    root_path = os.path.join(get_project_root(), "public/universities")
+    countries = [d for d in os.listdir(root_path) if os.path.isdir(os.path.join(root_path, d))]
+    for country in countries:
+        country_path = os.path.join(root_path, country)
+        universities = [d for d in os.listdir(country_path)]
+        for univ in universities:
+            keywords = []
+            univ_path = os.path.join(country_path, univ)
+            langs = [f for f in os.listdir(univ_path)]
+            for lang in langs:
+                keywords += get_keywords(os.path.join(univ_path, lang))
+            search_data[univ] = keywords
+
+    output_path = os.path.join(get_project_root(), "public/universities/search.json")
+    json_data = json.dumps(search_data, ensure_ascii=False, indent=2)
+    with open(output_path, 'w', encoding='utf-8') as json_file:
+        json_file.write(json_data)
 
 def main():
-    # build_locations_json()
-    build_search_index()
+    build_locations_json()
+    build_search_json()
 
 
 if __name__ == "__main__":
