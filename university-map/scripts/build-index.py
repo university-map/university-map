@@ -3,6 +3,7 @@ import sys
 import yaml
 import json
 
+
 def get_project_root():
     # if this script is running from the same folder of package.json, the folder is the root
     f = os.path.normpath(__file__)
@@ -25,8 +26,7 @@ def get_univ_locations(file_path):
             print(f"Error reading {file_path}: {e}")
             sys.exit(1)
 
-
-def main():
+def build_locations_json():
     index_data = []
     root_path = os.path.join(get_project_root(), "public/universities")
     countries = [d for d in os.listdir(root_path) if os.path.isdir(os.path.join(root_path, d))]
@@ -43,6 +43,15 @@ def main():
     json_data = json.dumps(index_data, ensure_ascii=False, indent=2)
     with open(output_path, 'w', encoding='utf-8') as json_file:
         json_file.write(json_data)
+
+
+def build_search_index():
+    pass
+
+def main():
+    # build_locations_json()
+    build_search_index()
+
 
 if __name__ == "__main__":
     main()

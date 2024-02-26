@@ -2,9 +2,9 @@
   position: absolute;
   left: 50%;
   z-index: 500;
-  width: 550px;
+  width: 450px;
   height: 100px;
-  margin-left: -275px;
-  margin-top: 10px;
+  margin-left: -225px;
+  margin-top: 5px;
   background-color: transparent;
 }
