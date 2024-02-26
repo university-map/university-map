@@ -59,20 +59,28 @@ def build_locations_json():
 
 
 def build_search_json():
-    search_data = {}
+    index = 0
+    keyword_index = {}
+    all_universities = []
+
     root_path = os.path.join(get_project_root(), "public/universities")
     countries = [d for d in os.listdir(root_path) if os.path.isdir(os.path.join(root_path, d))]
     for country in countries:
         country_path = os.path.join(root_path, country)
         universities = [d for d in os.listdir(country_path)]
         for univ in universities:
-            keywords = []
+            univ_keywords = []
             univ_path = os.path.join(country_path, univ)
             langs = [f for f in os.listdir(univ_path)]
             for lang in langs:
-                keywords += get_keywords(os.path.join(univ_path, lang))
-            search_data[univ] = keywords
+                univ_keywords += get_keywords(os.path.join(univ_path, lang))
+            for kw in univ_keywords:
+                keyword_index[kw] = index
+            index += 1
+        all_universities += universities
 
+    sorted_keywords_index = dict(sorted(keyword_index.items(), key=lambda x: x[0]))
+    search_data = { "universities": all_universities, "keywords": list(sorted_keywords_index.keys()), "keyword_index": list(sorted_keywords_index.values()) }
     output_path = os.path.join(get_project_root(), "public/universities/search.json")
     json_data = json.dumps(search_data, ensure_ascii=False, indent=2)
     with open(output_path, 'w', encoding='utf-8') as json_file:
