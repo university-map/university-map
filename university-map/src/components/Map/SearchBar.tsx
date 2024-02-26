@@ -1,12 +1,23 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { IoSearch } from "react-icons/io5";
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { IoSearch } from 'react-icons/io5';
 import { Autocomplete, Center, UnstyledButton } from '@mantine/core';
+import DataLoader from '@/services/DataLoader';
 import './SearchBar.css';
 
+
 const SearchBar = () => {
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [searchQuery, setSearchQuery] = useState("");
   const { t } = useTranslation();
+  const dataLoader = DataLoader.getInstance();
+  useEffect(() => {
+    const search = async () => {
+      dataLoader.getSearchData().then((data) => {
+        console.log(data);
+      });
+    };
+    search();
+  }, [dataLoader]);
 
   return (
     <div className='SearchBar'>

@@ -29,4 +29,13 @@ class UniversityInfo {
   ) {}
 }
 
-export { Location, UniversityLocation, UniversityInfo };
+// public/universities/search.json
+class SearchData {
+  constructor(
+    public universities: string[] = [],
+    public keywords: string[] = [],
+    public keywordIndex: string[] = [],
+  ) {}
+}
+
+export { Location, UniversityLocation, UniversityInfo, SearchData };

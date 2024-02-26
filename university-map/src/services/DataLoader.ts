@@ -1,10 +1,11 @@
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 import yaml from 'js-yaml';
-import { Location, UniversityLocation, UniversityInfo } from './models';
+import { Location, UniversityLocation, UniversityInfo, SearchData } from './models';
 
 interface IDataLoader {
   getUnivLocations(): Promise<UniversityLocation[]>
   getUnivInfo(country: string, university: string, locale: string): Promise<UniversityInfo>
+  getSearchData(): Promise<SearchData>
 }
 
 class DataLoader implements IDataLoader {
@@ -74,6 +75,21 @@ class DataLoader implements IDataLoader {
     } catch (error) {
       console.error('Error loading university info:', error);
       return Promise.resolve(new UniversityInfo());
+    }
+  }
+
+  public async getSearchData(): Promise<SearchData> {
+    try {
+      const response = await fetch(`${DataLoader.Endpoint}/universities/search.json`);
+      const data = await response.json();
+      return new SearchData(
+        data.universities ?? [],
+        data.keywords ?? [],
+        data.keyword_index ?? []
+      );
+    } catch (error) {
+      console.error('Error loading search data:', error);
+      return Promise.resolve(new SearchData());
     }
   }
 }
