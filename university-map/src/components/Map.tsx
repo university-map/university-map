@@ -1,70 +1,16 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { MapContainer, Marker, Popup, TileLayer, ZoomControl, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
 import InfoCard from './Map/InfoCard';
 import SearchBar from './Map/SearchBar';
+import MapMarker from './Map/MapMarker';
 import DataLoader from '@/services/DataLoader';
 import { UniversityInfo } from '@/services/models';
 import 'leaflet/dist/leaflet.css';
 
-const blueIcon = new L.Icon({
-  iconUrl: '/leaflet-color-markers/marker-icon-blue.png',
-  shadowUrl: '/leaflet-color-markers/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
-});
-
-const redIcon = new L.Icon({
-  iconUrl: '/leaflet-color-markers/marker-icon-red.png',
-  shadowUrl: '/leaflet-color-markers/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
-});
-
-/**
- * MapMarker
- */
-interface MapMarkerProps {
-  countryName: string;
-  universityName: string;
-  coordinates: L.LatLngTuple;
-  locationName: string;
-  icon: L.Icon;
-  onMarkerClick: (country: string, universityName: string) => void;
-}
-
-const MapMarker = (props: MapMarkerProps) => {
-  return (
-    <Marker
-      position={props.coordinates}
-      icon={props.icon}
-      eventHandlers={{
-        click: () => {
-          props.onMarkerClick(props.countryName, props.universityName);
-        },
-      }}
-    >
-      <Popup>
-        <div style={{ textAlign: 'center' }}>
-          {props.universityName}
-          <br />
-          ({props.locationName})
-        </div>
-      </Popup>
-    </Marker>
-  );
-};
-
-/**
- * Map and MapController
- */
 const MapController = () => {
   const map = useMap();
   Cookies.set('mapCenter', JSON.stringify(map.getCenter()), {
@@ -93,7 +39,7 @@ function Map() {
     setMarkers((prevMarkers) => {
       return prevMarkers.map((marker) => {
         return React.cloneElement(marker, {
-          icon: marker.props.countryName === countryName && marker.props.universityName === universityName ? redIcon : blueIcon
+          iconColor: marker.props.countryName === countryName && marker.props.universityName === universityName ? 'red' : 'blue'
         });
       });
     });
@@ -117,7 +63,7 @@ function Map() {
               universityName={univ.name}
               coordinates={location.coordinates}
               locationName={location.name}
-              icon={isSelected ? redIcon : blueIcon}
+              iconColor={isSelected ? 'red' : 'blue'}
               onMarkerClick={handleMarkerClick}
             />
           );

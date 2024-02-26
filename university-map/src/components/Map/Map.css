@@ -28,3 +28,13 @@
   position: relative;
   height: 240px;
 }
+
+.SearchBar {
+  position: absolute;
+  left: 50%;
+  z-index: 500;
+  width: 450px;
+  margin-left: -225px;
+  margin-top: 5px;
+  background-color: transparent;
+}

@@ -1,128 +1,245 @@
 {
   "universities": [
-    "University of Melbourne",
-    "University of Toronto",
-    "Peking University",
-    "Tsinghua University",
-    "Technical University of Munich",
-    "Indian Institute of Science",
-    "Kyoto University",
-    "The University of Tokyo",
-    "Delft University of Technology",
-    "Lomonosov Moscow State University",
-    "National University of Singapore",
-    "Seoul National University",
-    "ETH Zurich",
-    "National Cheng Kung University",
-    "National Taiwan University",
-    "National Tsing Hua University",
-    "Imperial College London",
-    "University College London",
-    "University of Cambridge",
-    "University of Oxford",
-    "California Institute of Technology",
-    "Carnegie Mellon University",
-    "Columbia University",
-    "Cornell University",
-    "Duke University",
-    "Harvard University",
-    "Johns Hopkins University",
-    "Massachusetts Institute of Technology",
-    "New York University",
-    "Northwestern University",
-    "Princeton University",
-    "Stanford University",
-    "University of California Berkeley",
-    "University of California Los Angeles",
-    "University of Chicago",
-    "University of Michigan Ann Arbor",
-    "University of Pennsylvania",
-    "University of Washington Seattle",
-    "Yale University"
+    [
+      "Australia",
+      "University of Melbourne"
+    ],
+    [
+      "Canada",
+      "University of Toronto"
+    ],
+    [
+      "China",
+      "Peking University"
+    ],
+    [
+      "China",
+      "Tsinghua University"
+    ],
+    [
+      "Germany",
+      "Technical University of Munich"
+    ],
+    [
+      "India",
+      "Indian Institute of Science"
+    ],
+    [
+      "Japan",
+      "Kyoto University"
+    ],
+    [
+      "Japan",
+      "The University of Tokyo"
+    ],
+    [
+      "Netherlands",
+      "Delft University of Technology"
+    ],
+    [
+      "Russian Federation",
+      "Lomonosov Moscow State University"
+    ],
+    [
+      "Singapore",
+      "National University of Singapore"
+    ],
+    [
+      "South Korea",
+      "Seoul National University"
+    ],
+    [
+      "Switzerland",
+      "ETH Zurich"
+    ],
+    [
+      "Taiwan",
+      "National Cheng Kung University"
+    ],
+    [
+      "Taiwan",
+      "National Taiwan University"
+    ],
+    [
+      "Taiwan",
+      "National Tsing Hua University"
+    ],
+    [
+      "United Kingdom",
+      "Imperial College London"
+    ],
+    [
+      "United Kingdom",
+      "University College London"
+    ],
+    [
+      "United Kingdom",
+      "University of Cambridge"
+    ],
+    [
+      "United Kingdom",
+      "University of Oxford"
+    ],
+    [
+      "United States",
+      "California Institute of Technology"
+    ],
+    [
+      "United States",
+      "Carnegie Mellon University"
+    ],
+    [
+      "United States",
+      "Columbia University"
+    ],
+    [
+      "United States",
+      "Cornell University"
+    ],
+    [
+      "United States",
+      "Duke University"
+    ],
+    [
+      "United States",
+      "Harvard University"
+    ],
+    [
+      "United States",
+      "Johns Hopkins University"
+    ],
+    [
+      "United States",
+      "Massachusetts Institute of Technology"
+    ],
+    [
+      "United States",
+      "New York University"
+    ],
+    [
+      "United States",
+      "Northwestern University"
+    ],
+    [
+      "United States",
+      "Princeton University"
+    ],
+    [
+      "United States",
+      "Stanford University"
+    ],
+    [
+      "United States",
+      "University of California Berkeley"
+    ],
+    [
+      "United States",
+      "University of California Los Angeles"
+    ],
+    [
+      "United States",
+      "University of Chicago"
+    ],
+    [
+      "United States",
+      "University of Michigan Ann Arbor"
+    ],
+    [
+      "United States",
+      "University of Pennsylvania"
+    ],
+    [
+      "United States",
+      "University of Washington Seattle"
+    ],
+    [
+      "United States",
+      "Yale University"
+    ]
   ],
   "keywords": [
-    "BERKELEY",
-    "CAL",
-    "CALIFORNIA INSTITUTE OF TECHNOLOGY",
-    "CALTECH",
-    "CAMBRIDGE",
-    "CARNEGIE MELLON UNIVERSITY",
+    "Berkeley",
     "CMU",
-    "COLUMBIA",
-    "COLUMBIA UNIVERSITY",
-    "CORNELL",
-    "CORNELL UNIVERSITY",
-    "DELFT UNIVERSITY OF TECHNOLOGY",
-    "DUKE",
-    "DUKE UNIVERSITY",
-    "EIDGENÖSSISCHE TECHNISCHE HOCHSCHULE ZÜRICH (ETH ZURICH)",
-    "ETH ZURICH",
-    "HARVARD",
-    "HARVARD UNIVERSITY",
+    "Cal",
+    "California Institute of Technology",
+    "Caltech",
+    "Cambridge",
+    "Carnegie Mellon University",
+    "Columbia",
+    "Columbia University",
+    "Cornell",
+    "Cornell University",
+    "Delft University of Technology",
+    "Duke",
+    "Duke University",
+    "ETH Zurich",
+    "Eidgenössische Technische Hochschule Zürich (ETH Zurich)",
+    "Harvard",
+    "Harvard University",
     "IC",
     "IISC",
-    "IMPERIAL COLLEGE LONDON",
-    "INDIAN INSTITUTE OF SCIENCE",
+    "Imperial College London",
+    "Indian Institute of Science",
     "JHU",
-    "JOHNS HOPKINS UNIVERSITY",
-    "KYOTO UNIVERSITY",
-    "KYOTOU",
-    "LOMONOSOV MOSCOW STATE UNIVERSITY",
-    "MASSACHUSETTS INSTITUTE OF TECHNOLOGY (MIT)",
+    "Johns Hopkins University",
+    "Kyoto University",
+    "KyotoU",
+    "Lomonosov Moscow State University",
     "MIT",
     "MSU",
-    "NATIONAL CHENG KUNG UNIVERSITY",
-    "NATIONAL TAIWAN UNIVERSITY",
-    "NATIONAL TSING HUA UNIVERSITY",
-    "NATIONAL UNIVERSITY OF SINGAPORE",
+    "Massachusetts Institute of Technology (MIT)",
     "NCKU",
-    "NEW YORK UNIVERSITY",
-    "NORTHWESTERN UNIVERSITY",
     "NTHU",
     "NTU",
     "NU",
     "NUS",
     "NYU",
-    "OXFORD",
-    "PEKING UNIVERSITY",
+    "National Cheng Kung University",
+    "National Taiwan University",
+    "National Tsing Hua University",
+    "National University of Singapore",
+    "New York University",
+    "Northwestern University",
+    "Oxford",
     "PKU",
-    "PRINCETON",
-    "PRINCETON UNIVERSITY",
-    "SEOUL NATIONAL UNIVERSITY",
+    "Peking University",
+    "Princeton",
+    "Princeton University",
     "SNU",
-    "STANFORD",
-    "STANFORD UNIVERSITY",
-    "TECHNICAL UNIVERSITY OF MUNICH",
-    "THE UNIVERSITY OF TOKYO",
+    "Seoul National University",
+    "Stanford",
+    "Stanford University",
     "THU",
-    "TSINGHUA UNIVERSITY",
-    "TU DELFT",
-    "TU MUNICH",
+    "TU Delft",
+    "TU Munich",
     "TUM",
-    "U OF T",
-    "UC BERKELEY",
+    "Technical University of Munich",
+    "The University of Tokyo",
+    "Tsinghua University",
+    "U of T",
+    "UC Berkeley",
     "UCB",
-    "UCHICAGO",
     "UCL",
     "UCLA",
-    "UMICH",
-    "UNIVERSITY COLLEGE LONDON (UCL)",
-    "UNIVERSITY OF CALIFORNIA LOS ANGELES",
-    "UNIVERSITY OF CALIFORNIA, BERKELEY",
-    "UNIVERSITY OF CAMBRIDGE",
-    "UNIVERSITY OF CHICAGO",
-    "UNIVERSITY OF MELBOURNE",
-    "UNIVERSITY OF MICHIGAN ANN ARBOR",
-    "UNIVERSITY OF OXFORD",
-    "UNIVERSITY OF PENNSYLVANIA",
-    "UNIVERSITY OF TORONTO",
-    "UNIVERSITY OF WASHINGTON SEATTLE",
-    "UPENN",
-    "UTOKYO",
-    "UTORONTO",
+    "UChicago",
+    "UMich",
+    "UPenn",
+    "UTokyo",
+    "UToronto",
     "UW",
-    "YALE",
-    "YALE UNIVERSITY",
+    "University College London (UCL)",
+    "University of California Los Angeles",
+    "University of California, Berkeley",
+    "University of Cambridge",
+    "University of Chicago",
+    "University of Melbourne",
+    "University of Michigan Ann Arbor",
+    "University of Oxford",
+    "University of Pennsylvania",
+    "University of Toronto",
+    "University of Washington Seattle",
+    "Yale",
+    "Yale University",
     "台大",
     "國立成功大學",
     "國立清華大學",
@@ -132,11 +249,11 @@
   ],
   "keyword_index": [
     32,
+    21,
     32,
     20,
     20,
     18,
-    21,
     21,
     22,
     22,
@@ -159,20 +276,20 @@
     6,
     9,
     27,
-    27,
     9,
+    27,
     13,
-    14,
-    15,
-    10,
-    13,
-    28,
-    29,
     15,
     14,
     29,
     10,
     28,
+    13,
+    14,
+    15,
+    10,
+    28,
+    29,
     19,
     2,
     2,
@@ -182,20 +299,24 @@
     11,
     31,
     31,
-    4,
-    7,
-    3,
     3,
     8,
     4,
     4,
+    4,
+    7,
+    3,
     1,
     32,
     32,
-    34,
     17,
     33,
+    34,
     35,
+    36,
+    7,
+    1,
+    37,
     17,
     33,
     32,
@@ -205,10 +326,6 @@
     35,
     19,
     36,
-    1,
-    37,
-    36,
-    7,
     1,
     37,
     38,

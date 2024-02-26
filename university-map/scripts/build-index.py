@@ -34,7 +34,7 @@ def get_keywords(file_path):
             keywords = []
             keywords.append(content["name"])
             keywords += content["acronyms"]
-            return [kw.upper() for kw in keywords]
+            return keywords
         except yaml.YAMLError as e:
             print(f"Error reading {file_path}: {e}")
             sys.exit(1) 
@@ -76,8 +76,8 @@ def build_search_json():
                 univ_keywords += get_keywords(os.path.join(univ_path, lang))
             for kw in univ_keywords:
                 keyword_index[kw] = index
+            all_universities.append([country, univ])
             index += 1
-        all_universities += universities
 
     sorted_keywords_index = dict(sorted(keyword_index.items(), key=lambda x: x[0]))
     search_data = { "universities": all_universities, "keywords": list(sorted_keywords_index.keys()), "keyword_index": list(sorted_keywords_index.values()) }

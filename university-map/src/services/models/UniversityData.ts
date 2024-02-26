@@ -32,9 +32,9 @@ class UniversityInfo {
 // public/universities/search.json
 class SearchData {
   constructor(
-    public universities: string[] = [],
+    public universities: [country: string, university: string][] = [],
     public keywords: string[] = [],
-    public keywordIndex: string[] = [],
+    public keywordIndex: number[] = [],
   ) {}
 }
 
