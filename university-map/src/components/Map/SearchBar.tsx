@@ -23,6 +23,7 @@ const SearchBar = (props: SearchBarProps) => {
 
     const index = searchDataRef.current.keywords.findIndex(item => query.toLowerCase() === item.toLowerCase());
     if (index < 0) {
+      window.alert(t('noSuchUniversity'));
       return;
     }
 
@@ -30,7 +31,7 @@ const SearchBar = (props: SearchBarProps) => {
     const universities = searchDataRef.current.universities;
     const [country, university] = universities[keywordIndex[index]];
     props.onSearch(country, university);
-  }, [props, query, searchDataRef]);
+  }, [props, query, searchDataRef, t]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -56,6 +57,12 @@ const SearchBar = (props: SearchBarProps) => {
         limit={8}
         value={query}
         onChange={setQuery}
+        onOptionSubmit={handleSearch}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') {
+            handleSearch();
+          }
+        }}
       />
     </div>
   );
