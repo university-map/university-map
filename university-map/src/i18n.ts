@@ -29,7 +29,6 @@ i18n.use(initReactI18next).init({
 });
 
 const segments = decodeURI(window.location.hash).split('/');
-console.log(segments);
 if (segments[1] !== i18n.language) {
   i18n.changeLanguage(segments[1]);
 }

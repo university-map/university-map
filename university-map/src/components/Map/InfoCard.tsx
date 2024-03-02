@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Tabs, Image, Title } from '@mantine/core';
 import InfoCardOverview from './InfoCardOverview';
 import { UniversityInfo } from '@/services/models';
-import './InfoCard.css';
+import './Map.css';
 
 const InfoCard: React.FC<{
   universityInfo: UniversityInfo,
