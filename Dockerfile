@@ -9,7 +9,7 @@ RUN pip install -r scripts/requirements.txt && \
 FROM node:lts AS builder
 WORKDIR /app
 COPY ./university-map/ .
-COPY --from=python /app/public/universities/locations.json ./public
+COPY --from=python /app/public/universities/*.json ./public
 RUN npm ci && \
     npm run build
 

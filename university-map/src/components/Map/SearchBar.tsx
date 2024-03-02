@@ -16,12 +16,12 @@ const SearchBar = (props: SearchBarProps) => {
   const { t } = useTranslation();
   const dataLoader = DataLoader.getInstance();
 
-  const handleSearch = useCallback(async () => {
-    if (query === '') {
+  const handleSearch = useCallback(async (searchStr: string = '') => {
+    if (searchStr === '') {
       return;
     }
 
-    const index = searchDataRef.current.keywords.findIndex(item => query.toLowerCase() === item.toLowerCase());
+    const index = searchDataRef.current.keywords.findIndex(item => searchStr.toLowerCase() === item.toLowerCase());
     if (index < 0) {
       window.alert(t('noSuchUniversity'));
       return;
@@ -31,7 +31,7 @@ const SearchBar = (props: SearchBarProps) => {
     const universities = searchDataRef.current.universities;
     const [country, university] = universities[keywordIndex[index]];
     props.onSearch(country, university);
-  }, [props, query, searchDataRef, t]);
+  }, [props, searchDataRef, t]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,7 +47,7 @@ const SearchBar = (props: SearchBarProps) => {
         comboboxProps={{ withinPortal: false, offset: 0 }}
         placeholder={t('search')}
         rightSection={
-          <UnstyledButton onClick={handleSearch}>
+          <UnstyledButton onClick={() => { handleSearch(query); }}>
             <Center>
               <IoSearch />
             </Center>
@@ -57,10 +57,10 @@ const SearchBar = (props: SearchBarProps) => {
         limit={8}
         value={query}
         onChange={setQuery}
-        onOptionSubmit={handleSearch}
+        onOptionSubmit={(optionValue) => { handleSearch(optionValue); }}
         onKeyDown={(event) => {
           if (event.key === 'Enter') {
-            handleSearch();
+            handleSearch(query);
           }
         }}
       />
