@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoSearch } from 'react-icons/io5';
 import { Autocomplete, Center, UnstyledButton } from '@mantine/core';
@@ -7,43 +6,31 @@ import DataLoader from '@/services/DataLoader';
 import { SearchData } from '@/services/models';
 import './Map.css';
 
-const SearchBar: React.FC = () => {
+interface SearchBarProps {
+  onSearch: (country: string, universityName: string) => void;
+}
+
+const SearchBar = (props: SearchBarProps) => {
   const [query, setQuery] = useState('');
   const searchDataRef = useRef(new SearchData());
-  const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const dataLoader = DataLoader.getInstance();
 
-  const gotoPage = async (): Promise<void> => {
-    function binarySearch(value: string) {
-      const keywords = searchDataRef.current.keywords;
-      let left = 0;
-      let right = keywords.length - 1;
-      while (left <= right) {
-        const mid = Math.floor((left + right) / 2);
-        if (keywords[mid].startsWith(value)) {
-          return mid;
-        } else if (keywords[mid] < value) {
-          left = mid + 1;
-        } else {
-          right = mid - 1;
-        }
-      }
-      return undefined;
+  const handleSearch = useCallback(async () => {
+    if (query === '') {
+      return;
     }
 
-    console.log('Search:', query);
-    const firstMatch = binarySearch(query);
-    if (!firstMatch) {
-      alert('Query Not Found');
+    const index = searchDataRef.current.keywords.findIndex(item => query.toLowerCase() === item.toLowerCase());
+    if (index < 0) {
       return;
     }
 
     const keywordIndex = searchDataRef.current.keywordIndex;
     const universities = searchDataRef.current.universities;
-    const [country, university] = universities[keywordIndex[firstMatch]];
-    navigate(`/${i18n.language}/university/${country}/${university}`);
-  };
+    const [country, university] = universities[keywordIndex[index]];
+    props.onSearch(country, university);
+  }, [props, query, searchDataRef]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,7 +46,7 @@ const SearchBar: React.FC = () => {
         comboboxProps={{ withinPortal: false, offset: 0 }}
         placeholder={t('search')}
         rightSection={
-          <UnstyledButton onClick={gotoPage}>
+          <UnstyledButton onClick={handleSearch}>
             <Center>
               <IoSearch />
             </Center>

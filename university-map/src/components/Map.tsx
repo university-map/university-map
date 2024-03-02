@@ -32,7 +32,7 @@ function Map() {
   const { i18n } = useTranslation();
   const dataLoader = DataLoader.getInstance();
 
-  const handleMarkerClick = useCallback(async (countryName: string, universityName: string) => {
+  const showUniversity = useCallback(async (countryName: string, universityName: string) => {
     const univInfo = await dataLoader.getUnivInfo(countryName, universityName, i18n.language);
     navigate(`/${i18n.language}/university/${countryName}/${universityName}`);
     setSelectedUniv(univInfo);
@@ -64,7 +64,7 @@ function Map() {
               coordinates={location.coordinates}
               locationName={location.name}
               iconColor={isSelected ? 'red' : 'blue'}
-              onMarkerClick={handleMarkerClick}
+              onMarkerClick={showUniversity}
             />
           );
         }
@@ -76,7 +76,7 @@ function Map() {
     if (country && university) {
       dataLoader.getUnivInfo(country, university, i18n.language).then((univInfo) => setSelectedUniv(univInfo));
     }
-  }, [country, university, i18n.language, dataLoader, markers?.length, handleMarkerClick]);
+  }, [country, university, i18n.language, dataLoader, markers?.length, showUniversity]);
 
   const bounds = L.latLngBounds(L.latLng(-90, -180), L.latLng(90, 180));
   const center = JSON.parse(Cookies.get('mapCenter') ?? '[0, 20]');
@@ -84,7 +84,7 @@ function Map() {
   return (
     <main style={{ height: '100vh' }}>
       { country && university ? <InfoCard universityInfo={selectedUniv} /> : null }
-      <SearchBar />
+      <SearchBar onSearch={showUniversity} />
       <MapContainer
         center={center}
         zoom={zoom}
