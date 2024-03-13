@@ -13,6 +13,45 @@
     ]
   },
   {
+    "name": "KU Leuven",
+    "country": "Belgium",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          50.87825277221089,
+          4.699651653045911
+        ]
+      }
+    ]
+  },
+  {
+    "name": "McGill University",
+    "country": "Canada",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          45.505443572366204,
+          -73.57724080954155
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of British Columbia",
+    "country": "Canada",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          49.34976844211286,
+          -123.30384063646677
+        ]
+      }
+    ]
+  },
+  {
     "name": "University of Toronto",
     "country": "Canada",
     "location": [
@@ -21,6 +60,19 @@
         "coordinates": [
           43.66440327972784,
           -79.39666130605445
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fudan University",
+    "country": "China",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          31.297575457178215,
+          121.50359632037966
         ]
       }
     ]
@@ -39,6 +91,19 @@
     ]
   },
   {
+    "name": "Shanghai Jiao Tong University",
+    "country": "China",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          31.025417770237674,
+          121.43377839947595
+        ]
+      }
+    ]
+  },
+  {
     "name": "Tsinghua University",
     "country": "China",
     "location": [
@@ -47,6 +112,45 @@
         "coordinates": [
           39.99987276788524,
           116.32633659183877
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Paris Sciences et Lettres",
+    "country": "France",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          48.85560304318301,
+          2.3374913404124964
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heidelberg University",
+    "country": "Germany",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          49.41078562086761,
+          8.706532839482467
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ludwig Maximilian University of Munich",
+    "country": "Germany",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          48.15110457803431,
+          11.579882354764937
         ]
       }
     ]
@@ -288,6 +392,19 @@
     ]
   },
   {
+    "name": "Kings College London",
+    "country": "United Kingdom",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          51.512065123242806,
+          -0.11615064480473596
+        ]
+      }
+    ]
+  },
+  {
     "name": "University College London",
     "country": "United Kingdom",
     "location": [
@@ -400,6 +517,19 @@
         "coordinates": [
           36.00167741111304,
           -78.93820716318346
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Georgia Institute of Technology",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          33.77584964186457,
+          -84.39624208812104
         ]
       }
     ]
@@ -543,6 +673,19 @@
         "coordinates": [
           41.790608356689596,
           -87.60039530317336
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of Illinois at Urbana-Champaign",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          40.10204353302258,
+          -88.22720233059479
         ]
       }
     ]

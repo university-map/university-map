@@ -54,7 +54,7 @@ const SearchBar = (props: SearchBarProps) => {
           </UnstyledButton>
         }
         data={searchDataRef.current.keywords}
-        limit={8}
+        limit={20}
         value={query}
         onChange={setQuery}
         onOptionSubmit={(optionValue) => { handleSearch(optionValue); }}

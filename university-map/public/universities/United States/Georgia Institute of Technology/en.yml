@@ -1,0 +1,13 @@
+name: Georgia Institute of Technology
+address: 225 North Avenue NW, Atlanta, GA 30332 United States
+website: https://www.gatech.edu
+locations:
+  - name: Main Campus
+    coordinates: [33.77584964186457, -84.39624208812104]
+acronyms: [Gatech, Georgia Tech, GT]
+banner: https://www.gatech.edu/sites/default/files/styles/hero_16_9_large_992x558_/public/half-half/main-campus.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

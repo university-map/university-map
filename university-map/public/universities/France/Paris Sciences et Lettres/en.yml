@@ -1,0 +1,12 @@
+name: Paris Sciences et Lettres (PSL)
+address: 60 rue Mazarine, Paris, Île-de-France region, 75006, France
+website: https://psl.eu/en
+locations:
+  - name: Main Campus
+    coordinates: [48.85560304318301, 2.3374913404124964]
+acronyms: [PSL]
+banner: https://psl.eu/sites/default/files/styles/420x300/public/2021-02/visuel-galaxie_dauphine_0.png
+introduction: >-
+  TBD
+gallery:
+  []

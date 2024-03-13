@@ -1,0 +1,13 @@
+name: University of Illinois at Urbana-Champaign
+address: 601 E. John Street, Champaign, IL 61820-5711 United States
+website: https://www.illinois.edu/
+locations:
+  - name: Main Campus
+    coordinates: [40.10204353302258, -88.22720233059479]
+acronyms: [UIUC, U of I]
+banner: https://www.uiucpurchasing.illinois.edu/wp-content/uploads/2021/03/Home-page-1-768x512.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]
