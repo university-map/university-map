@@ -1,0 +1,13 @@
+name: University of California San Diego
+address: 9500 Gilman Drive, La Jolla, CA 92093 United States
+website: https://www.ucsd.edu
+locations:
+  - name: Main Campus
+    coordinates: [32.88136619469444, -117.23443560533298]
+acronyms: [UCSD, UC San Diego]
+banner: https://today.ucsd.edu/news_uploads/1280x800_210310-Rainbow7DSC_8071-UCSanDiego-ErikJepsen-1.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

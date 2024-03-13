@@ -1,0 +1,13 @@
+name: University of Hong Kong
+address: Pok Ful Lam Road, Pok Fu Lam, Hong Kong
+website: https://www.hku.hk/
+locations:
+  - name: Main Campus
+    coordinates: [22.283402823569375, 114.13639681196481]
+acronyms: [HKU]
+banner: https://www.hku.hk/visit/images/HeritageBuilding/background/declared-main-building.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

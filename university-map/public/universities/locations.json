@@ -72,6 +72,19 @@
     ]
   },
   {
+    "name": "University of Hong Kong",
+    "country": "Hong Kong",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          22.283402823569375,
+          114.13639681196481
+        ]
+      }
+    ]
+  },
+  {
     "name": "Indian Institute of Science",
     "country": "India",
     "location": [
@@ -137,6 +150,19 @@
     ]
   },
   {
+    "name": "Nanyang Technological University",
+    "country": "Singapore",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          1.3476176088920264,
+          103.6806585646995
+        ]
+      }
+    ]
+  },
+  {
     "name": "National University of Singapore",
     "country": "Singapore",
     "location": [
@@ -172,6 +198,19 @@
         "coordinates": [
           37.58120712456937,
           126.99948223527062
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EPFL",
+    "country": "Switzerland",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          46.51953541327693,
+          6.566748576740866
         ]
       }
     ]
@@ -270,6 +309,19 @@
         "coordinates": [
           52.20555624964476,
           0.11314384499981649
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of Edinburgh",
+    "country": "United Kingdom",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          55.94467198342611,
+          -3.1893378620939754
         ]
       }
     ]
@@ -465,6 +517,19 @@
         "coordinates": [
           34.07008703131178,
           -118.44386023228604
+        ]
+      }
+    ]
+  },
+  {
+    "name": "University of California San Diego",
+    "country": "United States",
+    "location": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          32.88136619469444,
+          -117.23443560533298
         ]
       }
     ]
