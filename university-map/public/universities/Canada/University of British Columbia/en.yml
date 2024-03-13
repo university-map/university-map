@@ -1,0 +1,12 @@
+name: University of British Columbia
+address: 1200-1874 E. Mall, Vancouver, British Columbia V6T 1Z4 Canada
+website: https://you.ubc.ca
+locations:
+  - name: Main Campus
+    coordinates: [49.34976844211286, -123.30384063646677]
+acronyms: [UBC]
+banner: https://you.ubc.ca/wp-content/uploads/2022/12/ubc-vancouver-land-acknowledgment.jpg
+introduction: >-
+  TBD
+gallery:
+  []

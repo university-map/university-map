@@ -1,0 +1,13 @@
+name: Fudan University
+address: 220 Handan Rd. Yangpu District, Shanghai 200433 China
+website: https://www.fudan.edu.cn/en/
+locations:
+  - name: Main Campus
+    coordinates: [31.297575457178215, 121.50359632037966]
+acronyms: []
+banner: https://upload.wikimedia.org/wikipedia/commons/d/d9/Fudan-guanghualou2.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

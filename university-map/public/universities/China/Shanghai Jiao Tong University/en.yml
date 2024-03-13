@@ -1,0 +1,13 @@
+name: Shanghai Jiao Tong University
+address: 655 Panyu Rd, Xuhui, Shanghai 200231 China
+website: https://en.sjtu.edu.cn/
+locations:
+  - name: Main Campus
+    coordinates: [31.025417770237674, 121.43377839947595]
+acronyms: [SJTU]
+banner: https://studyinchina.hk/wp-content/uploads/2020/09/22%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B82.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

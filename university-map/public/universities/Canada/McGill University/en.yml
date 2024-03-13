@@ -1,0 +1,12 @@
+name: McGill University
+address: 845 Sherbrooke Street W, Montréal, Québec H3A 0G4 Canada
+website: https://www.mcgill.ca/
+locations:
+  - name: Main Campus
+    coordinates: [45.505443572366204, -73.57724080954155]
+acronyms: []
+banner: https://www.mcgill.ca/gradapplicants/files/gradapplicants/styles/fullwidth_breakpoints_theme_moriarty_small_1x/public/arts_mont_royal_fall_stock_resized.jpg
+introduction: >-
+  TBD
+gallery:
+  []

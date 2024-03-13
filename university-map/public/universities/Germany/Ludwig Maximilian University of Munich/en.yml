@@ -1,0 +1,12 @@
+name: University of Munich (LMU)
+address: Geschwister-Scholl-Platz, Munich 80539 Germany
+website: https://www.lmu.de/en/index.html
+locations:
+  - name: Main Campus
+    coordinates: [48.15110457803431, 11.579882354764937]
+acronyms: [LMU Munich, Ludwig Maximilian University of Munich]
+banner: https://cms-cdn.lmu.de/media/lmu-mediapool/die_lmu/pano_muenchen_14_full_2_1_format_m.jpg
+introduction: >-
+  TBD
+gallery:
+  []
