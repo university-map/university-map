@@ -1,0 +1,12 @@
+name: Nanyang Technological University
+address: Nanyang Technological University, Singapore
+website: https://www.ntu.edu.sg/
+locations:
+  - name: Main Campus
+    coordinates: [1.3476176088920264, 103.6806585646995]
+acronyms: [NTU]
+banner: https://www.ntu.edu.sg/images/default-source/cco-images/the-hived35b5919-7b6f-4b40-a40f-5fb994b2878d.jpg
+introduction: >-
+  TBD
+gallery:
+  []

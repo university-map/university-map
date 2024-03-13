@@ -1,0 +1,15 @@
+name: University of Edinburgh
+address: Old College, South Bridge, Edinburgh, Scotland EH8 9YL United Kingdom
+website: https://www.ed.ac.uk/home
+locations:
+  - name: Main Campus
+    coordinates: [55.94467198342611, -3.1893378620939754]
+acronyms: []
+banner: https://www.ed.ac.uk/sites/default/files/styles/panel_breakpoints_theme_uoe_mobile_1x/public/thumbnails/image/hdwebsiteimage_1.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+    "https://www.ed.ac.uk/sites/default/files/styles/landscape_breakpoints_theme_uoe_mobile_1x/public/thumbnails/image/divinity_2.png",
+    "https://www.ed.ac.uk/sites/default/files/styles/panel_breakpoints_theme_uoe_mobile_1x/public/thumbnails/image/dte-old-college-quad_0.jpg"
+  ]

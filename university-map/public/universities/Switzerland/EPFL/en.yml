@@ -1,0 +1,12 @@
+name: École Polytechnique Fédérale de Lausanne (EPFL)
+address: Route Cantonale, Lausanne CH-1015 Switzerland
+website: https://www.epfl.ch/en/
+locations:
+  - name: Main Campus
+    coordinates: [46.51953541327693, 6.566748576740866]
+acronyms: [EPFL]
+banner: https://www.epfl.ch/about/wp-content/uploads/2018/10/EPFL-vue-aerienne-768x432.jpg
+introduction: >-
+  TBD
+gallery:
+  []
