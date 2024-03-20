@@ -1,6 +1,6 @@
 import { LatLngTuple } from 'leaflet';
 
-// public/universities/locations.json
+// public/universities/index.json
 class Location {
   constructor(
     public name: string = '',

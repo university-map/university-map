@@ -51,9 +51,9 @@ function Map() {
         // Already initialized
         return;
       }
-      const univLocations = await dataLoader.getUnivLocations();
+      const univIndex = await dataLoader.getUnivIndex();
       const newMarkers = [];
-      for (const univ of univLocations) {
+      for (const univ of univIndex) {
         for (const location of univ.locations) {
           const isSelected = country === univ.country && university === univ.name;
           newMarkers.push(

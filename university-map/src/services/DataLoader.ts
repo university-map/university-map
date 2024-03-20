@@ -3,7 +3,7 @@ import yaml from 'js-yaml';
 import { Location, UniversityLocation, UniversityInfo, SearchData } from './models';
 
 interface IDataLoader {
-  getUnivLocations(): Promise<UniversityLocation[]>
+  getUnivIndex(): Promise<UniversityLocation[]>
   getUnivInfo(country: string, university: string, locale: string): Promise<UniversityInfo>
   getSearchData(): Promise<SearchData>
 }
@@ -24,12 +24,12 @@ class DataLoader implements IDataLoader {
     return DataLoader.Instance;
   }
 
-  public async getUnivLocations(): Promise<UniversityLocation[]> {
+  public async getUnivIndex(): Promise<UniversityLocation[]> {
     try {
-      const response = await fetch(`${DataLoader.Endpoint}/universities/locations.json`);
+      const response = await fetch(`${DataLoader.Endpoint}/universities/index.json`);
       const data = await response.json();
       const universities: UniversityLocation[] = data.map((univ: any) => {
-        const locations: Location[] = univ.location.map((loc: any) => new Location(loc.name, loc.coordinates));
+        const locations: Location[] = univ.locations.map((loc: any) => new Location(loc.name, loc.coordinates));
         return new UniversityLocation(
           univ.name,
           univ.country,
