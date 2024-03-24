@@ -1,11 +1,10 @@
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 import yaml from 'js-yaml';
-import { Location, UniversityLocation, UniversityInfo, SearchData } from './models';
+import { Location, UniversityIndex, UniversityInfo } from './models';
 
 interface IDataLoader {
-  getUnivIndex(): Promise<UniversityLocation[]>
+  getUnivIndex(): Promise<UniversityIndex[]>
   getUnivInfo(country: string, university: string, locale: string): Promise<UniversityInfo>
-  getSearchData(): Promise<SearchData>
 }
 
 class DataLoader implements IDataLoader {
@@ -24,21 +23,22 @@ class DataLoader implements IDataLoader {
     return DataLoader.Instance;
   }
 
-  public async getUnivIndex(): Promise<UniversityLocation[]> {
+  public async getUnivIndex(): Promise<UniversityIndex[]> {
     try {
       const response = await fetch(`${DataLoader.Endpoint}/universities/index.json`);
       const data = await response.json();
-      const universities: UniversityLocation[] = data.map((univ: any) => {
+      const universities: UniversityIndex[] = data.map((univ: any) => {
         const locations: Location[] = univ.locations.map((loc: any) => new Location(loc.name, loc.coordinates));
-        return new UniversityLocation(
+        return new UniversityIndex(
           univ.name,
           univ.country,
-          locations
+          locations,
+          univ.acronyms
         );
       });
       return universities;
     } catch (error) {
-      console.error('Error loading locations:', error);
+      console.error('Error loading university index:', error);
       return Promise.resolve([]);
     }
   }
@@ -75,21 +75,6 @@ class DataLoader implements IDataLoader {
     } catch (error) {
       console.error('Error loading university info:', error);
       return Promise.resolve(new UniversityInfo());
-    }
-  }
-
-  public async getSearchData(): Promise<SearchData> {
-    try {
-      const response = await fetch(`${DataLoader.Endpoint}/universities/search.json`);
-      const data = await response.json();
-      return new SearchData(
-        data.universities ?? [],
-        data.keywords ?? [],
-        data.keyword_index ?? []
-      );
-    } catch (error) {
-      console.error('Error loading search data:', error);
-      return Promise.resolve(new SearchData());
     }
   }
 }

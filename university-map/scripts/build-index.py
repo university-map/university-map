@@ -24,6 +24,7 @@ def get_univ_data(univ_dir):
     with open(en_yml, 'r', encoding='utf-8') as file:
         try:
             content = yaml.safe_load(file)
+            name = content["name"]
             locations = content["locations"]
             acronyms += content["acronyms"]
         except yaml.YAMLError as e:
@@ -40,7 +41,7 @@ def get_univ_data(univ_dir):
             except yaml.YAMLError as e:
                 print(f"Error reading {lang_yml}: {e}")
                 sys.exit(1)
-    return locations, acronyms
+    return name, locations, acronyms
 
 
 def build_index_json():
@@ -51,8 +52,8 @@ def build_index_json():
         country_path = os.path.join(root_path, country)
         universities = [d for d in os.listdir(country_path)]
         for univ in universities:
-            univObj = { "name": univ, "country": country }
-            univObj["locations"], univObj["acronyms"] = get_univ_data(os.path.join(country_path, univ))
+            univObj = { "country": country }
+            univObj["name"], univObj["locations"], univObj["acronyms"] = get_univ_data(os.path.join(country_path, univ))
             index_data.append(univObj)
 
     output_path = os.path.join(get_project_root(), "public/universities/index.json")

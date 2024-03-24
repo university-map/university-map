@@ -4,7 +4,7 @@ website: https://www.princeton.edu
 locations:
   - name: Main Campus
     coordinates: [40.34342195971586, -74.6550710037108]
-acronyms: [Princeton]
+acronyms: []
 banner: https://images.unsplash.com/photo-1611339105600-dca794ada272?q=80&w=400
 introduction: >-
   Princeton University is a private Ivy League research university in Princeton, New Jersey.

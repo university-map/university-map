@@ -1,1 +1,1 @@
-export { Location, UniversityLocation, UniversityInfo, SearchData } from './UniversityData';
+export { Location, UniversityIndex, UniversityInfo } from './UniversityData';

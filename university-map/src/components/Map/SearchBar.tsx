@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoSearch } from 'react-icons/io5';
 import { Autocomplete, Center, UnstyledButton } from '@mantine/core';
 import DataLoader from '@/services/DataLoader';
-import { SearchData } from '@/services/models';
+import { UniversityIndex } from '@/services/models';
 import './Map.css';
 
 interface SearchBarProps {
@@ -11,9 +11,10 @@ interface SearchBarProps {
 }
 
 const SearchBar = (props: SearchBarProps) => {
-  const [query, setQuery] = useState('');
-  const searchDataRef = useRef(new SearchData());
   const { t } = useTranslation();
+  const [query, setQuery] = useState('');
+  const [univData, setUnivData] = useState(new Map<string, UniversityIndex>());
+  const [dropDownData, setDropDownData] = useState<string[]>([]);
   const dataLoader = DataLoader.getInstance();
 
   const handleSearch = useCallback(async (searchStr: string = '') => {
@@ -21,24 +22,43 @@ const SearchBar = (props: SearchBarProps) => {
       return;
     }
 
-    const index = searchDataRef.current.keywords.findIndex(item => searchStr.toLowerCase() === item.toLowerCase());
-    if (index < 0) {
-      window.alert(t('noSuchUniversity'));
+    searchStr = searchStr.toLowerCase();
+    const univ = univData.get(searchStr);
+    if (univ !== undefined) {
+      props.onSearch(univ.country, univ.name);
       return;
     }
-
-    const keywordIndex = searchDataRef.current.keywordIndex;
-    const universities = searchDataRef.current.universities;
-    const [country, university] = universities[keywordIndex[index]];
-    props.onSearch(country, university);
-  }, [props, searchDataRef, t]);
+  }, [props, univData]);
 
   useEffect(() => {
     const fetchData = async () => {
-      searchDataRef.current = await dataLoader.getSearchData();
+      if (univData.size != 0) {
+        // Already initialized
+        return;
+      }
+
+      const map = new Map<string, UniversityIndex>();
+      const dropDown = new Array<string>();
+      const univIndex = await dataLoader.getUnivIndex();
+      for (const univ of univIndex) {
+        map.set(univ.name.toLowerCase(), univ);
+        if (!dropDown.includes(univ.name)) {
+          dropDown.push(univ.name);
+        }
+        for (const acronym of univ.acronyms) {
+          map.set(acronym.toLowerCase(), univ);
+          // TODO: Support multiple universities with the same acronym
+          if (!dropDown.includes(acronym)) {
+            dropDown.push(acronym);
+          }
+        }
+      }
+      console.log('dropDown:', dropDown);
+      setUnivData(map);
+      setDropDownData(dropDown);
     };
     fetchData();
-  }, [dataLoader]);
+  }, [dataLoader, univData.size]);
 
   return (
     <div className='SearchBar'>
@@ -53,7 +73,7 @@ const SearchBar = (props: SearchBarProps) => {
             </Center>
           </UnstyledButton>
         }
-        data={searchDataRef.current.keywords}
+        data={dropDownData}
         limit={20}
         value={query}
         onChange={setQuery}
