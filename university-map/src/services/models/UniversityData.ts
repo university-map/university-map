@@ -1,6 +1,6 @@
 import { LatLngTuple } from 'leaflet';
 
-// public/universities/locations.json
+// public/universities/index.json
 class Location {
   constructor(
     public name: string = '',
@@ -8,11 +8,12 @@ class Location {
   ) {}
 }
 
-class UniversityLocation {
+class UniversityIndex {
   constructor(
     public name: string = '',
     public country: string = '',
     public locations: Location[] = [],
+    public acronyms: string[] = [],
   ) {}
 }
 
@@ -29,13 +30,4 @@ class UniversityInfo {
   ) {}
 }
 
-// public/universities/search.json
-class SearchData {
-  constructor(
-    public universities: [country: string, university: string][] = [],
-    public keywords: string[] = [],
-    public keywordIndex: number[] = [],
-  ) {}
-}
-
-export { Location, UniversityLocation, UniversityInfo, SearchData };
+export { Location, UniversityIndex, UniversityInfo };

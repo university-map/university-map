@@ -4,7 +4,7 @@ website: http://www.cam.ac.uk
 locations:
   - name: Main Campus
     coordinates: [52.20555624964476, 0.11314384499981649]
-acronyms: [Cambridge]
+acronyms: []
 banner: https://images.unsplash.com/20/cambridge.JPG?q=80&w=400
 introduction: >-
   The University of Cambridge is a collegiate research university in Cambridge, United Kingdom.

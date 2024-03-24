@@ -11,7 +11,7 @@ Install NodeJS v20.10.0.
 Install Python 3 and install `PyYAML`.
 
 ```bash
-# Generate or update public/universities/locations.json
+# Generate or update public/universities/index.json
 cd university-map
 python scripts/build-index.py
 

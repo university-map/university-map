@@ -4,7 +4,7 @@ website: https://www.harvard.edu
 locations:
   - name: Cambridge Campus
     coordinates: [42.37482288761835, -71.11818747532095]
-acronyms: [Harvard]
+acronyms: []
 banner: https://images.unsplash.com/photo-1559135197-8a45ea74d367?q=80&w=400
 introduction: >-
   Harvard University is a private Ivy League research university in Cambridge,

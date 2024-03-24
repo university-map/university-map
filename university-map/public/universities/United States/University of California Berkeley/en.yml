@@ -4,7 +4,7 @@ website: https://www.berkeley.edu
 locations:
   - name: Main Campus
     coordinates: [37.870489515094455, -122.25945378132072]
-acronyms: [UC Berkeley, Berkeley, Cal, UCB]
+acronyms: [UC Berkeley, Cal, UCB]
 banner: https://images.unsplash.com/photo-1694391579944-b9162db8162e?q=80&w=400
 introduction: >-
   UC Berkeley is a public land-grant research university in Berkeley, California, established in 1868.
