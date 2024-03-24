@@ -30,6 +30,7 @@ class DataLoader implements IDataLoader {
       const universities: UniversityIndex[] = data.map((univ: any) => {
         const locations: Location[] = univ.locations.map((loc: any) => new Location(loc.name, loc.coordinates));
         return new UniversityIndex(
+          univ.filename,
           univ.name,
           univ.country,
           locations,

@@ -59,6 +59,7 @@ function Map() {
           newMarkers.push(
             <MapMarker
               key={`${univ.country}+${univ.name}+${location.name}`}
+              filename={univ.filename}
               countryName={univ.country}
               universityName={univ.name}
               coordinates={location.coordinates}

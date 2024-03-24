@@ -1,5 +1,6 @@
 [
   {
+    "filename": "University of Melbourne",
     "country": "Australia",
     "name": "University of Melbourne",
     "locations": [
@@ -14,6 +15,7 @@
     "acronyms": []
   },
   {
+    "filename": "KU Leuven",
     "country": "Belgium",
     "name": "KU Leuven",
     "locations": [
@@ -28,6 +30,7 @@
     "acronyms": []
   },
   {
+    "filename": "McGill University",
     "country": "Canada",
     "name": "McGill University",
     "locations": [
@@ -42,6 +45,7 @@
     "acronyms": []
   },
   {
+    "filename": "University of British Columbia",
     "country": "Canada",
     "name": "University of British Columbia",
     "locations": [
@@ -58,6 +62,7 @@
     ]
   },
   {
+    "filename": "University of Toronto",
     "country": "Canada",
     "name": "University of Toronto",
     "locations": [
@@ -75,6 +80,7 @@
     ]
   },
   {
+    "filename": "Fudan University",
     "country": "China",
     "name": "Fudan University",
     "locations": [
@@ -89,6 +95,7 @@
     "acronyms": []
   },
   {
+    "filename": "Peking University",
     "country": "China",
     "name": "Peking University",
     "locations": [
@@ -105,6 +112,7 @@
     ]
   },
   {
+    "filename": "Shanghai Jiao Tong University",
     "country": "China",
     "name": "Shanghai Jiao Tong University",
     "locations": [
@@ -121,6 +129,7 @@
     ]
   },
   {
+    "filename": "Tsinghua University",
     "country": "China",
     "name": "Tsinghua University",
     "locations": [
@@ -137,6 +146,7 @@
     ]
   },
   {
+    "filename": "Paris Sciences et Lettres",
     "country": "France",
     "name": "Paris Sciences et Lettres (PSL)",
     "locations": [
@@ -153,6 +163,7 @@
     ]
   },
   {
+    "filename": "Heidelberg University",
     "country": "Germany",
     "name": "Ruprecht Karls University Heidelberg",
     "locations": [
@@ -167,6 +178,7 @@
     "acronyms": []
   },
   {
+    "filename": "Technical University of Munich",
     "country": "Germany",
     "name": "Technical University of Munich",
     "locations": [
@@ -191,6 +203,7 @@
     ]
   },
   {
+    "filename": "University of Munich",
     "country": "Germany",
     "name": "University of Munich (LMU)",
     "locations": [
@@ -208,6 +221,7 @@
     ]
   },
   {
+    "filename": "University of Hong Kong",
     "country": "Hong Kong",
     "name": "University of Hong Kong",
     "locations": [
@@ -224,6 +238,7 @@
     ]
   },
   {
+    "filename": "Indian Institute of Science",
     "country": "India",
     "name": "Indian Institute of Science",
     "locations": [
@@ -240,6 +255,7 @@
     ]
   },
   {
+    "filename": "Kyoto University",
     "country": "Japan",
     "name": "Kyoto University",
     "locations": [
@@ -256,6 +272,7 @@
     ]
   },
   {
+    "filename": "The University of Tokyo",
     "country": "Japan",
     "name": "The University of Tokyo",
     "locations": [
@@ -272,6 +289,7 @@
     ]
   },
   {
+    "filename": "Delft University of Technology",
     "country": "Netherlands",
     "name": "Delft University of Technology",
     "locations": [
@@ -288,6 +306,7 @@
     ]
   },
   {
+    "filename": "Lomonosov Moscow State University",
     "country": "Russian Federation",
     "name": "Lomonosov Moscow State University",
     "locations": [
@@ -304,6 +323,7 @@
     ]
   },
   {
+    "filename": "Nanyang Technological University",
     "country": "Singapore",
     "name": "Nanyang Technological University",
     "locations": [
@@ -320,6 +340,7 @@
     ]
   },
   {
+    "filename": "National University of Singapore",
     "country": "Singapore",
     "name": "National University of Singapore",
     "locations": [
@@ -343,6 +364,7 @@
     ]
   },
   {
+    "filename": "Seoul National University",
     "country": "South Korea",
     "name": "Seoul National University",
     "locations": [
@@ -366,6 +388,7 @@
     ]
   },
   {
+    "filename": "EPFL",
     "country": "Switzerland",
     "name": "École Polytechnique Fédérale de Lausanne (EPFL)",
     "locations": [
@@ -382,6 +405,7 @@
     ]
   },
   {
+    "filename": "ETH Zurich",
     "country": "Switzerland",
     "name": "Eidgenössische Technische Hochschule Zürich (ETH Zurich)",
     "locations": [
@@ -398,6 +422,7 @@
     ]
   },
   {
+    "filename": "National Cheng Kung University",
     "country": "Taiwan",
     "name": "National Cheng Kung University",
     "locations": [
@@ -422,6 +447,7 @@
     ]
   },
   {
+    "filename": "National Taiwan University",
     "country": "Taiwan",
     "name": "National Taiwan University",
     "locations": [
@@ -439,6 +465,7 @@
     ]
   },
   {
+    "filename": "National Tsing Hua University",
     "country": "Taiwan",
     "name": "National Tsing Hua University",
     "locations": [
@@ -456,6 +483,7 @@
     ]
   },
   {
+    "filename": "Imperial College London",
     "country": "United Kingdom",
     "name": "Imperial College London",
     "locations": [
@@ -472,6 +500,7 @@
     ]
   },
   {
+    "filename": "Kings College London",
     "country": "United Kingdom",
     "name": "King's College London",
     "locations": [
@@ -488,6 +517,7 @@
     ]
   },
   {
+    "filename": "University College London",
     "country": "United Kingdom",
     "name": "University College London (UCL)",
     "locations": [
@@ -504,6 +534,7 @@
     ]
   },
   {
+    "filename": "University of Cambridge",
     "country": "United Kingdom",
     "name": "University of Cambridge",
     "locations": [
@@ -518,6 +549,7 @@
     "acronyms": []
   },
   {
+    "filename": "University of Edinburgh",
     "country": "United Kingdom",
     "name": "University of Edinburgh",
     "locations": [
@@ -532,6 +564,7 @@
     "acronyms": []
   },
   {
+    "filename": "University of Oxford",
     "country": "United Kingdom",
     "name": "University of Oxford",
     "locations": [
@@ -546,6 +579,7 @@
     "acronyms": []
   },
   {
+    "filename": "California Institute of Technology",
     "country": "United States",
     "name": "California Institute of Technology",
     "locations": [
@@ -562,6 +596,7 @@
     ]
   },
   {
+    "filename": "Carnegie Mellon University",
     "country": "United States",
     "name": "Carnegie Mellon University",
     "locations": [
@@ -578,6 +613,7 @@
     ]
   },
   {
+    "filename": "Columbia University",
     "country": "United States",
     "name": "Columbia University",
     "locations": [
@@ -592,6 +628,7 @@
     "acronyms": []
   },
   {
+    "filename": "Cornell University",
     "country": "United States",
     "name": "Cornell University",
     "locations": [
@@ -606,6 +643,7 @@
     "acronyms": []
   },
   {
+    "filename": "Duke University",
     "country": "United States",
     "name": "Duke University",
     "locations": [
@@ -620,6 +658,7 @@
     "acronyms": []
   },
   {
+    "filename": "Georgia Institute of Technology",
     "country": "United States",
     "name": "Georgia Institute of Technology",
     "locations": [
@@ -638,6 +677,7 @@
     ]
   },
   {
+    "filename": "Harvard University",
     "country": "United States",
     "name": "Harvard University",
     "locations": [
@@ -652,6 +692,7 @@
     "acronyms": []
   },
   {
+    "filename": "Johns Hopkins University",
     "country": "United States",
     "name": "Johns Hopkins University",
     "locations": [
@@ -668,6 +709,7 @@
     ]
   },
   {
+    "filename": "Massachusetts Institute of Technology",
     "country": "United States",
     "name": "Massachusetts Institute of Technology (MIT)",
     "locations": [
@@ -684,6 +726,7 @@
     ]
   },
   {
+    "filename": "New York University",
     "country": "United States",
     "name": "New York University",
     "locations": [
@@ -700,6 +743,7 @@
     ]
   },
   {
+    "filename": "Northwestern University",
     "country": "United States",
     "name": "Northwestern University",
     "locations": [
@@ -716,6 +760,7 @@
     ]
   },
   {
+    "filename": "Princeton University",
     "country": "United States",
     "name": "Princeton University",
     "locations": [
@@ -730,6 +775,7 @@
     "acronyms": []
   },
   {
+    "filename": "Stanford University",
     "country": "United States",
     "name": "Stanford University",
     "locations": [
@@ -744,6 +790,7 @@
     "acronyms": []
   },
   {
+    "filename": "University of California Berkeley",
     "country": "United States",
     "name": "University of California, Berkeley",
     "locations": [
@@ -762,6 +809,7 @@
     ]
   },
   {
+    "filename": "University of California Los Angeles",
     "country": "United States",
     "name": "University of California Los Angeles",
     "locations": [
@@ -778,6 +826,7 @@
     ]
   },
   {
+    "filename": "University of California San Diego",
     "country": "United States",
     "name": "University of California San Diego",
     "locations": [
@@ -795,6 +844,7 @@
     ]
   },
   {
+    "filename": "University of Chicago",
     "country": "United States",
     "name": "University of Chicago",
     "locations": [
@@ -811,6 +861,7 @@
     ]
   },
   {
+    "filename": "University of Illinois at Urbana-Champaign",
     "country": "United States",
     "name": "University of Illinois at Urbana-Champaign",
     "locations": [
@@ -828,6 +879,7 @@
     ]
   },
   {
+    "filename": "University of Michigan Ann Arbor",
     "country": "United States",
     "name": "University of Michigan Ann Arbor",
     "locations": [
@@ -844,6 +896,7 @@
     ]
   },
   {
+    "filename": "University of Pennsylvania",
     "country": "United States",
     "name": "University of Pennsylvania",
     "locations": [
@@ -860,6 +913,7 @@
     ]
   },
   {
+    "filename": "University of Washington Seattle",
     "country": "United States",
     "name": "University of Washington Seattle",
     "locations": [
@@ -876,6 +930,7 @@
     ]
   },
   {
+    "filename": "Yale University",
     "country": "United States",
     "name": "Yale University",
     "locations": [

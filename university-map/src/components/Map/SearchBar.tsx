@@ -25,7 +25,7 @@ const SearchBar = (props: SearchBarProps) => {
     searchStr = searchStr.toLowerCase();
     const univ = univData.get(searchStr);
     if (univ !== undefined) {
-      props.onSearch(univ.country, univ.name);
+      props.onSearch(univ.country, univ.filename);
       return;
     }
   }, [props, univData]);

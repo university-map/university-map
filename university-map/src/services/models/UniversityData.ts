@@ -10,6 +10,7 @@ class Location {
 
 class UniversityIndex {
   constructor(
+    public filename: string = '',
     public name: string = '',
     public country: string = '',
     public locations: Location[] = [],
