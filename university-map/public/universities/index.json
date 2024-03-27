@@ -1,5 +1,20 @@
 [
   {
+    "filename": "Monash University",
+    "country": "Australia",
+    "name": "Monash University",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          -37.90822663040592,
+          145.1323936203974
+        ]
+      }
+    ],
+    "acronyms": []
+  },
+  {
     "filename": "University of Melbourne",
     "country": "Australia",
     "name": "University of Melbourne",
@@ -13,6 +28,57 @@
       }
     ],
     "acronyms": []
+  },
+  {
+    "filename": "University of New South Wales Sydney",
+    "country": "Australia",
+    "name": "University of New South Wales Sydney",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          -33.917204521028594,
+          151.23131041215254
+        ]
+      }
+    ],
+    "acronyms": [
+      "UNSW"
+    ]
+  },
+  {
+    "filename": "University of Queensland",
+    "country": "Australia",
+    "name": "University of Queensland",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          -27.49274781901136,
+          153.013302246438
+        ]
+      }
+    ],
+    "acronyms": [
+      "UQ"
+    ]
+  },
+  {
+    "filename": "University of Sydney",
+    "country": "Australia",
+    "name": "University of Sydney",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          -33.888163603410774,
+          151.18670042380262
+        ]
+      }
+    ],
+    "acronyms": [
+      "USYD"
+    ]
   },
   {
     "filename": "KU Leuven",
@@ -52,8 +118,8 @@
       {
         "name": "Main Campus",
         "coordinates": [
-          49.34976844211286,
-          -123.30384063646677
+          49.26076960896727,
+          -123.24597196309536
         ]
       }
     ],
@@ -306,6 +372,23 @@
     ]
   },
   {
+    "filename": "University of Amsterdam",
+    "country": "Netherlands",
+    "name": "University of Amsterdam",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          52.35627419040054,
+          4.9557263485802485
+        ]
+      }
+    ],
+    "acronyms": [
+      "UvA"
+    ]
+  },
+  {
     "filename": "Lomonosov Moscow State University",
     "country": "Russian Federation",
     "name": "Lomonosov Moscow State University",
@@ -385,6 +468,23 @@
     ],
     "acronyms": [
       "SNU"
+    ]
+  },
+  {
+    "filename": "Karolinska Institute",
+    "country": "Sweden",
+    "name": "Karolinska Institute",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          59.349163279913085,
+          18.023297982380054
+        ]
+      }
+    ],
+    "acronyms": [
+      "KI"
     ]
   },
   {
@@ -562,6 +662,23 @@
       }
     ],
     "acronyms": []
+  },
+  {
+    "filename": "University of Manchester",
+    "country": "United Kingdom",
+    "name": "University of Manchester",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          53.46700305392848,
+          -2.2339909910043962
+        ]
+      }
+    ],
+    "acronyms": [
+      "UoM"
+    ]
   },
   {
     "filename": "University of Oxford",
@@ -792,7 +909,7 @@
   {
     "filename": "University of California Berkeley",
     "country": "United States",
-    "name": "University of California, Berkeley",
+    "name": "University of California Berkeley",
     "locations": [
       {
         "name": "Main Campus",
@@ -841,6 +958,24 @@
     "acronyms": [
       "UCSD",
       "UC San Diego"
+    ]
+  },
+  {
+    "filename": "University of California San Francisco",
+    "country": "United States",
+    "name": "University of California San Francisco",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          37.76272471870086,
+          -122.45869411830733
+        ]
+      }
+    ],
+    "acronyms": [
+      "UCSF",
+      "UC San Francisco"
     ]
   },
   {
@@ -896,6 +1031,23 @@
     ]
   },
   {
+    "filename": "University of North Carolina Chapel Hill",
+    "country": "United States",
+    "name": "University of North Carolina Chapel Hill",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          35.905103358107105,
+          -79.04687048805062
+        ]
+      }
+    ],
+    "acronyms": [
+      "UNC"
+    ]
+  },
+  {
     "filename": "University of Pennsylvania",
     "country": "United States",
     "name": "University of Pennsylvania",
@@ -913,6 +1065,23 @@
     ]
   },
   {
+    "filename": "University of Texas Austin",
+    "country": "United States",
+    "name": "University of Texas Austin",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          30.28523219674906,
+          -97.73347968822702
+        ]
+      }
+    ],
+    "acronyms": [
+      "UT Austin"
+    ]
+  },
+  {
     "filename": "University of Washington Seattle",
     "country": "United States",
     "name": "University of Washington Seattle",
@@ -927,6 +1096,23 @@
     ],
     "acronyms": [
       "UW"
+    ]
+  },
+  {
+    "filename": "Washington University in St. Louis",
+    "country": "United States",
+    "name": "Washington University in St. Louis",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          38.64897381179142,
+          -90.31089276280693
+        ]
+      }
+    ],
+    "acronyms": [
+      "WUSTL"
     ]
   },
   {

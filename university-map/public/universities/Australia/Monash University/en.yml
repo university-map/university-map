@@ -1,0 +1,12 @@
+name: Monash University
+address: Wellington Rd, Clayton, Victoria 3800 Australia
+website: https://www.monash.edu/
+locations:
+  - name: Main Campus
+    coordinates: [-37.90822663040592, 145.1323936203974]
+acronyms: []
+banner: https://www.monash.edu/__data/assets/image/0004/512086/Monash-Feature-Box-Caulfield-About.jpg
+introduction: >-
+  TBD
+gallery:
+  []

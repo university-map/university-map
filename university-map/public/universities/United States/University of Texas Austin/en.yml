@@ -1,0 +1,13 @@
+name: University of Texas Austin
+address: Austin, TX 78712-1111 United States
+website: https://www.utexas.edu/
+locations:
+  - name: Main Campus
+    coordinates: [30.28523219674906, -97.73347968822702]
+acronyms: [UT Austin]
+banner: https://www.utexas.edu/sites/default/files/styles/utexas_hero_photo_image/public/hero-photos/maincampus_hero.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

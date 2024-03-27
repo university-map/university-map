@@ -1,0 +1,13 @@
+name: University of Amsterdam
+address: Spui 21, Amsterdam 1012 WX Netherlands
+website: https://www.uva.nl/en/home
+locations:
+  - name: Main Campus
+    coordinates: [52.35627419040054, 4.9557263485802485]
+acronyms: [UvA]
+banner: https://www.uva.nl/binaries/_ht_1701906590410/1024x700-jpg/content/gallery/faculteiten-en-diensten/eb/werken-bij-eb/hippo_jpg-rec-van-boven---108249.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

@@ -1,0 +1,13 @@
+name: University of California San Francisco
+address: 500 Parnassus Ave, San Francisco, CA 94143 United States
+website: https://www.ucsf.edu/
+locations:
+  - name: Main Campus
+    coordinates: [37.76272471870086, -122.45869411830733]
+acronyms: [UCSF, UC San Francisco]
+banner: https://www.ucsf.edu/sites/default/files/styles/full_width_page_banner__image/public/2019-03/parnassus-downtown-aerial5.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

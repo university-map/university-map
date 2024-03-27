@@ -1,0 +1,12 @@
+name: University of Sydney
+address: Sydney, New South Wales 2006 Australia
+website: https://www.sydney.edu.au/
+locations:
+  - name: Main Campus
+    coordinates: [-33.888163603410774, 151.18670042380262]
+acronyms: [USYD]
+banner: https://www.sydney.edu.au/content/dam/corporate/images/to-be-deleted/target-personalisation/Main_Quadrangle_University_of_Sydney.jpg
+introduction: >-
+  TBD
+gallery:
+  []

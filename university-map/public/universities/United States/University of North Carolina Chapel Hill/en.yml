@@ -1,0 +1,13 @@
+name: University of North Carolina Chapel Hill
+address: Chapel Hill, NC 27599 United States
+website: https://www.unc.edu/
+locations:
+  - name: Main Campus
+    coordinates: [35.905103358107105, -79.04687048805062]
+acronyms: [UNC]
+banner: https://www.unc.edu/wp-content/uploads/2020/09/007620_coronavirus_campus_scenes0491-1-e1600351682988-1200x675.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

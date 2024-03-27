@@ -1,13 +1,13 @@
-name: "Seoul National University"
-address: "1 Gwanak-ro, Gwanak-gu, Seoul 151-742 South Korea"
-website: "https://en.snu.ac.kr/index.html"
+name: Seoul National University
+address: 1 Gwanak-ro, Gwanak-gu, Seoul 151-742 South Korea
+website: https://en.snu.ac.kr/index.html
 locations:
-  - name: "Gwanak Campus"
+  - name: Gwanak Campus
     coordinates: [37.46019184872756, 126.95086487602497]
-  - name: "Yeongeon Campus"
+  - name: Yeongeon Campus
     coordinates: [37.58120712456937, 126.99948223527062]
-acronyms: ["SNU"]
-banner: "https://uploaded.kcampus.kr/3_d44c03b545.jpg"
+acronyms: [SNU]
+banner: https://uploaded.kcampus.kr/3_d44c03b545.jpg
 introduction: >-
   Seoul National University (SNU; Korean: 서울대학교; lit. Seoul University) is a public research university
   located in Seoul, South Korea. It is one of the SKY universities and a part of the Flagship Korean National
