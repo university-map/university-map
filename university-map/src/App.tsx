@@ -14,7 +14,7 @@ function App() {
           <Route path='/:lang' element={<Navigate to={`/${i18n.language}/university`} />} />
           <Route path='/:lang/university' element={<Map />} />
           <Route path='/:lang/university/:country/:university' element={<Map />} />
-          <Route path="*" Component={NotFound}></Route>
+          <Route path='*' Component={NotFound}></Route>
         </Routes>
       </div>
     </div>

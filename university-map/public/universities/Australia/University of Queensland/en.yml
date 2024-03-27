@@ -1,0 +1,12 @@
+name: University of Queensland
+address: Brisbane, Queensland 4072 Australia
+website: https://www.uq.edu.au/
+locations:
+  - name: Main Campus
+    coordinates: [-27.49274781901136, 153.013302246438]
+acronyms: [UQ]
+banner: https://www.uq.edu.au/news/filething/get-styled/large/140237/Entry%20sign.jpg
+introduction: >-
+  TBD
+gallery:
+  []

@@ -1,0 +1,12 @@
+name: Karolinska Institute
+address: Solnavägen 1, Solna, Stockholm SE-171 77 Sweden
+website: https://ki.se/en
+locations:
+  - name: Main Campus
+    coordinates: [59.349163279913085, 18.023297982380054]
+acronyms: [KI]
+banner: https://ki.se/sites/kise/files/styles/article_full_width/public/qbank/webbild_etikradet-custom20201204150522.jpg
+introduction: >-
+  TBD
+gallery:
+  []

@@ -1,0 +1,12 @@
+name: University of New South Wales Sydney
+address: High St., Kensington, New South Wales 2052 Australia
+website: https://www.unsw.edu.au/
+locations:
+  - name: Main Campus
+    coordinates: [-33.917204521028594, 151.23131041215254]
+acronyms: [UNSW]
+banner: https://newsroom.unsw.edu.au/sites/default/files/styles/full_width__2x/public/thumbnails/image/unsw_library_lawn_2_0_3.jpg
+introduction: >-
+  TBD
+gallery:
+  []
