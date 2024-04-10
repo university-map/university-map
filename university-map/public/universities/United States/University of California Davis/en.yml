@@ -1,0 +1,13 @@
+name: University of California Davis
+address: 1 Shields Avenue, Davis, CA 95616 United States
+website: https://www.ucdavis.edu/
+locations:
+  - name: Main Campus
+    coordinates: [38.53845878407319, -121.76184124706667]
+acronyms: [UCD, UC Davis]
+banner: https://www.ucdavis.edu/sites/default/files/styles/sf_landscape_16x9/public/images/article/campusoverview72.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

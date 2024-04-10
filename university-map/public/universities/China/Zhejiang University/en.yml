@@ -1,0 +1,13 @@
+name: Zhejiang University
+address: 866 Yuhangtang Road, Hangzhou, Zhejiang 310058 China
+website: https://www.zju.edu.cn/english/
+locations:
+  - name: Main Campus
+    coordinates: [30.3088140484319, 120.08641366575512]
+acronyms: [ZJU]
+banner: https://www.zju.edu.cn/_upload/article/images/5f/73/516353aa41ad8ad8cbc42839f6f5/2212966d-2e10-46d6-a5ac-365591b50bdd.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

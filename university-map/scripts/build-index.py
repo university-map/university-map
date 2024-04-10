@@ -52,7 +52,7 @@ def build_index_json():
         country_path = os.path.join(root_path, country)
         universities = [d for d in os.listdir(country_path)]
         for univ in universities:
-            univObj = { "filename": univ, "country": country }
+            univObj = { "directoryName": univ, "country": country }
             univObj["name"], univObj["locations"], univObj["acronyms"] = get_univ_data(os.path.join(country_path, univ))
             index_data.append(univObj)
 

@@ -32,14 +32,14 @@ function Map() {
   const { i18n } = useTranslation();
   const dataLoader = DataLoader.getInstance();
 
-  const showUniversity = useCallback(async (countryName: string, universityName: string) => {
-    const univInfo = await dataLoader.getUnivInfo(countryName, universityName, i18n.language);
-    navigate(`/${i18n.language}/university/${countryName}/${universityName}`);
+  const showUniversity = useCallback(async (countryName: string, directoryName: string) => {
+    const univInfo = await dataLoader.getUnivInfo(countryName, directoryName, i18n.language);
+    navigate(`/${i18n.language}/university/${countryName}/${directoryName}`);
     setSelectedUniv(univInfo);
     setMarkers((prevMarkers) => {
       return prevMarkers.map((marker) => {
         return React.cloneElement(marker, {
-          iconColor: marker.props.countryName === countryName && marker.props.universityName === universityName ? 'red' : 'blue'
+          iconColor: marker.props.countryName === countryName && marker.props.directoryName === directoryName ? 'red' : 'blue'
         });
       });
     });
@@ -59,7 +59,7 @@ function Map() {
           newMarkers.push(
             <MapMarker
               key={`${univ.country}+${univ.name}+${location.name}`}
-              filename={univ.filename}
+              directoryName={univ.directoryName}
               countryName={univ.country}
               universityName={univ.name}
               coordinates={location.coordinates}

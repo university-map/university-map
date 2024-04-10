@@ -1,0 +1,12 @@
+name: Australian National University
+address: Canberra, Australian Capital Territory 0200 Australia
+website: http://www.anu.edu.au/
+locations:
+  - name: Main Campus
+    coordinates: [-35.28098176699643, 149.11829161036266]
+acronyms: []
+banner: https://www.anu.edu.au/files/styles/anu_full_1180_660/public/article/images/University%2520Avenue%2520and%2520Kambri.jpg
+introduction: >-
+  TBD
+gallery:
+  []
