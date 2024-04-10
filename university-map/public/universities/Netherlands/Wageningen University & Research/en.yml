@@ -1,0 +1,13 @@
+name: Wageningen University & Research
+address: Droevendaalsesteeg 4, Wageningen 6708 PB Netherlands
+website: https://www.wur.nl/en.htm
+locations:
+  - name: Main Campus
+    coordinates: [52.004137783414684, 5.669734348435309]
+acronyms: [WUR]
+banner: https://www.wur.nl/upload_mm/d/d/b/9cc1bfbb-84d6-417b-a3f7-1e99bf50ed6e_1678004707507%20%28002%29_8f1d0f70_460x319.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

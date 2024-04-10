@@ -1,6 +1,21 @@
 [
   {
-    "filename": "Monash University",
+    "directoryName": "Australian National University",
+    "country": "Australia",
+    "name": "Australian National University",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          -35.28098176699643,
+          149.11829161036266
+        ]
+      }
+    ],
+    "acronyms": []
+  },
+  {
+    "directoryName": "Monash University",
     "country": "Australia",
     "name": "Monash University",
     "locations": [
@@ -15,7 +30,7 @@
     "acronyms": []
   },
   {
-    "filename": "University of Melbourne",
+    "directoryName": "University of Melbourne",
     "country": "Australia",
     "name": "University of Melbourne",
     "locations": [
@@ -30,7 +45,7 @@
     "acronyms": []
   },
   {
-    "filename": "University of New South Wales Sydney",
+    "directoryName": "University of New South Wales Sydney",
     "country": "Australia",
     "name": "University of New South Wales Sydney",
     "locations": [
@@ -47,7 +62,7 @@
     ]
   },
   {
-    "filename": "University of Queensland",
+    "directoryName": "University of Queensland",
     "country": "Australia",
     "name": "University of Queensland",
     "locations": [
@@ -64,7 +79,7 @@
     ]
   },
   {
-    "filename": "University of Sydney",
+    "directoryName": "University of Sydney",
     "country": "Australia",
     "name": "University of Sydney",
     "locations": [
@@ -81,7 +96,7 @@
     ]
   },
   {
-    "filename": "KU Leuven",
+    "directoryName": "KU Leuven",
     "country": "Belgium",
     "name": "KU Leuven",
     "locations": [
@@ -96,7 +111,7 @@
     "acronyms": []
   },
   {
-    "filename": "McGill University",
+    "directoryName": "McGill University",
     "country": "Canada",
     "name": "McGill University",
     "locations": [
@@ -111,7 +126,7 @@
     "acronyms": []
   },
   {
-    "filename": "University of British Columbia",
+    "directoryName": "University of British Columbia",
     "country": "Canada",
     "name": "University of British Columbia",
     "locations": [
@@ -128,7 +143,7 @@
     ]
   },
   {
-    "filename": "University of Toronto",
+    "directoryName": "University of Toronto",
     "country": "Canada",
     "name": "University of Toronto",
     "locations": [
@@ -146,7 +161,7 @@
     ]
   },
   {
-    "filename": "Fudan University",
+    "directoryName": "Fudan University",
     "country": "China",
     "name": "Fudan University",
     "locations": [
@@ -161,7 +176,7 @@
     "acronyms": []
   },
   {
-    "filename": "Peking University",
+    "directoryName": "Peking University",
     "country": "China",
     "name": "Peking University",
     "locations": [
@@ -178,7 +193,7 @@
     ]
   },
   {
-    "filename": "Shanghai Jiao Tong University",
+    "directoryName": "Shanghai Jiao Tong University",
     "country": "China",
     "name": "Shanghai Jiao Tong University",
     "locations": [
@@ -195,7 +210,7 @@
     ]
   },
   {
-    "filename": "Tsinghua University",
+    "directoryName": "Tsinghua University",
     "country": "China",
     "name": "Tsinghua University",
     "locations": [
@@ -212,7 +227,58 @@
     ]
   },
   {
-    "filename": "Paris Sciences et Lettres",
+    "directoryName": "University of Science & Technology of China",
+    "country": "China",
+    "name": "University of Science & Technology of China",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          31.82621111621824,
+          117.27854611303219
+        ]
+      }
+    ],
+    "acronyms": [
+      "USTC"
+    ]
+  },
+  {
+    "directoryName": "Zhejiang University",
+    "country": "China",
+    "name": "Zhejiang University",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          30.3088140484319,
+          120.08641366575512
+        ]
+      }
+    ],
+    "acronyms": [
+      "ZJU"
+    ]
+  },
+  {
+    "directoryName": "University of Copenhagen",
+    "country": "Denmark",
+    "name": "University of Copenhagen",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          55.68041779273543,
+          12.572345224444987
+        ]
+      }
+    ],
+    "acronyms": [
+      "KU"
+    ]
+  },
+  {
+    "directoryName": "Paris Sciences et Lettres",
     "country": "France",
     "name": "Paris Sciences et Lettres (PSL)",
     "locations": [
@@ -229,7 +295,24 @@
     ]
   },
   {
-    "filename": "Heidelberg University",
+    "directoryName": "Universite Paris Saclay",
+    "country": "France",
+    "name": "Universite Paris Saclay",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          48.71050772293519,
+          2.166786483349348
+        ]
+      }
+    ],
+    "acronyms": [
+      "UPS"
+    ]
+  },
+  {
+    "directoryName": "Heidelberg University",
     "country": "Germany",
     "name": "Ruprecht Karls University Heidelberg",
     "locations": [
@@ -244,7 +327,7 @@
     "acronyms": []
   },
   {
-    "filename": "Technical University of Munich",
+    "directoryName": "Technical University of Munich",
     "country": "Germany",
     "name": "Technical University of Munich",
     "locations": [
@@ -269,7 +352,7 @@
     ]
   },
   {
-    "filename": "University of Munich",
+    "directoryName": "University of Munich",
     "country": "Germany",
     "name": "University of Munich (LMU)",
     "locations": [
@@ -287,7 +370,24 @@
     ]
   },
   {
-    "filename": "University of Hong Kong",
+    "directoryName": "Hong Kong University of Science & Technology",
+    "country": "Hong Kong",
+    "name": "Hong Kong University of Science & Technology",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          22.33772284964602,
+          114.26349545575204
+        ]
+      }
+    ],
+    "acronyms": [
+      "HKUST"
+    ]
+  },
+  {
+    "directoryName": "University of Hong Kong",
     "country": "Hong Kong",
     "name": "University of Hong Kong",
     "locations": [
@@ -304,7 +404,7 @@
     ]
   },
   {
-    "filename": "Indian Institute of Science",
+    "directoryName": "Indian Institute of Science",
     "country": "India",
     "name": "Indian Institute of Science",
     "locations": [
@@ -321,7 +421,7 @@
     ]
   },
   {
-    "filename": "Kyoto University",
+    "directoryName": "Kyoto University",
     "country": "Japan",
     "name": "Kyoto University",
     "locations": [
@@ -338,7 +438,7 @@
     ]
   },
   {
-    "filename": "The University of Tokyo",
+    "directoryName": "The University of Tokyo",
     "country": "Japan",
     "name": "The University of Tokyo",
     "locations": [
@@ -355,7 +455,7 @@
     ]
   },
   {
-    "filename": "Delft University of Technology",
+    "directoryName": "Delft University of Technology",
     "country": "Netherlands",
     "name": "Delft University of Technology",
     "locations": [
@@ -372,7 +472,7 @@
     ]
   },
   {
-    "filename": "University of Amsterdam",
+    "directoryName": "University of Amsterdam",
     "country": "Netherlands",
     "name": "University of Amsterdam",
     "locations": [
@@ -389,7 +489,41 @@
     ]
   },
   {
-    "filename": "Lomonosov Moscow State University",
+    "directoryName": "Utrecht University",
+    "country": "Netherlands",
+    "name": "Utrecht University",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          52.08532091957854,
+          5.175824214461198
+        ]
+      }
+    ],
+    "acronyms": [
+      "UU"
+    ]
+  },
+  {
+    "directoryName": "Wageningen University & Research",
+    "country": "Netherlands",
+    "name": "Wageningen University & Research",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          52.004137783414684,
+          5.669734348435309
+        ]
+      }
+    ],
+    "acronyms": [
+      "WUR"
+    ]
+  },
+  {
+    "directoryName": "Lomonosov Moscow State University",
     "country": "Russian Federation",
     "name": "Lomonosov Moscow State University",
     "locations": [
@@ -406,7 +540,7 @@
     ]
   },
   {
-    "filename": "Nanyang Technological University",
+    "directoryName": "Nanyang Technological University",
     "country": "Singapore",
     "name": "Nanyang Technological University",
     "locations": [
@@ -423,7 +557,7 @@
     ]
   },
   {
-    "filename": "National University of Singapore",
+    "directoryName": "National University of Singapore",
     "country": "Singapore",
     "name": "National University of Singapore",
     "locations": [
@@ -447,7 +581,7 @@
     ]
   },
   {
-    "filename": "Seoul National University",
+    "directoryName": "Seoul National University",
     "country": "South Korea",
     "name": "Seoul National University",
     "locations": [
@@ -471,7 +605,7 @@
     ]
   },
   {
-    "filename": "Karolinska Institute",
+    "directoryName": "Karolinska Institute",
     "country": "Sweden",
     "name": "Karolinska Institute",
     "locations": [
@@ -488,7 +622,7 @@
     ]
   },
   {
-    "filename": "EPFL",
+    "directoryName": "EPFL",
     "country": "Switzerland",
     "name": "École Polytechnique Fédérale de Lausanne (EPFL)",
     "locations": [
@@ -505,7 +639,7 @@
     ]
   },
   {
-    "filename": "ETH Zurich",
+    "directoryName": "ETH Zurich",
     "country": "Switzerland",
     "name": "Eidgenössische Technische Hochschule Zürich (ETH Zurich)",
     "locations": [
@@ -522,7 +656,7 @@
     ]
   },
   {
-    "filename": "National Cheng Kung University",
+    "directoryName": "National Cheng Kung University",
     "country": "Taiwan",
     "name": "National Cheng Kung University",
     "locations": [
@@ -547,7 +681,7 @@
     ]
   },
   {
-    "filename": "National Taiwan University",
+    "directoryName": "National Taiwan University",
     "country": "Taiwan",
     "name": "National Taiwan University",
     "locations": [
@@ -565,7 +699,7 @@
     ]
   },
   {
-    "filename": "National Tsing Hua University",
+    "directoryName": "National Tsing Hua University",
     "country": "Taiwan",
     "name": "National Tsing Hua University",
     "locations": [
@@ -583,7 +717,7 @@
     ]
   },
   {
-    "filename": "Imperial College London",
+    "directoryName": "Imperial College London",
     "country": "United Kingdom",
     "name": "Imperial College London",
     "locations": [
@@ -600,7 +734,7 @@
     ]
   },
   {
-    "filename": "Kings College London",
+    "directoryName": "Kings College London",
     "country": "United Kingdom",
     "name": "King's College London",
     "locations": [
@@ -617,7 +751,7 @@
     ]
   },
   {
-    "filename": "University College London",
+    "directoryName": "University College London",
     "country": "United Kingdom",
     "name": "University College London (UCL)",
     "locations": [
@@ -634,7 +768,7 @@
     ]
   },
   {
-    "filename": "University of Cambridge",
+    "directoryName": "University of Cambridge",
     "country": "United Kingdom",
     "name": "University of Cambridge",
     "locations": [
@@ -649,7 +783,7 @@
     "acronyms": []
   },
   {
-    "filename": "University of Edinburgh",
+    "directoryName": "University of Edinburgh",
     "country": "United Kingdom",
     "name": "University of Edinburgh",
     "locations": [
@@ -664,7 +798,7 @@
     "acronyms": []
   },
   {
-    "filename": "University of Manchester",
+    "directoryName": "University of Manchester",
     "country": "United Kingdom",
     "name": "University of Manchester",
     "locations": [
@@ -681,7 +815,7 @@
     ]
   },
   {
-    "filename": "University of Oxford",
+    "directoryName": "University of Oxford",
     "country": "United Kingdom",
     "name": "University of Oxford",
     "locations": [
@@ -696,7 +830,22 @@
     "acronyms": []
   },
   {
-    "filename": "California Institute of Technology",
+    "directoryName": "Brown University",
+    "country": "United States",
+    "name": "Brown University",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          42.34198122862406,
+          -71.93508885385259
+        ]
+      }
+    ],
+    "acronyms": []
+  },
+  {
+    "directoryName": "California Institute of Technology",
     "country": "United States",
     "name": "California Institute of Technology",
     "locations": [
@@ -713,7 +862,7 @@
     ]
   },
   {
-    "filename": "Carnegie Mellon University",
+    "directoryName": "Carnegie Mellon University",
     "country": "United States",
     "name": "Carnegie Mellon University",
     "locations": [
@@ -730,7 +879,7 @@
     ]
   },
   {
-    "filename": "Columbia University",
+    "directoryName": "Columbia University",
     "country": "United States",
     "name": "Columbia University",
     "locations": [
@@ -745,7 +894,7 @@
     "acronyms": []
   },
   {
-    "filename": "Cornell University",
+    "directoryName": "Cornell University",
     "country": "United States",
     "name": "Cornell University",
     "locations": [
@@ -760,7 +909,7 @@
     "acronyms": []
   },
   {
-    "filename": "Duke University",
+    "directoryName": "Duke University",
     "country": "United States",
     "name": "Duke University",
     "locations": [
@@ -775,7 +924,7 @@
     "acronyms": []
   },
   {
-    "filename": "Georgia Institute of Technology",
+    "directoryName": "Georgia Institute of Technology",
     "country": "United States",
     "name": "Georgia Institute of Technology",
     "locations": [
@@ -794,7 +943,7 @@
     ]
   },
   {
-    "filename": "Harvard University",
+    "directoryName": "Harvard University",
     "country": "United States",
     "name": "Harvard University",
     "locations": [
@@ -809,7 +958,7 @@
     "acronyms": []
   },
   {
-    "filename": "Johns Hopkins University",
+    "directoryName": "Johns Hopkins University",
     "country": "United States",
     "name": "Johns Hopkins University",
     "locations": [
@@ -826,7 +975,7 @@
     ]
   },
   {
-    "filename": "Massachusetts Institute of Technology",
+    "directoryName": "Massachusetts Institute of Technology",
     "country": "United States",
     "name": "Massachusetts Institute of Technology (MIT)",
     "locations": [
@@ -843,7 +992,7 @@
     ]
   },
   {
-    "filename": "New York University",
+    "directoryName": "New York University",
     "country": "United States",
     "name": "New York University",
     "locations": [
@@ -860,7 +1009,7 @@
     ]
   },
   {
-    "filename": "Northwestern University",
+    "directoryName": "Northwestern University",
     "country": "United States",
     "name": "Northwestern University",
     "locations": [
@@ -877,7 +1026,7 @@
     ]
   },
   {
-    "filename": "Princeton University",
+    "directoryName": "Princeton University",
     "country": "United States",
     "name": "Princeton University",
     "locations": [
@@ -892,7 +1041,7 @@
     "acronyms": []
   },
   {
-    "filename": "Stanford University",
+    "directoryName": "Stanford University",
     "country": "United States",
     "name": "Stanford University",
     "locations": [
@@ -907,7 +1056,7 @@
     "acronyms": []
   },
   {
-    "filename": "University of California Berkeley",
+    "directoryName": "University of California Berkeley",
     "country": "United States",
     "name": "University of California Berkeley",
     "locations": [
@@ -926,7 +1075,25 @@
     ]
   },
   {
-    "filename": "University of California Los Angeles",
+    "directoryName": "University of California Davis",
+    "country": "United States",
+    "name": "University of California Davis",
+    "locations": [
+      {
+        "name": "Main Campus",
+        "coordinates": [
+          38.53845878407319,
+          -121.76184124706667
+        ]
+      }
+    ],
+    "acronyms": [
+      "UCD",
+      "UC Davis"
+    ]
+  },
+  {
+    "directoryName": "University of California Los Angeles",
     "country": "United States",
     "name": "University of California Los Angeles",
     "locations": [
@@ -943,7 +1110,7 @@
     ]
   },
   {
-    "filename": "University of California San Diego",
+    "directoryName": "University of California San Diego",
     "country": "United States",
     "name": "University of California San Diego",
     "locations": [
@@ -961,7 +1128,7 @@
     ]
   },
   {
-    "filename": "University of California San Francisco",
+    "directoryName": "University of California San Francisco",
     "country": "United States",
     "name": "University of California San Francisco",
     "locations": [
@@ -979,7 +1146,7 @@
     ]
   },
   {
-    "filename": "University of Chicago",
+    "directoryName": "University of Chicago",
     "country": "United States",
     "name": "University of Chicago",
     "locations": [
@@ -996,7 +1163,7 @@
     ]
   },
   {
-    "filename": "University of Illinois at Urbana-Champaign",
+    "directoryName": "University of Illinois at Urbana-Champaign",
     "country": "United States",
     "name": "University of Illinois at Urbana-Champaign",
     "locations": [
@@ -1014,7 +1181,7 @@
     ]
   },
   {
-    "filename": "University of Michigan Ann Arbor",
+    "directoryName": "University of Michigan Ann Arbor",
     "country": "United States",
     "name": "University of Michigan Ann Arbor",
     "locations": [
@@ -1031,7 +1198,7 @@
     ]
   },
   {
-    "filename": "University of North Carolina Chapel Hill",
+    "directoryName": "University of North Carolina Chapel Hill",
     "country": "United States",
     "name": "University of North Carolina Chapel Hill",
     "locations": [
@@ -1048,7 +1215,7 @@
     ]
   },
   {
-    "filename": "University of Pennsylvania",
+    "directoryName": "University of Pennsylvania",
     "country": "United States",
     "name": "University of Pennsylvania",
     "locations": [
@@ -1065,7 +1232,7 @@
     ]
   },
   {
-    "filename": "University of Texas Austin",
+    "directoryName": "University of Texas Austin",
     "country": "United States",
     "name": "University of Texas Austin",
     "locations": [
@@ -1082,7 +1249,7 @@
     ]
   },
   {
-    "filename": "University of Washington Seattle",
+    "directoryName": "University of Washington Seattle",
     "country": "United States",
     "name": "University of Washington Seattle",
     "locations": [
@@ -1099,7 +1266,7 @@
     ]
   },
   {
-    "filename": "Washington University in St. Louis",
+    "directoryName": "Washington University in St. Louis",
     "country": "United States",
     "name": "Washington University in St. Louis",
     "locations": [
@@ -1116,7 +1283,7 @@
     ]
   },
   {
-    "filename": "Yale University",
+    "directoryName": "Yale University",
     "country": "United States",
     "name": "Yale University",
     "locations": [

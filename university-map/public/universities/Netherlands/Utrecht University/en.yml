@@ -1,0 +1,13 @@
+name: Utrecht University
+address: P.O Box 80125, Utrecht 3508 TC Netherlands
+website: https://www.uu.nl/en
+locations:
+  - name: Main Campus
+    coordinates: [52.08532091957854, 5.175824214461198]
+acronyms: [UU]
+banner: https://www.uu.nl/sites/default/files/styles/image_480x320/public/images/ucu_campus_college_hall_1200x800.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

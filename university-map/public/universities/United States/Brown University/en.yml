@@ -1,0 +1,13 @@
+name: Brown University
+address: Providence, RI 02912 United States
+website: https://www.brown.edu/
+locations:
+  - name: Main Campus
+    coordinates: [42.34198122862406, -71.93508885385259]
+acronyms: []
+banner: https://www.brown.edu/sites/default/files/styles/classic_xsml/public/2019-03/20181031_Brown4_C83T5506.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

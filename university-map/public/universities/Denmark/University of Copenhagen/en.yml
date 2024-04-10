@@ -1,0 +1,13 @@
+name: University of Copenhagen
+address: Nørregade 10, Copenhagen 1165 Denmark
+website: https://www.ku.dk/english/
+locations:
+  - name: Main Campus
+    coordinates: [55.68041779273543, 12.572345224444987]
+acronyms: [KU]
+banner: https://www.ku.dk/statisk-grafik/instagrambilleder/insta_1.png
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

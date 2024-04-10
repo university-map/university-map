@@ -1,0 +1,13 @@
+name: Universite Paris Saclay
+address: Espace Technologique, Bat. Discovery, Saint-Aubin 91190 France
+website: https://www.universite-paris-saclay.fr/en
+locations:
+  - name: Main Campus
+    coordinates: [48.71050772293519, 2.166786483349348]
+acronyms: [UPS]
+banner: https://www.universite-paris-saclay.fr/sites/default/files/styles/large/public/2023-12/campus-agroparistech_0.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

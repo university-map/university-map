@@ -30,7 +30,7 @@ class DataLoader implements IDataLoader {
       const universities: UniversityIndex[] = data.map((univ: any) => {
         const locations: Location[] = univ.locations.map((loc: any) => new Location(loc.name, loc.coordinates));
         return new UniversityIndex(
-          univ.filename,
+          univ.directoryName,
           univ.name,
           univ.country,
           locations,
@@ -46,20 +46,20 @@ class DataLoader implements IDataLoader {
 
   public async getUnivInfo(
     country: string = 'Taiwan',
-    university: string = 'National Cheng Kung University',
+    directoryName: string = 'National Taiwan University',
     locale: string = 'en'
   ): Promise<UniversityInfo> {
     try {
       let localeData = null;
       if (locale !== 'en') {
-        const response = await fetch(`${DataLoader.Endpoint}/universities/${country}/${university}/${locale}.yml`);
+        const response = await fetch(`${DataLoader.Endpoint}/universities/${country}/${directoryName}/${locale}.yml`);
         if (response.ok) {
           localeData = yaml.load(await response.text()) as any;
         }
       }
 
       let enData = null;
-      const response = await fetch(`${DataLoader.Endpoint}/universities/${country}/${university}/en.yml`);
+      const response = await fetch(`${DataLoader.Endpoint}/universities/${country}/${directoryName}/en.yml`);
       if (response.ok) {
         enData = yaml.load(await response.text()) as any;
       }
