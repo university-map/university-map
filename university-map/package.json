@@ -16,7 +16,7 @@
     "@mantine/hooks": "^7.7.1",
     "embla-carousel-autoplay": "^8.0.2",
     "embla-carousel-react": "^8.0.2",
-    "i18next": "^23.10.1",
+    "i18next": "^23.11.2",
     "js-cookie": "^3.0.5",
     "js-yaml": "^4.1.0",
     "leaflet": "^1.9.4",
