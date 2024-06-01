@@ -1,0 +1,12 @@
+name: Yonsei University
+address: 50 Yonsei-ro, Seodaemun-gu, Seoul 120-749 South Korea
+website: https://www.yonsei.ac.kr/en_sc/index.jsp
+locations:
+  - name: Main Campus
+    coordinates: [37.5664419630153, 126.93871134132425]
+acronyms: [YSU]
+banner: https://www.yonsei.ac.kr/_attach/editor_image/2023-04/grzsdkbnhlpp.jpg
+introduction: >-
+  TBD
+gallery:
+  []

@@ -1,0 +1,13 @@
+name: Vanderbilt University
+address: Nashville, TN 37240 United States
+website: https://www.vanderbilt.edu/
+locations:
+  - name: Main Campus
+    coordinates: [36.144841994021675, -86.80276239173071]
+acronyms: [VU]
+banner: https://www.vanderbilt.edu/150/wp-content/uploads/2023/02/campus-20210316JR005-590x380-c-default.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

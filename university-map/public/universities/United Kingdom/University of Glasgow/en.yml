@@ -1,0 +1,13 @@
+name: University of Glasgow
+address: Gilmorehill Campus, Glasgow, Scotland G12 8QQ United Kingdom
+website: https://www.gla.ac.uk/
+locations:
+  - name: Main Campus
+    coordinates: [55.87251586220627, -4.290086733214994]
+acronyms: [UofG]
+banner: https://www.gla.ac.uk/media/Media_720993_smxx.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

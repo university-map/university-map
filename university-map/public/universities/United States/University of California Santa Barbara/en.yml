@@ -1,0 +1,13 @@
+name: University of California Santa Barbara
+address: Santa Barbara, CA 93106 United States
+website: https://www.ucsb.edu/
+locations:
+  - name: Main Campus
+    coordinates: [34.41411334040055, -119.84900064761436]
+acronyms: [UCSB, UC Santa Barbara]
+banner: https://i.ytimg.com/vi/mJE3Xf5kOWc/maxresdefault.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]
