@@ -1,0 +1,12 @@
+name: University of Zurich
+address: Rämistrasse 71, Zürich CH-8006 Switzerland
+website: https://www.uzh.ch/en.html
+locations:
+  - name: Main Campus
+    coordinates: [47.37472761725841, 8.548705812400078]
+acronyms: [UZH]
+banner: https://www.uzh.ch/irem/ssl-dir/iPSZurich2024/files/Information/Overview/UZH_main_building.jpg
+introduction: >-
+  TBD
+gallery:
+  []

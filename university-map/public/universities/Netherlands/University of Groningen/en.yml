@@ -1,0 +1,13 @@
+name: University of Groningen
+address: Broerstraat 5, Groningen 9700 AB Netherlands
+website: https://www.rug.nl/?lang=en
+locations:
+  - name: Main Campus
+    coordinates: [53.21949359404948, 6.562851555002065]
+acronyms: []
+banner: https://www.rug.nl/ucg/images/groningen1-2.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

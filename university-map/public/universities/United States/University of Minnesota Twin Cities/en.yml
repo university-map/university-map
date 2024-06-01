@@ -1,0 +1,13 @@
+name: University of Minnesota Twin Cities
+address: 100 Church Street SE, Minneapolis, MN 55455-0213 United States
+website: https://twin-cities.umn.edu/
+locations:
+  - name: Main Campus
+    coordinates: [45.290995206229326, -93.25820601947835]
+acronyms: [UMN]
+banner: https://twin-cities.umn.edu/sites/twin-cities.umn.edu/files/UM-East%20Bank1.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

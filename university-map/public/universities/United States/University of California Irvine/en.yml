@@ -1,0 +1,13 @@
+name: University of California Irvine
+address: Irvine, CA 92697 United States
+website: https://www.ucsb.edu/
+locations:
+  - name: Main Campus
+    coordinates: [33.643306261639566, -117.84161915110884]
+acronyms: [UCI, UC Irvine]
+banner: https://www.uci.edu/administration/img/about-administration.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

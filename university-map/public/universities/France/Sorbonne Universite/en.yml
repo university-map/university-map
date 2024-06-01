@@ -1,0 +1,12 @@
+name: Sorbonne Universite
+address: 21, rue de l'Ecole-de-medecine, Paris 75006 France
+website: https://www.sorbonne-universite.fr/en/university
+locations:
+  - name: Main Campus
+    coordinates: [48.85065875837776, 2.3402697586301495]
+acronyms: []
+banner: https://www.sorbonne-universite.fr/sites/default/files/styles/large/public/media/2019-11/Facult%C3%A9s.jpg
+introduction: >-
+  TBD
+gallery:
+  []

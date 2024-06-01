@@ -1,0 +1,13 @@
+name: Boston University
+address: 1 Silber Way, Boston, MA 02215 United States
+website: https://www.bu.edu/
+locations:
+  - name: Main Campus
+    coordinates: [42.350613616558455, -71.10544000068947]
+acronyms: [BU]
+banner: https://www.bu.edu/files/2016/10/h_butoday_15-8448-CAMPUS-028.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

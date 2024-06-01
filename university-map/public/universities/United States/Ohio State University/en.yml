@@ -1,0 +1,13 @@
+name: Ohio State University
+address: 154 W. 12th Avenue, Columbus, OH 43210 United States
+website: https://www.osu.edu/
+locations:
+  - name: Main Campus
+    coordinates: [40.00644226629289, -83.0164979740574]
+acronyms: [OSU]
+banner: https://www.osu.edu/assets/downloads/images/bigpics/UniversityHall_1_1600x1200.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

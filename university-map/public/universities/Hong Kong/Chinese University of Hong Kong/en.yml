@@ -1,0 +1,13 @@
+name: Chinese University of Hong Kong
+address: Pok Ful Lam Road, Pok Fu Lam, Hong Kong
+website: https://www.cuhk.edu.hk/english/index.html
+locations:
+  - name: Main Campus
+    coordinates: [22.4217688198514, 114.20661481101739]
+acronyms: [CUHK]
+banner: https://www.cuhk.edu.hk/english/images/admissions/al-03.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]

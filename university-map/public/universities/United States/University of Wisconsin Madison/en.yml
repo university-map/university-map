@@ -1,0 +1,13 @@
+name: University of Wisconsin Madison
+address: 500 Lincoln Drive, Madison, WI 53706 United States
+website: https://www.wisc.edu/
+locations:
+  - name: Main Campus
+    coordinates: [43.076795727224024, -89.412476774287]
+acronyms: [UW-Madison]
+banner: https://news.wisc.edu/content/uploads/2015/09/aerial_UW_campus_JM13_66672.jpg
+introduction: >-
+  TBD
+gallery:
+  [
+  ]
