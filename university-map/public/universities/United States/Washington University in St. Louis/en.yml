@@ -4,10 +4,12 @@ website: http://www.wustl.edu/
 locations:
   - name: Main Campus
     coordinates: [38.64897381179142, -90.31089276280693]
-acronyms: [WUSTL]
+acronyms: [WUSTL, WashU]
 banner: https://wustl.edu/wp-content/uploads/2014/09/danforth-aerial.jpg
 introduction: >-
-  TBD
+  Washington University in St. Louis, commonly referred to as WashU, is a distinguished private research university founded in 1853.
+  WashU is divided into eight schools, including four undergraduate institutions, and is known for its top-ranked programs such as
+  the George Warren Brown School of Social Work, Olin Business School, School of Law, School of Medicine, and McKelvey School of Engineering.
 gallery:
   [
   ]
