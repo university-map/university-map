@@ -4,10 +4,11 @@ website: https://www.rug.nl/?lang=en
 locations:
   - name: Main Campus
     coordinates: [53.21949359404948, 6.562851555002065]
-acronyms: []
+acronyms: [UG]
 banner: https://www.rug.nl/ucg/images/groningen1-2.jpg
 introduction: >-
-  TBD
+  The University of Groningen is a public research university of more than 30,000 students in the city of Groningen in the Netherlands. Founded in 1614,
+  the university is the second oldest in the country (after Leiden) and one of the most traditional and prestigious universities in the Netherlands.
 gallery:
   [
   ]
