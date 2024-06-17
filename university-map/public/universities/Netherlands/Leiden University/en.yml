@@ -4,10 +4,11 @@ website: https://www.universiteitleiden.nl/en
 locations:
   - name: Main Campus
     coordinates: [52.15666112272208, 4.486645668446078]
-acronyms: []
+acronyms: [LEI]
 banner: https://www.universiteitleiden.nl/binaries/content/gallery/ul2/main-images/general/homepage-headers/unsorted/header-academiegebouw.jpg/header-academiegebouw.jpg/d600x315
 introduction: >-
-  TBD
+  Leiden University is a public research university in Leiden, Netherlands. It was founded as a Protestant university in 1575 by William, Prince of Orange,
+  making it the oldest institution of higher education in the Netherlands.
 gallery:
   [
   ]
