@@ -53,7 +53,6 @@ const SearchBar = (props: SearchBarProps) => {
           }
         }
       }
-      console.log('dropDown:', dropDown);
       setUnivData(map);
       setDropDownData(dropDown);
     };

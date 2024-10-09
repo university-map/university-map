@@ -50,11 +50,11 @@ class DataLoader implements IDataLoader {
     locale: string = 'en'
   ): Promise<UniversityInfo> {
     try {
-      let localeData = null;
+      let data = null;
       if (locale !== 'en') {
         const response = await fetch(`${DataLoader.Endpoint}/universities/${country}/${directoryName}/${locale}.yml`);
         if (response.ok) {
-          localeData = yaml.load(await response.text()) as any;
+          data = yaml.load(await response.text()) as any;
         }
       }
 
@@ -66,12 +66,13 @@ class DataLoader implements IDataLoader {
 
       return new UniversityInfo(
         locale,
-        localeData?.name ?? enData?.name ?? '',
-        localeData?.address ?? enData?.address ?? '',
-        localeData?.website ?? enData?.website ?? '',
-        localeData?.banner ?? enData?.banner ?? '',
-        localeData?.introduction ?? enData?.introduction ?? '',
-        localeData?.gallery ?? enData?.gallery ?? [],
+        data?.name ?? enData?.name ?? '',
+        data?.address ?? enData?.address ?? '',
+        data?.website ?? enData?.website ?? '',
+        data?.banner ?? enData?.banner ?? '',
+        data?.introduction ?? enData?.introduction ?? '',
+        data?.locations ?? enData?.locations ?? [],
+        data?.gallery ?? enData?.gallery ?? [],
       );
     } catch (error) {
       console.error('Error loading university info:', error);

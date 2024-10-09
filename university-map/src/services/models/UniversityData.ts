@@ -27,6 +27,7 @@ class UniversityInfo {
     public website: string = '',
     public banner: string = '',
     public introduction: string = '',
+    public locations: Location[] = [],
     public gallery: string[] = [],
   ) {}
 }

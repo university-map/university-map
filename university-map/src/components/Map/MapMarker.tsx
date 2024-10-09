@@ -20,13 +20,13 @@ const redIcon = new L.Icon({
 });
 
 interface MapMarkerProps {
-  directoryName: string;
   countryName: string;
-  universityName: string;
+  directoryName: string;
   coordinates: L.LatLngTuple;
+  universityName: string;
   locationName: string;
   iconColor: string;
-  onMarkerClick: (country: string, universityName: string) => void;
+  onMarkerClick: (country: string, universityName: string, locationName: string) => void;
 }
 
 const MapMarker = (props: MapMarkerProps) => {
@@ -36,7 +36,7 @@ const MapMarker = (props: MapMarkerProps) => {
       icon={props.iconColor === 'red' ? redIcon : blueIcon}
       eventHandlers={{
         click: () => {
-          props.onMarkerClick(props.countryName, props.directoryName);
+          props.onMarkerClick(props.countryName, props.directoryName, props.locationName);
         },
       }}
     >
@@ -44,7 +44,7 @@ const MapMarker = (props: MapMarkerProps) => {
         <div style={{ textAlign: 'center' }}>
           {props.universityName}
           <br />
-          ({props.locationName})
+          {props.locationName}
         </div>
       </Popup>
     </Marker>

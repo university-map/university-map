@@ -9,6 +9,7 @@ import SearchBar from './Map/SearchBar';
 import MapMarker from './Map/MapMarker';
 import DataLoader from '@/services/DataLoader';
 import { UniversityInfo } from '@/services/models';
+import { isSameLatLng } from '@/utils';
 import 'leaflet/dist/leaflet.css';
 
 const MapController = () => {
@@ -32,25 +33,12 @@ function Map() {
   const { i18n } = useTranslation();
   const dataLoader = DataLoader.getInstance();
 
-  const showUniversity = useCallback(async (countryName: string, directoryName: string) => {
-    const univInfo = await dataLoader.getUnivInfo(countryName, directoryName, i18n.language);
+  const showInfoCard = useCallback(async (countryName: string, directoryName: string) => {
     navigate(`/${i18n.language}/university/${countryName}/${directoryName}`);
-    setSelectedUniv(univInfo);
-    setMarkers((prevMarkers) => {
-      return prevMarkers.map((marker) => {
-        return React.cloneElement(marker, {
-          iconColor: marker.props.countryName === countryName && marker.props.directoryName === directoryName ? 'red' : 'blue'
-        });
-      });
-    });
-  }, [dataLoader, i18n.language, navigate]);
+  }, [i18n.language, navigate]);
 
   useEffect(() => {
     const initMarkers = async () => {
-      if (markers?.length != 0) {
-        // Already initialized
-        return;
-      }
       const univIndex = await dataLoader.getUnivIndex();
       const newMarkers = [];
       for (const univ of univIndex) {
@@ -59,13 +47,13 @@ function Map() {
           newMarkers.push(
             <MapMarker
               key={`${univ.country}+${univ.name}+${location.name}`}
-              directoryName={univ.directoryName}
               countryName={univ.country}
-              universityName={univ.name}
+              directoryName={univ.directoryName}
               coordinates={location.coordinates}
+              universityName={univ.name}
               locationName={location.name}
               iconColor={isSelected ? 'red' : 'blue'}
-              onMarkerClick={showUniversity}
+              onMarkerClick={showInfoCard}
             />
           );
         }
@@ -73,11 +61,40 @@ function Map() {
       setMarkers(newMarkers);
     };
 
-    initMarkers();
-    if (country && university) {
-      dataLoader.getUnivInfo(country, university, i18n.language).then((univInfo) => setSelectedUniv(univInfo));
+    const updateMarkers = async (univInfo: UniversityInfo) => {
+      setMarkers((markers) => {
+        return markers.map((marker) => {
+          // Set the markers of the selected university to red,
+          // and update the location name regarding locale
+          if (marker.props.countryName === country && marker.props.directoryName === university) {
+            const matchedLocations = univInfo.locations.filter((loc) => isSameLatLng(loc.coordinates, marker.props.coordinates));
+            return React.cloneElement(marker, {
+              iconColor: 'red',
+              universityName: univInfo.name,
+              locationName: matchedLocations.length > 0 ? matchedLocations[0].name : marker.props.locationName
+            });
+          }
+
+          // Reset the markers of other universities to blue
+          return React.cloneElement(marker, {
+            iconColor: 'blue'
+          });
+        });
+      });
+    };
+
+    const updateMarkersAndSetSelectedUniv = async () => {
+      const univInfo = await dataLoader.getUnivInfo(country, university, i18n.language);
+      setSelectedUniv(univInfo);
+      updateMarkers(univInfo);
+    };
+
+    if (markers?.length == 0) {
+      initMarkers();
+    } else if (country && university) {
+      updateMarkersAndSetSelectedUniv();
     }
-  }, [country, university, i18n.language, dataLoader, markers?.length, showUniversity]);
+  }, [country, university, i18n.language, dataLoader, markers?.length, showInfoCard]);
 
   const bounds = L.latLngBounds(L.latLng(-90, -180), L.latLng(90, 180));
   const center = JSON.parse(Cookies.get('mapCenter') ?? '[0, 20]');
@@ -85,7 +102,7 @@ function Map() {
   return (
     <main style={{ height: '100vh' }}>
       { country && university ? <InfoCard universityInfo={selectedUniv} /> : null }
-      <SearchBar onSearch={showUniversity} />
+      <SearchBar onSearch={showInfoCard} />
       <MapContainer
         center={center}
         zoom={zoom}
