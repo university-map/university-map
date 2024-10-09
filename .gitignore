@@ -140,3 +140,4 @@ dist
 # misc
 .DS_Store
 *.pem
+university-map/public/universities/index.json
