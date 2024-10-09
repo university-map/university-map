@@ -1,0 +1,14 @@
+name: 北京大學
+address: 北京市海淀區頤和園路5號
+website: https://english.pku.edu.cn
+locations:
+  - name: 主校區
+    coordinates: [39.98713492033826, 116.30588462559174]
+acronyms: [北大]
+banner: https://english.pku.edu.cn/Uploads/Bden/Picture/2024/01/03/s659519496ea9a.jpg
+introduction: >-
+  北京大學是中國北京的一所主要研究型大學，並且是中國C9聯盟的成員。自1911年成立以來，一直致力於學術卓越、中國社會的福祉和全球發展。北京大學以其對教育和研究的重視以及有影響力的校友網絡而聞名。北京大學被評為中國和亞洲頂尖的學術機構之一，也是世界上最負盛名的大學之一。
+gallery:
+  [
+    "https://images.unsplash.com/photo-1566796096958-94dacebdcb6a?q=80&w=400"
+  ]

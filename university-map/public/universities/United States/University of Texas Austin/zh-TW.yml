@@ -1,0 +1,13 @@
+name: 德州大學奧斯汀分校
+address: Austin, TX 78712-1111 United States
+website: https://www.utexas.edu/
+locations:
+  - name: 主校區
+    coordinates: [30.28523219674906, -97.73347968822702]
+acronyms: []
+banner: https://www.utexas.edu/sites/default/files/styles/utexas_hero_photo_image/public/hero-photos/maincampus_hero.jpg
+introduction: >-
+  德州大學奧斯汀分校（UT Austin）成立於1883年，是德州中心的一所頂尖高等教育和研究機構。UT Austin支持約52,000名學生和3,000名教職員，涵蓋19個學院和學校，營造了一個學生和教職員可以蓬勃發展和創新的環境。
+gallery:
+  [
+  ]

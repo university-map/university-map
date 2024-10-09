@@ -1,0 +1,14 @@
+name: 哈佛大學
+address: Massachusetts Hall Cambridge, MA 02138 United States
+website: https://www.harvard.edu
+locations:
+  - name: 劍橋校區
+    coordinates: [42.37482288761835, -71.11818747532095]
+acronyms: []
+banner: https://images.unsplash.com/photo-1559135197-8a45ea74d367?q=80&w=400
+introduction: >-
+  哈佛大學是一所位於麻薩諸塞州劍橋的私立常春藤盟校研究型大學。成立於1636年，以其首位捐助者牧師約翰·哈佛命名，哈佛是美國最古老的高等教育機構。其歷史、影響力、財富和學術聲譽使其成為世界上最負盛名的大學之一。
+gallery:
+  [
+    "https://www.harvard.edu/wp-content/uploads/2020/12/032613_overviews_0206-1536x1152.jpg",
+  ]

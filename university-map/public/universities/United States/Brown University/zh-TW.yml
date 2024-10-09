@@ -1,0 +1,13 @@
+name: 布朗大學
+address: Providence, RI 02912 United States
+website: https://www.brown.edu/
+locations:
+  - name: 主校區
+    coordinates: [42.34198122862406, -71.93508885385259]
+acronyms: []
+banner: https://www.brown.edu/sites/default/files/styles/classic_xsml/public/2019-03/20181031_Brown4_C83T5506.jpg
+introduction: >-
+  布朗大學成立於1764年，是一所以學生為中心的常春藤盟校研究型大學，以其深刻的使命感而聞名。
+gallery:
+  [
+  ]

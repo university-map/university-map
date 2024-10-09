@@ -1,0 +1,16 @@
+name: 南加州大學
+address: University Park, Los Angeles, CA 90089 United States
+website: https://www.usc.edu/
+locations:
+  - name: 大學園區
+    coordinates: [34.02265420970884, -118.28526720714093]
+acronyms: [南加大]
+banner: https://www.usc.edu/wp-content/uploads/2023/02/48244487066_842b6fedce_o-768x432.jpg
+introduction: >-
+  南加州大學（USC）是一所位於加利福尼亞州洛杉磯的著名私立研究型大學。由羅伯特·麥克萊·威德尼於1880年創立，是加州歷史最悠久的私立研究型大學。
+gallery:
+  [
+    "https://annenberg.usc.edu/sites/default/files/styles/article_full_content_1240x600/public/usc_campus_bovard_auditorium.jpg",
+    "https://gradadm.usc.edu/wp-content/uploads/2024/01/20060214_6992jpg_7304625758_o-Doheny-Front-copy-768x432.webp",
+    "https://today.usc.edu/wp-content/uploads/2017/08/11_Great-Lawn-768x432.jpg"
+  ]

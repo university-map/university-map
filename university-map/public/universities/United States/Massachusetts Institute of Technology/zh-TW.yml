@@ -1,0 +1,14 @@
+name: 麻省理工學院 (MIT)
+address: 77 Massachusetts Avenue, Cambridge, MA 02139 United States
+website: https://web.mit.edu
+locations:
+  - name: 劍橋校區
+    coordinates: [42.36043149339396, -71.09426317806926]
+acronyms: []
+banner: https://images.unsplash.com/photo-1537888692311-8a7fb3e9f374?q=80&w=400
+introduction: >-
+  麻省理工學院（MIT）是一所位於麻薩諸塞州劍橋的私立土地贈與研究型大學。該學院擁有一個沿著查爾斯河延伸超過一英里的城市校區。學院還包括一些主要的校外設施，如MIT林肯實驗室、貝茨中心和干草堆天文台，以及附屬實驗室如布羅德研究所和懷特黑德研究所。MIT成立於1861年，為應對美國日益增長的工業化，採用了歐洲理工大學模式，強調應用科學和工程的實驗室教學。自成立以來，MIT在現代科學、工程、數學和技術的許多方面發揮了關鍵作用，以其創新和學術實力而聞名，使其成為世界上最負盛名的大學之一。
+gallery:
+  [
+    "https://images.unsplash.com/photo-1678742733118-029763b67e5c?q=80&w=400",
+  ]

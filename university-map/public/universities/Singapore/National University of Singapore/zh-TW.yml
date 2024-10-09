@@ -1,0 +1,14 @@
+name: 新加坡國立大學
+address: 新加坡肯特崗下段路21號 119077
+website: http://www.nus.edu.sg
+locations:
+  - name: 武吉知馬校區
+    coordinates: [1.320161371980279, 103.81701426172378]
+  - name: 肯特崗校區
+    coordinates: [1.2970475817534486, 103.77613066561054]
+acronyms: []
+banner: https://masters.nus.edu.sg/images/default-source/default-album/nus-u-town-campusdcb399df-fa6a-4778-9088-967eabc0315f.jpg
+introduction: >-
+  新加坡國立大學（NUS）是一所位於新加坡的國立公立學院和研究型大學。該校於1980年由新加坡大學和南洋大學合併正式成立。
+gallery:
+  []

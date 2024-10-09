@@ -1,0 +1,13 @@
+name: 卡內基美隆大學
+address: 5000 Forbes Avenue, Pittsburgh, PA 15213 United States
+website: https://www.cmu.edu
+locations:
+  - name: 主校區
+    coordinates: [40.44344184124333, -79.94284744538533]
+acronyms: []
+banner: https://www.cmu.edu/assets/images/site/meta-image-cmu.jpg
+introduction: >-
+  卡內基美隆大學是一所位於賓夕法尼亞州匹茲堡的私立研究型大學。該機構最初由安德魯·卡內基於1900年創立，名為卡內基技術學校。1967年，通過與梅隆工業研究所合併，成為今日的卡內基美隆大學。該大學的教職員和校友中包括20位諾貝爾獎得主和13位圖靈獎得主。
+gallery:
+  [
+  ]
