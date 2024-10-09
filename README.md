@@ -13,6 +13,7 @@ Install Python 3 and install `PyYAML`.
 ```bash
 # Generate or update public/universities/index.json
 cd university-map
+pip install -r ./scripts/requirements.txt
 python scripts/build-index.py
 
 npm install
