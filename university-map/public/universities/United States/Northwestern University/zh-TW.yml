@@ -1,0 +1,13 @@
+name: 西北大學
+address: 633 Clark Street, Evanston, IL 60208 United States
+website: https://www.northwestern.edu
+locations:
+  - name: 主校區
+    coordinates: [42.05722937430988, -87.67532615281772]
+acronyms: []
+banner: https://www.northwestern.edu/sustainability/images/about/home-equity720x350.png
+introduction: >-
+  西北大學成立於1851年，是一所位於伊利諾伊州埃文斯頓的私立研究型大學，緊鄰芝加哥。西北大學的校友包括眾多在新聞、政府、文學、商業、科學、表演藝術、教育和醫學領域的傑出人物。在美國大學中，西北大學在產生億萬富翁的數量上排名第八。
+gallery:
+  [
+  ]

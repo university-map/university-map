@@ -1,0 +1,14 @@
+name: 耶魯大學
+address: New Haven, CT 06520 United States
+website: https://www.yale.edu
+locations:
+  - name: 主校區
+    coordinates: [41.31660946953559, -72.92240928635714]
+acronyms: []
+banner: https://admissions.yale.edu/sites/default/files/styles/flexslider_full/public/2010_05_10_19_03_37_central_campus_1.jpg
+introduction: >-
+  耶魯大學於1701年由康涅狄格殖民地的公理會牧師創立，最初名為學院學校。該校最初僅限於神學和神聖語言的教育，但在美國革命時期，其課程擴展至人文和科學。截至2020年10月，耶魯大學共有65位諾貝爾獎得主、五位菲爾茲獎得主、四位阿貝爾獎得主和三位圖靈獎得主。此外，耶魯還培養了許多傑出校友，包括五位美國總統和十位開國元勳。
+gallery:
+  [
+    "https://admissions.yale.edu/sites/default/files/styles/flexslider_full/public/2016_10_19_10_48_peabody.jpg"
+  ]

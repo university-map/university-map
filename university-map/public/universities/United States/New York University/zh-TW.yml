@@ -1,0 +1,13 @@
+name: 紐約大學
+address: 70 Washington Square S, New York, NY 10012 United States
+website: https://www.nyu.edu
+locations:
+  - name: 主校區
+    coordinates: [40.72975192268224, -73.99656755156305]
+acronyms: []
+banner: https://engineering.nyu.edu/sites/default/files/styles/content_header_default_1x/public/2018-09/campus-convocation-2018-sign.jpg
+introduction: >-
+  紐約大學（NYU）成立於1831年，是一所位於紐約市中心的著名私立研究型大學。NYU是美國最大的私立研究型大學，在其眾多學院和學校中為超過65,000名學生提供嚴謹而高要求的教育。
+gallery:
+  [
+  ]

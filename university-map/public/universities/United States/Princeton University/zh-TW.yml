@@ -1,0 +1,14 @@
+name: 普林斯頓大學
+address: Princeton, NJ 08544 United States
+website: https://www.princeton.edu
+locations:
+  - name: 主校區
+    coordinates: [40.34342195971586, -74.6550710037108]
+acronyms: []
+banner: https://images.unsplash.com/photo-1611339105600-dca794ada272?q=80&w=400
+introduction: >-
+  普林斯頓大學是一所位於新澤西州普林斯頓的私立常春藤盟校研究型大學。該校於1746年在伊麗莎白成立，最初名為新澤西學院，是美國第四古老的高等教育機構，也是美國革命前九所殖民地學院之一。截至2021年10月，共有75位諾貝爾獎得主、16位菲爾茲獎得主和16位圖靈獎得主與普林斯頓大學有關聯，無論是作為校友、教職員還是研究人員。
+gallery:
+  [
+    "https://www.princeton.edu/sites/default/files/styles/third_1x_crop/public/images/2024/01/20231023_CL_Fall_DJA_003_WEB.jpeg",
+  ]

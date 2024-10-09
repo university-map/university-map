@@ -1,0 +1,13 @@
+name: 哥倫比亞大學
+address: 2960 Broadway, New York, NY 10027 United States
+website: http://www.columbia.edu
+locations:
+  - name: 主校區
+    coordinates: [40.807861417655424, -73.96261081854225]
+acronyms: []
+banner: https://www.columbia.edu/content/sites/default/files/styles/cu_crop/public/content/Campus%20Images/Low_Library_NYC_skyline_night_lights.jpg
+introduction: >-
+  哥倫比亞大學是一所位於紐約市的私立常春藤盟校研究型大學。該校成立於1754年，最初名為國王學院，位於曼哈頓的三一教堂地區，是紐約州最古老的高等教育機構，也是美國第五古老的大學。哥倫比亞大學作為殖民地學院由英國國王喬治二世頒發皇家憲章成立。美國革命後，於1784年更名為哥倫比亞學院。
+gallery:
+  [
+  ]

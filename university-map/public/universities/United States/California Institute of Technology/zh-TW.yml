@@ -1,0 +1,13 @@
+name: 加州理工學院
+address: 1200 E. California Boulevard, Pasadena, CA 91125 United States
+website: https://www.caltech.edu
+locations:
+  - name: 主校區
+    coordinates: [34.13787389202399, -118.12531233014644]
+acronyms: []
+banner: https://caltech-prod.s3.amazonaws.com/main/images/02-D230226_PAZ_0265.2e16d0ba.fill-1600x900-c100.jpg
+introduction: >-
+  加州理工學院（簡稱 Caltech）是一所位於加利福尼亞州帕薩迪納的私立研究型大學。該大學負責許多現代科學的進步，是美國少數專注於純科學和應用科學教學的技術學院之一。截至2022年10月，共有79位諾貝爾獎得主與加州理工學院有關聯，使其成為美國人均擁有最多諾貝爾獎得主的機構。其中包括46位校友和教職員（47個獎項，化學家萊納斯·鮑林是歷史上唯一兩次獨自獲獎的人）。此外，還有四位菲爾茲獎得主和六位圖靈獎得主與加州理工學院有關。
+gallery:
+  [
+  ]

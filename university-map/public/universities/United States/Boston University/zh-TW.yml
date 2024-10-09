@@ -1,0 +1,13 @@
+name: 波士頓大學
+address: 1 Silber Way, Boston, MA 02215 United States
+website: https://www.bu.edu/
+locations:
+  - name: 主校區
+    coordinates: [42.350613616558455, -71.10544000068947]
+acronyms: []
+banner: https://www.bu.edu/files/2016/10/h_butoday_15-8448-CAMPUS-028.jpg
+introduction: >-
+  波士頓大學（BU）成立於1839年，是位於麻薩諸塞州波士頓的一所私立研究型大學。主校區沿查爾斯河位於波士頓的芬威-肯莫爾和奧爾斯頓社區，而醫學校區則位於南端。芬威校區包括2018年與BU合併的惠洛克教育與人類發展學院。
+gallery:
+  [
+  ]

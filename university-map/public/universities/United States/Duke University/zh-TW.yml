@@ -1,0 +1,13 @@
+name: 杜克大學
+address: Durham, NC 27708 United States
+website: https://duke.edu
+locations:
+  - name: 主校區
+    coordinates: [36.00167741111304, -78.93820716318346]
+acronyms: []
+banner: https://chapel.duke.edu/sites/default/files/styles/inline_image/public/20200721_westcampus007_web1000.jpg
+introduction: >-
+  杜克大學成立於1838年，是一所位於北卡羅來納州達勒姆的私立研究型大學。該校最初由衛理公會和貴格會創立，於1892年遷至達勒姆，後來以美國煙草和電力工業家華盛頓·杜克的名字命名。杜克大學的校友網絡包括15位諾貝爾獎得主、3位圖靈獎得主和50位羅德學者。
+gallery:
+  [
+  ]

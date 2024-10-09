@@ -1,0 +1,13 @@
+name: 賓夕法尼亞大學
+address: Philadelphia, PA 19104 United States
+website: https://www.upenn.edu/
+locations:
+  - name: 主校區
+    coordinates: [39.95243260853637, -75.19328880508864]
+acronyms: [賓州大學]
+banner: https://www.upenn.edu/sites/default/files/styles/default/public/2020-11/p-100297-master-v1-075a-1600x800.jpg
+introduction: >-
+  賓夕法尼亞大學（Penn），由本傑明·富蘭克林於1740年創立，是一所位於賓夕法尼亞州費城的著名常春藤盟校。Penn的校友、董事和教職員中包括8位美國開國元勳，他們簽署了《獨立宣言》，24位大陸會議成員，3位美國總統，38位諾貝爾獎得主等。
+gallery:
+  [
+  ]

@@ -1,0 +1,14 @@
+name: 史丹佛大學
+address: Stanford, CA 94305 United States
+website: https://www.stanford.edu
+locations:
+  - name: 中央校區
+    coordinates: [37.42798659476949, -122.17017749899045]
+acronyms: []
+banner: https://images.unsplash.com/photo-1619139081320-38dc9778d051?q=80&w=400
+introduction: >-
+  史丹佛大學，正式名稱為利蘭·小史丹佛學院，是一所位於加利福尼亞州史丹佛的私立研究型大學。史丹佛於 1885 年由利蘭和簡·史丹佛創立，以紀念他們唯一的孩子利蘭·小史丹佛。史丹佛的大學部課程是美國最具選擇性的前三名之一。史丹佛以其創業精神著稱，特別是在計算機科學和工程領域。它位於矽谷的中心，與谷歌、雅虎和惠普等科技公司有密切聯繫。
+gallery:
+  [
+    "https://images.unsplash.com/photo-1508302882073-8af6be4c6688?q=80&w=400",
+  ]
