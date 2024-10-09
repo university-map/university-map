@@ -1,0 +1,13 @@
+name: 香港大學
+address: 香港薄扶林道
+website: https://www.hku.hk/
+locations:
+  - name: 主校區
+    coordinates: [22.283402823569375, 114.13639681196481]
+acronyms: [HKU]
+banner: https://www.hku.hk/visit/images/HeritageBuilding/background/declared-main-building.jpg
+introduction: >-
+  香港大學（HKU）是一所位於香港島薄扶林的公立研究型大學。成立於1887年，最初名為香港華人西醫書院，是香港歷史最悠久的高等教育機構。
+gallery:
+  [
+  ]

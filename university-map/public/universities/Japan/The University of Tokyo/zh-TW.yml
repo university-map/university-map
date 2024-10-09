@@ -1,0 +1,14 @@
+name: 東京大學
+address: 日本東京都文京區本鄉 7-3-1 113-0033
+website: http://www.u-tokyo.ac.jp/en
+locations:
+  - name: 主校區
+    coordinates: [35.713966038846046, 139.76274081234956]
+acronyms: []
+banner: https://www.u-tokyo.ac.jp/content/400184684.jpeg
+introduction: >-
+  東京大學是位於日本東京的一所主要研究型大學。它是日本國立七大學之首。東京大學以其對教育和研究的重視以及有影響力的校友網絡而聞名，被認為是世界上最負盛名的大學之一。
+gallery:
+  [
+    "https://images.unsplash.com/photo-1700989101178-e87b2f45dec7?q=80&w=400"
+  ]

@@ -1,0 +1,14 @@
+name: 首爾大學
+address: 首爾市冠岳區冠岳路1號 151-742
+website: https://en.snu.ac.kr/index.html
+locations:
+  - name: 冠岳校區
+    coordinates: [37.46019184872756, 126.95086487602497]
+  - name: 延世校區
+    coordinates: [37.58120712456937, 126.99948223527062]
+acronyms: []
+banner: https://uploaded.kcampus.kr/3_d44c03b545.jpg
+introduction: >-
+  首爾大學（SNU；韓語：서울대학교；意為首爾大學）是一所位於韓國首爾的公立研究型大學。它是SKY大學之一，也是韓國國立旗艦大學的一部分。
+gallery:
+  []

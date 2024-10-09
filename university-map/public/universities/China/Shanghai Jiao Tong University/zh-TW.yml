@@ -1,0 +1,13 @@
+name: 上海交通大學
+address: 上海市徐匯區番禺路655號
+website: https://en.sjtu.edu.cn/
+locations:
+  - name: 主校區
+    coordinates: [31.025417770237674, 121.43377839947595]
+acronyms: []
+banner: https://studyinchina.hk/wp-content/uploads/2020/09/22%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B82.jpg
+introduction: >-
+  上海交通大學（SJTU）成立於1896年12月6日，是中國最著名的高等教育機構之一。該校以其嚴謹的學術課程和在國家發展，特別是科學技術方面的重大貢獻而聞名。
+gallery:
+  [
+  ]

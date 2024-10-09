@@ -1,0 +1,16 @@
+name: 清華大學
+address: 北京市海淀區
+website: https://www.tsinghua.edu.cn/en/index.htm
+locations:
+  - name: 主校區
+    coordinates: [39.99987276788524, 116.32633659183877]
+acronyms: []
+banner: https://www.tsinghua.edu.cn/en/image/inner1_bn.jpg
+introduction: >-
+  清華大學是北京的一所主要研究型大學，並且是中國C9聯盟的成員。自1911年成立以來，一直致力於學術卓越、社會福祉和全球發展。清華以其對教育和研究的重視以及有影響力的校友網絡而聞名。清華被評為中國和亞洲頂尖的學術機構之一，也是世界上最負盛名的大學之一。
+gallery:
+  [
+    "https://www.tsinghua.edu.cn/en/image/inner1_bn6.jpg",
+    "https://www.tsinghua.edu.cn/__local/8/D3/34/464269BEDDBDCE7FE229998697D_A96F2368_BF34C.png",
+    "https://www.tsinghua.edu.cn/__local/7/24/99/FB9BF013DBF20E94F312877C646_FF440313_DC1E4.jpg"
+  ]

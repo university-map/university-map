@@ -1,0 +1,13 @@
+name: 復旦大學
+address: 上海市楊浦區邯鄲路220號
+website: https://www.fudan.edu.cn/en/
+locations:
+  - name: 主校區
+    coordinates: [31.297575457178215, 121.50359632037966]
+acronyms: []
+banner: https://upload.wikimedia.org/wikipedia/commons/d/d9/Fudan-guanghualou2.jpg
+introduction: >-
+  復旦大學成立於1905年，是中國上海的一所著名公立大學。該校專注於創新和技術，在低溫保存和基於雲的科學研究計算平台等領域的研究和開發方面做出了重大貢獻。
+gallery:
+  [
+  ]
