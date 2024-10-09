@@ -11,11 +11,12 @@ const LanguagePicker: React.FC<LanguagePickerProps> = (props) => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
+  // Update the language and navigate to the new locale
   const updateLanguage = async (language: string): Promise<void> => {
     const newLocale = Object.keys(languages).find((key) => languages[key] === language) ?? 'en';
     i18n.changeLanguage(newLocale);
 
-    // '#', 'en', ...
+    // segments will be ['#', 'en', ...]
     const segments = decodeURI(window.location.hash).split('/');
     segments.shift();
     segments[0] = newLocale;
