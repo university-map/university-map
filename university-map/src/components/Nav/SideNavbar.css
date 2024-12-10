@@ -45,3 +45,9 @@
   z-index: 600;
   padding: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    display: none;
+  }
+}

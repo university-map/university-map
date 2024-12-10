@@ -8,7 +8,7 @@ function App() {
   return (
     <div style={{ height: '100vh', width: '100vw', display: 'flex' }}>
       <SideNavbar />
-      <div style={{ height: '100%', flexGrow: 1, paddingLeft: '50px' }}>
+      <div className="main-content">
         <Routes>
           <Route path='/' element={<Navigate to={`/${i18n.language}/university`} />} />
           <Route path='/:lang' element={<Navigate to={`/${i18n.language}/university`} />} />

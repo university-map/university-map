@@ -4,7 +4,8 @@
   top: 0;
   left: 50px;
   z-index: 500;
-  width: 400px;
+  width: 40%;
+  max-width: 400px;
   height: 100%;
   margin-left: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,4 +38,28 @@
   margin-left: -225px;
   margin-top: 5px;
   background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  .infoCard {
+    top: auto;
+    bottom: 0;
+    left: 50;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .SearchBar {
+    left: 2%;
+    margin: 2% auto;
+    width: 96%;
+  }
+
+  .infoCard {
+    left: 0;
+  }
 }

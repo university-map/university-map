@@ -12,3 +12,15 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.main-content {
+  height: 100%;
+  flex-grow: 1;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .main-content {
+    padding-left: 0;
+  }
+}
