@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mantine/carousel": "^7.14.3",
+    "@mantine/carousel": "^7.15.2",
     "@mantine/core": "^7.14.3",
     "@mantine/hooks": "^7.13.2",
     "embla-carousel-autoplay": "^8.3.0",
