@@ -16,11 +16,11 @@ const LanguagePicker: React.FC<LanguagePickerProps> = (props) => {
     const newLocale = Object.keys(languages).find((key) => languages[key] === language) ?? 'en';
     i18n.changeLanguage(newLocale);
 
-    // segments will be ['#', 'en', ...]
+    // hash is like '#/en/university/...' → split gives ['#', 'en', ...]
     const segments = decodeURI(window.location.hash).split('/');
-    segments.shift();
+    segments.shift(); // remove '#'
     segments[0] = newLocale;
-    navigate(segments.join('/'));
+    navigate('/' + segments.join('/'));
   };
 
   return (
