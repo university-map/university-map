@@ -59,16 +59,7 @@ const SearchBar = (props: SearchBarProps) => {
   }, [dataLoader, univData.size]);
 
   return (
-    <Box
-      style={{
-        position: 'absolute',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        zIndex: 500,
-        width: 'min(450px, calc(100vw - 20px))',
-        marginTop: 5,
-      }}
-    >
+    <Box style={{ width: '100%', minWidth: 0 }}>
       <Autocomplete
         comboboxProps={{ withinPortal: false, offset: 0 }}
         placeholder={t('search')}

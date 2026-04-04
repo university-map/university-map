@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { MapContainer, TileLayer, ZoomControl, useMap } from 'react-leaflet';
+import MarkerClusterGroup from 'react-leaflet-cluster';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
 import { Anchor, Box, Paper, Text } from '@mantine/core';
@@ -11,6 +12,8 @@ import DataLoader from '@/services/DataLoader';
 import { UniversityInfo } from '@/services/models';
 import { isSameLatLng } from '@/utils';
 import 'leaflet/dist/leaflet.css';
+import 'react-leaflet-cluster/dist/assets/MarkerCluster.css';
+import 'react-leaflet-cluster/dist/assets/MarkerCluster.Default.css';
 
 const MapController = () => {
   const map = useMap();
@@ -135,7 +138,9 @@ function EmbedMap() {
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         />
         <ZoomControl position='bottomright' />
-        {markers}
+        <MarkerClusterGroup chunkedLoading>
+          {markers}
+        </MarkerClusterGroup>
       </MapContainer>
     </Box>
   );

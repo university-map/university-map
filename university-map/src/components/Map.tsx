@@ -1,29 +1,33 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { MapContainer, TileLayer, ZoomControl, useMap } from 'react-leaflet';
+import MarkerClusterGroup from 'react-leaflet-cluster';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
-import { Box, CloseButton, Paper, ScrollArea } from '@mantine/core';
+import { Box, CloseButton, Flex, Paper, ScrollArea } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import InfoCard from './Map/InfoCard';
 import SearchBar from './Map/SearchBar';
 import MapMarker from './Map/MapMarker';
+import FilterPanel, { FilterState } from './Map/FilterPanel';
 import DataLoader from '@/services/DataLoader';
-import { UniversityInfo } from '@/services/models';
-import { isSameLatLng } from '@/utils';
+import { UniversityIndex, UniversityInfo } from '@/services/models';
+import { getRegion, isSameLatLng } from '@/utils';
 import 'leaflet/dist/leaflet.css';
+import 'react-leaflet-cluster/dist/assets/MarkerCluster.css';
+import 'react-leaflet-cluster/dist/assets/MarkerCluster.Default.css';
 
 const INFO_CARD_WIDTH = 400;
 
 const MapController = () => {
   const map = useMap();
   Cookies.set('mapCenter', JSON.stringify(map.getCenter()), {
-    expires: 1 / 24, // 1 hour
+    expires: 1 / 24,
     path: '/',
   });
   Cookies.set('mapZoom', map.getZoom().toString(), {
-    expires: 1 / 24, // 1 hour
+    expires: 1 / 24,
     path: '/',
   });
   return <></>;
@@ -32,74 +36,72 @@ const MapController = () => {
 function Map() {
   const { country, university } = useParams();
   const navigate = useNavigate();
-  const [markers, setMarkers] = useState([] as JSX.Element[]);
-  const [selectedUniv, setSelectedUniv] = useState(new UniversityInfo());
   const { i18n } = useTranslation();
   const dataLoader = DataLoader.getInstance();
   const isMobile = useMediaQuery('(max-width: 768px)');
 
-  const showInfoCard = useCallback(async (countryName: string, directoryName: string) => {
+  const [univIndex, setUnivIndex] = useState<UniversityIndex[]>([]);
+  const [selectedUniv, setSelectedUniv] = useState(new UniversityInfo());
+  const [filter, setFilter] = useState<FilterState>({ countries: [], regions: [] });
+
+  const showInfoCard = useCallback((countryName: string, directoryName: string) => {
     navigate(`/${i18n.language}/university/${countryName}/${directoryName}`);
   }, [i18n.language, navigate]);
 
+  // Load index once
   useEffect(() => {
-    const initMarkers = async () => {
-      const univIndex = await dataLoader.getUnivIndex();
-      const newMarkers = [];
-      for (const univ of univIndex) {
-        for (const location of univ.locations) {
-          const isSelected = country === univ.country && university === univ.name;
-          newMarkers.push(
-            <MapMarker
-              key={`${univ.country}+${univ.name}+${location.name}`}
-              countryName={univ.country}
-              directoryName={univ.directoryName}
-              coordinates={location.coordinates}
-              universityName={univ.name}
-              locationName={location.name}
-              iconColor={isSelected ? 'red' : 'blue'}
-              onMarkerClick={showInfoCard}
-            />
-          );
-        }
-      }
-      setMarkers(newMarkers);
-    };
+    dataLoader.getUnivIndex().then(setUnivIndex);
+  }, [dataLoader]);
 
-    const updateMarkers = async (univInfo: UniversityInfo) => {
-      setMarkers((markers) => {
-        return markers.map((marker) => {
-          // Set the markers of the selected university to red,
-          // and update the location name regarding locale
-          if (marker.props.countryName === country && marker.props.directoryName === university) {
-            const matchedLocations = univInfo.locations.filter((loc) => isSameLatLng(loc.coordinates, marker.props.coordinates));
-            return React.cloneElement(marker, {
-              iconColor: 'red',
-              universityName: univInfo.name,
-              locationName: matchedLocations.length > 0 ? matchedLocations[0].name : marker.props.locationName
-            });
-          }
-
-          // Reset the markers of other universities to blue
-          return React.cloneElement(marker, {
-            iconColor: 'blue'
-          });
-        });
-      });
-    };
-
-    const updateMarkersAndSetSelectedUniv = async () => {
-      const univInfo = await dataLoader.getUnivInfo(country, university, i18n.language);
-      setSelectedUniv(univInfo);
-      updateMarkers(univInfo);
-    };
-
-    if (markers?.length == 0) {
-      initMarkers();
-    } else if (country && university) {
-      updateMarkersAndSetSelectedUniv();
+  // Load selected university info when route changes
+  useEffect(() => {
+    if (country && university) {
+      dataLoader.getUnivInfo(country, university, i18n.language).then(setSelectedUniv);
     }
-  }, [country, university, i18n.language, dataLoader, markers?.length, showInfoCard]);
+  }, [country, university, i18n.language, dataLoader]);
+
+  // Derive unique country list for filter UI
+  const availableCountries = useMemo(
+    () => Array.from(new Set(univIndex.map((u) => u.country))),
+    [univIndex]
+  );
+
+  // Filter index, then build markers
+  const filteredIndex = useMemo(() => {
+    if (filter.countries.length === 0 && filter.regions.length === 0) return univIndex;
+    return univIndex.filter((u) => {
+      const countryOk = filter.countries.length === 0 || filter.countries.includes(u.country);
+      const regionOk = filter.regions.length === 0 || filter.regions.includes(getRegion(u.country));
+      return countryOk && regionOk;
+    });
+  }, [univIndex, filter]);
+
+  const markers = useMemo(() =>
+    filteredIndex.flatMap((univ) =>
+      univ.locations.map((location) => {
+        const isSelected = country === univ.country && university === univ.directoryName;
+        return (
+          <MapMarker
+            key={`${univ.country}+${univ.name}+${location.name}`}
+            countryName={univ.country}
+            directoryName={univ.directoryName}
+            coordinates={location.coordinates}
+            universityName={
+              isSelected && selectedUniv.name ? selectedUniv.name : univ.name
+            }
+            locationName={
+              isSelected && selectedUniv.locations.length > 0
+                ? selectedUniv.locations.find((l) => isSameLatLng(l.coordinates, location.coordinates))?.name ?? location.name
+                : location.name
+            }
+            iconColor={isSelected ? 'red' : 'blue'}
+            onMarkerClick={showInfoCard}
+          />
+        );
+      })
+    ),
+  [filteredIndex, country, university, selectedUniv, showInfoCard]
+  );
 
   const bounds = L.latLngBounds(L.latLng(-90, -180), L.latLng(90, 180));
   const center = JSON.parse(Cookies.get('mapCenter') ?? '[0, 20]');
@@ -108,7 +110,7 @@ function Map() {
 
   return (
     <Box style={{ height: '100%', position: 'relative' }}>
-      {/* Desktop/tablet: side panel flush with the navbar */}
+      {/* Desktop: side panel */}
       {!isMobile && showPanel &&
         <Paper
           radius={0}
@@ -128,7 +130,7 @@ function Map() {
         </Paper>
       }
 
-      {/* Mobile: Google Maps-style bottom sheet */}
+      {/* Mobile: bottom sheet */}
       {isMobile && showPanel &&
         <Paper
           shadow='xl'
@@ -154,13 +156,36 @@ function Map() {
         </Paper>
       }
 
-      <SearchBar onSearch={showInfoCard} />
+      <Box
+        p={6}
+        pr={14}
+        style={{
+          position: 'absolute',
+          top: 8,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 500,
+          width: 'min(580px, calc(100vw - 24px))',
+          overflow: 'visible',
+        }}
+      >
+        <Flex gap='sm' align='center' wrap='nowrap' style={{ width: '100%' }}>
+          <FilterPanel
+            availableCountries={availableCountries}
+            filter={filter}
+            onChange={setFilter}
+          />
+          <Box style={{ flex: 1, minWidth: 0 }}>
+            <SearchBar onSearch={showInfoCard} />
+          </Box>
+        </Flex>
+      </Box>
+
       <MapContainer
         center={center}
         zoom={zoom}
         scrollWheelZoom={true}
         style={{ height: '100%' }}
-        /* use bottomright zoom control instead */
         zoomControl={false}
         maxBounds={bounds}
         minZoom={2}
@@ -171,7 +196,9 @@ function Map() {
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         />
         {window.innerWidth >= 800 && <ZoomControl position='bottomright' />}
-        {markers}
+        <MarkerClusterGroup chunkedLoading>
+          {markers}
+        </MarkerClusterGroup>
       </MapContainer>
     </Box>
   );
