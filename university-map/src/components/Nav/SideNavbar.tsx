@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Group, Stack, Tooltip, UnstyledButton, rem } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { IoLanguage, IoLogoGithub } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { IoHome, IoLanguage, IoLogoGithub } from 'react-icons/io5';
 import LanguagePicker from './LanguagePicker';
 import classes from './SideNavbar.module.css';
 
@@ -27,8 +29,18 @@ const NAVBAR_SIZE = 50;
 const SideNavbar: React.FC = () => {
   const [showLanguages, setShowLanguages] = useState(false);
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const navigate = useNavigate();
+  const { i18n } = useTranslation();
 
-  const links =
+  const topLinks =
+    <NavbarLink
+      icon={IoHome}
+      label='Home'
+      onClick={() => navigate(`/${i18n.language}/home`)}
+    />
+  ;
+
+  const bottomLinks =
     <>
       <NavbarLink
         icon={IoLanguage}
@@ -71,11 +83,14 @@ const SideNavbar: React.FC = () => {
         }}
       >
         {isMobile ?
-          <Group gap={0}>{links}</Group>
+          <Group gap={0}>{topLinks}{bottomLinks}</Group>
           :
-          <Box style={{ position: 'absolute', bottom: 0 }}>
-            <Stack justify='center' gap={0}>{links}</Stack>
-          </Box>
+          <>
+            <Stack justify='center' gap={0}>{topLinks}</Stack>
+            <Box style={{ position: 'absolute', bottom: 0 }}>
+              <Stack justify='center' gap={0}>{bottomLinks}</Stack>
+            </Box>
+          </>
         }
       </Box>
 

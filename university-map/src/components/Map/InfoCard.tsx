@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Tabs, Image, Title } from '@mantine/core';
+import { Tabs, Title } from '@mantine/core';
 import InfoCardOverview from './InfoCardOverview';
+import LoadableImage from './LoadableImage';
 import { UniversityInfo } from '@/services/models';
 
 const InfoCard: React.FC<{
@@ -12,25 +13,14 @@ const InfoCard: React.FC<{
 
   return (
     <>
-      <Image
-        sizes='100vw'
-        h={240}
-        alt='University Banner'
-        style={{ objectFit: 'cover', display: 'block' }}
-        src={props.universityInfo.banner}
-        fallbackSrc='https://placehold.co/400x240/white/gray?text=Not%20Found'
-      />
+      <LoadableImage src={props.universityInfo.banner} h={240} alt='University Banner' />
       <Title order={2} m='xs'>
         {props.universityInfo.name}
       </Title>
-      <Tabs
-        value={activeTab}
-        onChange={setActiveTab}
-      >
+      <Tabs value={activeTab} onChange={setActiveTab}>
         <Tabs.List>
           <Tabs.Tab value='overview'>{t('InfoCard.overview')}</Tabs.Tab>
         </Tabs.List>
-
         <Tabs.Panel value='overview'>
           <InfoCardOverview universityInfo={props.universityInfo} />
         </Tabs.Panel>

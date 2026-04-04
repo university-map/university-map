@@ -6,6 +6,7 @@ import L from 'leaflet';
 import Cookies from 'js-cookie';
 import { Anchor, Box, Paper, Text } from '@mantine/core';
 import MapMarker from './Map/MapMarker';
+import LoadableImage from './Map/LoadableImage';
 import DataLoader from '@/services/DataLoader';
 import { UniversityInfo } from '@/services/models';
 import { isSameLatLng } from '@/utils';
@@ -90,7 +91,6 @@ function EmbedMap() {
   const zoom = parseInt(Cookies.get('mapZoom') ?? '3');
   const showPanel = !!(country && university);
 
-  // Build a full-map link that opens in the parent browsing context
   const fullMapUrl = `${window.location.origin}${window.location.pathname}#/${i18n.language}/university/${country}/${university}`;
 
   return (
@@ -98,25 +98,25 @@ function EmbedMap() {
       {showPanel &&
         <Paper
           shadow='md'
-          p='xs'
           style={{
             position: 'absolute',
             bottom: 24,
-            left: '50%',
-            transform: 'translateX(-50%)',
+            left: 16,
             zIndex: 500,
-            maxWidth: 320,
-            width: 'max-content',
-            textAlign: 'center',
+            width: 220,
+            overflow: 'hidden',
             pointerEvents: 'auto',
           }}
         >
-          <Text fw={600} size='sm' lineClamp={1}>
-            {selectedUniv.name}
-          </Text>
-          <Anchor href={fullMapUrl} target='_blank' size='xs'>
-            {t('Home.openInApp')}
-          </Anchor>
+          <LoadableImage src={selectedUniv.banner} h={120} alt='University Banner' />
+          <Box p='xs'>
+            <Text fw={600} size='sm' lineClamp={2}>
+              {selectedUniv.name}
+            </Text>
+            <Anchor href={fullMapUrl} target='_blank' size='xs'>
+              {t('Home.openInApp')}
+            </Anchor>
+          </Box>
         </Paper>
       }
 
