@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { MapContainer, TileLayer, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
-import { Box, Drawer, Paper, ScrollArea } from '@mantine/core';
+import { Box, CloseButton, Paper, ScrollArea } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import InfoCard from './Map/InfoCard';
 import SearchBar from './Map/SearchBar';
@@ -14,7 +14,6 @@ import { UniversityInfo } from '@/services/models';
 import { isSameLatLng } from '@/utils';
 import 'leaflet/dist/leaflet.css';
 
-const NAVBAR_SIZE = 50;
 const INFO_CARD_WIDTH = 400;
 
 const MapController = () => {
@@ -109,7 +108,7 @@ function Map() {
 
   return (
     <Box style={{ height: '100%', position: 'relative' }}>
-      {/* Desktop: side panel overlaid on the map */}
+      {/* Desktop/tablet: side panel flush with the navbar */}
       {!isMobile && showPanel &&
         <Paper
           radius={0}
@@ -117,7 +116,7 @@ function Map() {
           style={{
             position: 'absolute',
             top: 0,
-            left: NAVBAR_SIZE,
+            left: 0,
             zIndex: 500,
             width: INFO_CARD_WIDTH,
             height: '100%',
@@ -129,20 +128,30 @@ function Map() {
         </Paper>
       }
 
-      {/* Mobile: bottom Drawer */}
-      {isMobile &&
-        <Drawer
-          opened={showPanel}
-          onClose={() => navigate(`/${i18n.language}/university`)}
-          position='bottom'
-          size='75vh'
-          zIndex={600}
-          styles={{ body: { padding: 0 } }}
+      {/* Mobile: Google Maps-style bottom sheet */}
+      {isMobile && showPanel &&
+        <Paper
+          shadow='xl'
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: '55vh',
+            zIndex: 490,
+            borderRadius: 'var(--mantine-radius-lg) var(--mantine-radius-lg) 0 0',
+            overflow: 'hidden',
+          }}
         >
+          <CloseButton
+            size='md'
+            style={{ position: 'absolute', top: 8, right: 8, zIndex: 1 }}
+            onClick={() => navigate(`/${i18n.language}/university`)}
+          />
           <ScrollArea h='100%'>
             <InfoCard universityInfo={selectedUniv} />
           </ScrollArea>
-        </Drawer>
+        </Paper>
       }
 
       <SearchBar onSearch={showInfoCard} />
