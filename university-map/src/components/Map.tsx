@@ -156,20 +156,16 @@ function Map() {
         </Paper>
       }
 
-      <Paper
-        withBorder
-        shadow='md'
-        radius='md'
+      <Box
         p={6}
-        px={8}
+        pr={14}
         style={{
           position: 'absolute',
-          top: 12,
+          top: 8,
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 500,
           width: 'min(580px, calc(100vw - 24px))',
-          backgroundColor: 'var(--mantine-color-body)',
           overflow: 'visible',
         }}
       >
@@ -183,7 +179,7 @@ function Map() {
             <SearchBar onSearch={showInfoCard} />
           </Box>
         </Flex>
-      </Paper>
+      </Box>
 
       <MapContainer
         center={center}
