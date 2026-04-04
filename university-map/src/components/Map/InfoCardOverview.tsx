@@ -60,7 +60,7 @@ const InfoCardOverview: React.FC<{
         {t('InfoCard.gallery')}
       </Title>
       <Carousel
-        loop
+        emblaOptions={{ loop: true }}
         height={240}
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
