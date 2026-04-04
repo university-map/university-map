@@ -7,5 +7,16 @@
     "overview": "Overview",
     "rankings": "Rankings",
     "gallery": "Gallery"
+  },
+  "Home": {
+    "tagline": "Explore universities around the world on an interactive map.",
+    "openMap": "Open Map",
+    "previewTitle": "Map Preview",
+    "embedTitle": "Embed on Your Website",
+    "embedDescription": "Copy the HTML below and paste it into your webpage to embed the map. You can append <1>/Country/University</1> to the <3>src</3> URL to set a default university, e.g.:",
+    "copyEmbed": "Copy",
+    "copied": "Copied!",
+    "openInApp": "Open in University Map ↗",
+    "dataSource": "Data sourced from official university websites · "
   }
 }

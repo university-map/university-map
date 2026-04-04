@@ -3,11 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Box } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import SideNavbar from '@/components/Nav/SideNavbar';
-import { Map, NotFound } from '@/components';
+import { EmbedMap, Home, Map, NotFound } from '@/components';
 
 const NAVBAR_SIZE = 50;
 
-function App() {
+/** Normal app layout with sidebar */
+function MainLayout() {
   const { i18n } = useTranslation();
   const isMobile = useMediaQuery('(max-width: 768px)');
   return (
@@ -20,14 +21,27 @@ function App() {
         }}
       >
         <Routes>
-          <Route path='/' element={<Navigate to={`/${i18n.language}/university`} />} />
-          <Route path='/:lang' element={<Navigate to={`/${i18n.language}/university`} />} />
+          <Route path='/' element={<Navigate to={`/${i18n.language}/home`} />} />
+          <Route path='/:lang' element={<Navigate to={`/${i18n.language}/home`} />} />
+          <Route path='/:lang/home' element={<Home />} />
           <Route path='/:lang/university' element={<Map />} />
           <Route path='/:lang/university/:country/:university' element={<Map />} />
-          <Route path='*' Component={NotFound}></Route>
+          <Route path='*' Component={NotFound} />
         </Routes>
       </Box>
     </Box>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      {/* Embed routes — no app chrome, safe to use in <iframe> */}
+      <Route path='/:lang/embed' element={<EmbedMap />} />
+      <Route path='/:lang/embed/:country/:university' element={<EmbedMap />} />
+      {/* Everything else uses the main layout */}
+      <Route path='*' element={<MainLayout />} />
+    </Routes>
   );
 }
 

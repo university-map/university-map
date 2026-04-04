@@ -7,5 +7,16 @@
     "overview": "總覽",
     "rankings": "排名",
     "gallery": "相片"
+  },
+  "Home": {
+    "tagline": "在互動地圖上探索世界各地的大學。",
+    "openMap": "開啟地圖",
+    "previewTitle": "地圖預覽",
+    "embedTitle": "內嵌到你的網站",
+    "embedDescription": "複製以下 HTML，貼到你的網頁中即可嵌入地圖。可在 <1>/國家/學校</1> 後面加上學校路徑指定預設顯示的學校，例如：",
+    "copyEmbed": "複製",
+    "copied": "已複製！",
+    "openInApp": "在 University Map 開啟 ↗",
+    "dataSource": "資料來源：各大學官方網站 · "
   }
 }

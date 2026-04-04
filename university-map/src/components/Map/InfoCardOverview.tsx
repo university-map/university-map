@@ -1,10 +1,11 @@
 import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Divider, Image, Title, Text, Grid, CopyButton, Tooltip, ActionIcon, rem } from '@mantine/core';
+import { Divider, Title, Text, Grid, CopyButton, Tooltip, ActionIcon, rem } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { IoIosPin, IoMdCheckbox, IoMdCopy, IoMdHome } from 'react-icons/io';
 import { UniversityInfo } from '@/services/models';
+import LoadableImage from './LoadableImage';
 
 interface CopyLineProps {
   icon: typeof IoIosPin;
@@ -44,18 +45,7 @@ const InfoCardOverview: React.FC<{
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   const pictures = props.universityInfo.gallery.length > 0
     ? props.universityInfo.gallery
-    : ['https://placehold.co/400x240/white/gray?text=No%20Picture%20Yet'];
-  const slides = pictures.map((image, index) =>
-    <Carousel.Slide key={index}>
-      <Image
-        sizes='100vw'
-        h={240}
-        alt='Gallery Image'
-        style={{ objectFit: 'cover' }}
-        src={image}
-      />
-    </Carousel.Slide>
-  );
+    : null;
 
   return (
     <>
@@ -76,7 +66,16 @@ const InfoCardOverview: React.FC<{
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
       >
-        {slides}
+        {pictures
+          ? pictures.map((image, index) =>
+            <Carousel.Slide key={index}>
+              <LoadableImage src={image} h={240} alt='Gallery Image' />
+            </Carousel.Slide>
+          )
+          : <Carousel.Slide>
+            <LoadableImage src='' h={240} alt='No Picture' />
+          </Carousel.Slide>
+        }
       </Carousel>
     </>
   );
