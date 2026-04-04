@@ -141,3 +141,4 @@ dist
 .DS_Store
 *.pem
 university-map/public/universities/index.json
+CLAUDE.md
