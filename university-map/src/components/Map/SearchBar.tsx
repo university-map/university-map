@@ -1,10 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoSearch } from 'react-icons/io5';
-import { Autocomplete, Center, UnstyledButton } from '@mantine/core';
+import { Autocomplete, Box, Center, UnstyledButton } from '@mantine/core';
 import DataLoader from '@/services/DataLoader';
 import { UniversityIndex } from '@/services/models';
-import './Map.css';
 
 interface SearchBarProps {
   onSearch: (country: string, universityName: string) => void;
@@ -60,9 +59,17 @@ const SearchBar = (props: SearchBarProps) => {
   }, [dataLoader, univData.size]);
 
   return (
-    <div className='SearchBar'>
+    <Box
+      style={{
+        position: 'absolute',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: 500,
+        width: 'min(450px, calc(100vw - 20px))',
+        marginTop: 5,
+      }}
+    >
       <Autocomplete
-        className='SearchBar'
         comboboxProps={{ withinPortal: false, offset: 0 }}
         placeholder={t('search')}
         rightSection={
@@ -83,7 +90,7 @@ const SearchBar = (props: SearchBarProps) => {
           }
         }}
       />
-    </div>
+    </Box>
   );
 };
 

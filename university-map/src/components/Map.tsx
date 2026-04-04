@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { MapContainer, TileLayer, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
+import { Box, Drawer, Paper, ScrollArea } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import InfoCard from './Map/InfoCard';
 import SearchBar from './Map/SearchBar';
 import MapMarker from './Map/MapMarker';
@@ -11,6 +13,9 @@ import DataLoader from '@/services/DataLoader';
 import { UniversityInfo } from '@/services/models';
 import { isSameLatLng } from '@/utils';
 import 'leaflet/dist/leaflet.css';
+
+const NAVBAR_SIZE = 50;
+const INFO_CARD_WIDTH = 400;
 
 const MapController = () => {
   const map = useMap();
@@ -32,6 +37,7 @@ function Map() {
   const [selectedUniv, setSelectedUniv] = useState(new UniversityInfo());
   const { i18n } = useTranslation();
   const dataLoader = DataLoader.getInstance();
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   const showInfoCard = useCallback(async (countryName: string, directoryName: string) => {
     navigate(`/${i18n.language}/university/${countryName}/${directoryName}`);
@@ -99,9 +105,46 @@ function Map() {
   const bounds = L.latLngBounds(L.latLng(-90, -180), L.latLng(90, 180));
   const center = JSON.parse(Cookies.get('mapCenter') ?? '[0, 20]');
   const zoom = parseInt(Cookies.get('mapZoom') ?? '3');
+  const showPanel = !!(country && university);
+
   return (
-    <main style={{ height: '100vh' }}>
-      { country && university ? <InfoCard universityInfo={selectedUniv} /> : null }
+    <Box style={{ height: '100%', position: 'relative' }}>
+      {/* Desktop: side panel overlaid on the map */}
+      {!isMobile && showPanel &&
+        <Paper
+          radius={0}
+          shadow='md'
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: NAVBAR_SIZE,
+            zIndex: 500,
+            width: INFO_CARD_WIDTH,
+            height: '100%',
+          }}
+        >
+          <ScrollArea h='100%'>
+            <InfoCard universityInfo={selectedUniv} />
+          </ScrollArea>
+        </Paper>
+      }
+
+      {/* Mobile: bottom Drawer */}
+      {isMobile &&
+        <Drawer
+          opened={showPanel}
+          onClose={() => navigate(`/${i18n.language}/university`)}
+          position='bottom'
+          size='75vh'
+          zIndex={600}
+          styles={{ body: { padding: 0 } }}
+        >
+          <ScrollArea h='100%'>
+            <InfoCard universityInfo={selectedUniv} />
+          </ScrollArea>
+        </Drawer>
+      }
+
       <SearchBar onSearch={showInfoCard} />
       <MapContainer
         center={center}
@@ -121,7 +164,7 @@ function Map() {
         {window.innerWidth >= 800 && <ZoomControl position='bottomright' />}
         {markers}
       </MapContainer>
-    </main>
+    </Box>
   );
 }
 

@@ -1,5 +1,6 @@
 import L from 'leaflet';
 import { Marker, Popup } from 'react-leaflet';
+import { Text } from '@mantine/core';
 
 const blueIcon = new L.Icon({
   iconUrl: '/leaflet-color-markers/marker-icon-blue.png',
@@ -41,11 +42,11 @@ const MapMarker = (props: MapMarkerProps) => {
       }}
     >
       <Popup>
-        <div style={{ textAlign: 'center' }}>
+        <Text ta='center' size='sm'>
           {props.universityName}
           <br />
           {props.locationName}
-        </div>
+        </Text>
       </Popup>
     </Marker>
   );
