@@ -7,7 +7,7 @@ The University Map project is an interactive map of universities around the worl
 
 ### Run Source Code
 
-Install NodeJS v20.10.0.
+Install NodeJS v22.20.0.
 Install Python 3 and install `PyYAML`.
 
 ```bash

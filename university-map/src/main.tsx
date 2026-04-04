@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import { createTheme, MantineProvider } from '@mantine/core';
 import App from './App.tsx';
@@ -11,13 +11,17 @@ const theme = createTheme({
   /** Put your mantine theme override here */
 });
 
-ReactDOM.render(
+const root = document.getElementById('root');
+if (!root) {
+  throw new Error('Root element #root not found');
+}
+
+createRoot(root).render(
   <React.StrictMode>
     <HashRouter>
       <MantineProvider theme={theme}>
         <App />
       </MantineProvider>
     </HashRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
