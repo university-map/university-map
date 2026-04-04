@@ -5,7 +5,7 @@ import { MapContainer, TileLayer, ZoomControl, useMap } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import L from 'leaflet';
 import Cookies from 'js-cookie';
-import { Box, CloseButton, Paper, ScrollArea } from '@mantine/core';
+import { Box, CloseButton, Flex, Paper, ScrollArea } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import InfoCard from './Map/InfoCard';
 import SearchBar from './Map/SearchBar';
@@ -156,12 +156,34 @@ function Map() {
         </Paper>
       }
 
-      <FilterPanel
-        availableCountries={availableCountries}
-        filter={filter}
-        onChange={setFilter}
-      />
-      <SearchBar onSearch={showInfoCard} />
+      <Paper
+        withBorder
+        shadow='md'
+        radius='md'
+        p={6}
+        px={8}
+        style={{
+          position: 'absolute',
+          top: 12,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 500,
+          width: 'min(580px, calc(100vw - 24px))',
+          backgroundColor: 'var(--mantine-color-body)',
+          overflow: 'visible',
+        }}
+      >
+        <Flex gap='sm' align='center' wrap='nowrap' style={{ width: '100%' }}>
+          <FilterPanel
+            availableCountries={availableCountries}
+            filter={filter}
+            onChange={setFilter}
+          />
+          <Box style={{ flex: 1, minWidth: 0 }}>
+            <SearchBar onSearch={showInfoCard} />
+          </Box>
+        </Flex>
+      </Paper>
 
       <MapContainer
         center={center}

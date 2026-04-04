@@ -31,8 +31,8 @@ export default function FilterPanel({ availableCountries, filter, onChange }: Fi
   }
 
   return (
-    <Box style={{ position: 'absolute', top: 10, left: 10, zIndex: 500 }}>
-      <Tooltip label={t('Filter.title')} position='right' transitionProps={{ duration: 0 }}>
+    <Box style={{ position: 'relative', flexShrink: 0 }}>
+      <Tooltip label={t('Filter.title')} position='bottom' transitionProps={{ duration: 0 }}>
         <ActionIcon
           size='lg'
           variant={activeCount > 0 ? 'filled' : 'default'}
@@ -55,7 +55,19 @@ export default function FilterPanel({ availableCountries, filter, onChange }: Fi
       </Tooltip>
 
       {open &&
-        <Paper shadow='md' p='sm' mt={4} w={260} withBorder>
+        <Paper
+          shadow='md'
+          p='sm'
+          w={280}
+          withBorder
+          style={{
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            marginTop: 4,
+            zIndex: 510,
+          }}
+        >
           <Stack gap='xs'>
             <Text fw={600} size='sm'>{t('Filter.title')}</Text>
 
