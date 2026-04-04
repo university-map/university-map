@@ -8,6 +8,13 @@
     "rankings": "Rankings",
     "gallery": "Gallery"
   },
+  "Filter": {
+    "title": "Filter",
+    "region": "Region",
+    "country": "Country",
+    "all": "All",
+    "clear": "Clear filters"
+  },
   "Home": {
     "tagline": "Explore universities around the world on an interactive map.",
     "openMap": "Open Map",

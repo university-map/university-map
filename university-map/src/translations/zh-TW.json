@@ -8,6 +8,13 @@
     "rankings": "排名",
     "gallery": "相片"
   },
+  "Filter": {
+    "title": "篩選",
+    "region": "地區",
+    "country": "國家",
+    "all": "全部",
+    "clear": "清除篩選"
+  },
   "Home": {
     "tagline": "在互動地圖上探索世界各地的大學。",
     "openMap": "開啟地圖",
